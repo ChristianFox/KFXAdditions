@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '09B74F671745A392832AB56E'
+               BlueprintIdentifier = '73E21BFCB3CEF330885AFC52'
                BlueprintName = 'KFXAdditions'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'KFXAdditions.framework'>
