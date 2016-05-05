@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KFXAdditions_Example', :exclusive => true do
+  pod 'KFXAdditions', :path => '../'
+end
+
+target 'KFXAdditions_Tests', :exclusive => true do
+  pod 'KFXAdditions', :path => '../'
+
+  
+end
