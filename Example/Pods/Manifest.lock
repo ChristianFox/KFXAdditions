@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  KFXAdditions: 72e64bda93031f65cef7ba35448a8060e53a6d53
+  KFXAdditions: 627abfa4a9f0df26db037ed10c9fbf0b8490a9ea
 
 COCOAPODS: 0.39.0

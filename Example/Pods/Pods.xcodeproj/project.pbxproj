@@ -1,768 +1,1851 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		04BBD29DB1694E0D44154BBDBAF4E979 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		0E4F464F5E44ED57326651401665BFCE /* Pods-KFXAdditions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B410DEAC3AC06C9DC0C95F6FAE2AF713 /* Pods-KFXAdditions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3972BC54A1C39B0FB9905189D3E086B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		4E463481DD4DC40E23C33244B122FE53 /* KFXAdditions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3C9120AF2A2AB70E6B8A93CA9EC0EA /* KFXAdditions-dummy.m */; };
-		5B5205E61CDB4FBA0047DB8E /* NSArray+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205E41CDB4FBA0047DB8E /* NSArray+KFXAdditions.h */; };
-		5B5205E71CDB4FBA0047DB8E /* NSArray+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205E41CDB4FBA0047DB8E /* NSArray+KFXAdditions.h */; };
-		5B5205E81CDB4FBA0047DB8E /* NSArray+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205E41CDB4FBA0047DB8E /* NSArray+KFXAdditions.h */; };
-		5B5205E91CDB4FBA0047DB8E /* NSArray+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205E51CDB4FBA0047DB8E /* NSArray+KFXAdditions.m */; };
-		5B5205EA1CDB4FBA0047DB8E /* NSArray+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205E51CDB4FBA0047DB8E /* NSArray+KFXAdditions.m */; };
-		5B5205EB1CDB4FBA0047DB8E /* NSArray+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205E51CDB4FBA0047DB8E /* NSArray+KFXAdditions.m */; };
-		5B5205EE1CDB4FCB0047DB8E /* UIImage+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205EC1CDB4FCB0047DB8E /* UIImage+KFXAdditions.h */; };
-		5B5205EF1CDB4FCB0047DB8E /* UIImage+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205EC1CDB4FCB0047DB8E /* UIImage+KFXAdditions.h */; };
-		5B5205F01CDB4FCB0047DB8E /* UIImage+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205EC1CDB4FCB0047DB8E /* UIImage+KFXAdditions.h */; };
-		5B5205F11CDB4FCB0047DB8E /* UIImage+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205ED1CDB4FCB0047DB8E /* UIImage+KFXAdditions.m */; };
-		5B5205F21CDB4FCB0047DB8E /* UIImage+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205ED1CDB4FCB0047DB8E /* UIImage+KFXAdditions.m */; };
-		5B5205F31CDB4FCB0047DB8E /* UIImage+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205ED1CDB4FCB0047DB8E /* UIImage+KFXAdditions.m */; };
-		5B5205F61CDB4FD20047DB8E /* NSObject+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205F41CDB4FD20047DB8E /* NSObject+KFXAdditions.h */; };
-		5B5205F71CDB4FD20047DB8E /* NSObject+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205F41CDB4FD20047DB8E /* NSObject+KFXAdditions.h */; };
-		5B5205F81CDB4FD20047DB8E /* NSObject+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205F41CDB4FD20047DB8E /* NSObject+KFXAdditions.h */; };
-		5B5205F91CDB4FD20047DB8E /* NSObject+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205F51CDB4FD20047DB8E /* NSObject+KFXAdditions.m */; };
-		5B5205FA1CDB4FD20047DB8E /* NSObject+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205F51CDB4FD20047DB8E /* NSObject+KFXAdditions.m */; };
-		5B5205FB1CDB4FD20047DB8E /* NSObject+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205F51CDB4FD20047DB8E /* NSObject+KFXAdditions.m */; };
-		5B5205FE1CDB4FDD0047DB8E /* NSString+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205FC1CDB4FDD0047DB8E /* NSString+KFXAdditions.h */; };
-		5B5205FF1CDB4FDD0047DB8E /* NSString+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205FC1CDB4FDD0047DB8E /* NSString+KFXAdditions.h */; };
-		5B5206001CDB4FDD0047DB8E /* NSString+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5205FC1CDB4FDD0047DB8E /* NSString+KFXAdditions.h */; };
-		5B5206011CDB4FDD0047DB8E /* NSString+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205FD1CDB4FDD0047DB8E /* NSString+KFXAdditions.m */; };
-		5B5206021CDB4FDD0047DB8E /* NSString+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205FD1CDB4FDD0047DB8E /* NSString+KFXAdditions.m */; };
-		5B5206031CDB4FDD0047DB8E /* NSString+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5205FD1CDB4FDD0047DB8E /* NSString+KFXAdditions.m */; };
-		5B5206061CDB4FE70047DB8E /* UIApplication+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5206041CDB4FE70047DB8E /* UIApplication+KFXAdditions.h */; };
-		5B5206071CDB4FE70047DB8E /* UIApplication+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5206041CDB4FE70047DB8E /* UIApplication+KFXAdditions.h */; };
-		5B5206081CDB4FE70047DB8E /* UIApplication+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5206041CDB4FE70047DB8E /* UIApplication+KFXAdditions.h */; };
-		5B5206091CDB4FE70047DB8E /* UIApplication+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5206051CDB4FE70047DB8E /* UIApplication+KFXAdditions.m */; };
-		5B52060A1CDB4FE70047DB8E /* UIApplication+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5206051CDB4FE70047DB8E /* UIApplication+KFXAdditions.m */; };
-		5B52060B1CDB4FE70047DB8E /* UIApplication+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5206051CDB4FE70047DB8E /* UIApplication+KFXAdditions.m */; };
-		5B52060E1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B52060C1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h */; };
-		5B52060F1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B52060C1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h */; };
-		5B5206101CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B52060C1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h */; };
-		5B5206111CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B52060D1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m */; };
-		5B5206121CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B52060D1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m */; };
-		5B5206131CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B52060D1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m */; };
-		5DDADD5305B14E2D336450009A44A5F8 /* Pods-KFXAdditions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B706E1557A92AE39174B6D3A880E8ABF /* Pods-KFXAdditions_Example-dummy.m */; };
-		6FD8238AE017E2B32E2A11B82246EA34 /* KFXAdditions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CFC54D0082515104D88649EFBB2030 /* KFXAdditions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		902CD4769995CFF6B3303ABF1A5372C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		D5ACA931E9BD4B7AB4E9E972091CDFAA /* Pods-KFXAdditions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D29616958C10F1CFC9634B94104E96B3 /* Pods-KFXAdditions_Tests-dummy.m */; };
-		D73D4057A1B872A8F5936BA960579813 /* Pods-KFXAdditions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DD94D4114D767BEA9B5857A8AEFA609 /* Pods-KFXAdditions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4802CD02B8C17EE3E57CDBEA479EE170 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4086223AB42A61747DF28B4DCAD52193;
-			remoteInfo = KFXAdditions;
-		};
-		8169FDC36EFBC5E31E91EAA922D789D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4086223AB42A61747DF28B4DCAD52193;
-			remoteInfo = KFXAdditions;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		04DC2FAFD426F1FCCA3C9A30B938553A /* Pods-KFXAdditions_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KFXAdditions_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		30DD06ACC67B816E537C021DB110B81C /* Pods-KFXAdditions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXAdditions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		364DCA302F69A0B6D9A3FCB00636FF11 /* Pods_KFXAdditions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXAdditions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39E76B325D151767EEDC77066843B98B /* Pods-KFXAdditions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXAdditions_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		41A2C609C69A1F6E52648221CB2F61BD /* KFXAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KFXAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A26CE734E41000142A0DC0204AE2AED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C1024DBEFDB10D91953BFA1344E460E /* Pods-KFXAdditions_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KFXAdditions_Example.modulemap"; sourceTree = "<group>"; };
-		4C1DABC47820CEB24100D838290962D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A3C9120AF2A2AB70E6B8A93CA9EC0EA /* KFXAdditions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KFXAdditions-dummy.m"; sourceTree = "<group>"; };
-		5B5205E41CDB4FBA0047DB8E /* NSArray+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+KFXAdditions.h"; sourceTree = "<group>"; };
-		5B5205E51CDB4FBA0047DB8E /* NSArray+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+KFXAdditions.m"; sourceTree = "<group>"; };
-		5B5205EC1CDB4FCB0047DB8E /* UIImage+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KFXAdditions.h"; sourceTree = "<group>"; };
-		5B5205ED1CDB4FCB0047DB8E /* UIImage+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KFXAdditions.m"; sourceTree = "<group>"; };
-		5B5205F41CDB4FD20047DB8E /* NSObject+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KFXAdditions.h"; sourceTree = "<group>"; };
-		5B5205F51CDB4FD20047DB8E /* NSObject+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KFXAdditions.m"; sourceTree = "<group>"; };
-		5B5205FC1CDB4FDD0047DB8E /* NSString+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KFXAdditions.h"; sourceTree = "<group>"; };
-		5B5205FD1CDB4FDD0047DB8E /* NSString+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KFXAdditions.m"; sourceTree = "<group>"; };
-		5B5206041CDB4FE70047DB8E /* UIApplication+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+KFXAdditions.h"; sourceTree = "<group>"; };
-		5B5206051CDB4FE70047DB8E /* UIApplication+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+KFXAdditions.m"; sourceTree = "<group>"; };
-		5B52060C1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+KFXAdditions.h"; sourceTree = "<group>"; };
-		5B52060D1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+KFXAdditions.m"; sourceTree = "<group>"; };
-		5E79A0801B77F2186FF78F57E138E9DB /* Pods-KFXAdditions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXAdditions_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		6CBB7FC9372667BF75D1F3A5148BD0EE /* KFXAdditions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KFXAdditions.xcconfig; sourceTree = "<group>"; };
-		8CCE19F7BEBC353707FD836334AC9B63 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F4F4B3AF1FAF4B0D9C45FE9B0A33029 /* Pods-KFXAdditions_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXAdditions_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8F8045D95AFB5C3AEFED5769DDF1E864 /* KFXAdditions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KFXAdditions.modulemap; sourceTree = "<group>"; };
-		9DD94D4114D767BEA9B5857A8AEFA609 /* Pods-KFXAdditions_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KFXAdditions_Example-umbrella.h"; sourceTree = "<group>"; };
-		AB202C31DC28A8AF9B4C1ADBD1C7C61E /* Pods-KFXAdditions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KFXAdditions_Tests.modulemap"; sourceTree = "<group>"; };
-		AE443D38B51F754DAD8B1060D33DF63C /* Pods_KFXAdditions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXAdditions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AED6114B05E215F083EEB547C8045529 /* Pods-KFXAdditions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXAdditions_Tests-resources.sh"; sourceTree = "<group>"; };
-		B410DEAC3AC06C9DC0C95F6FAE2AF713 /* Pods-KFXAdditions_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KFXAdditions_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B706E1557A92AE39174B6D3A880E8ABF /* Pods-KFXAdditions_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KFXAdditions_Example-dummy.m"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C2D06A43EB4E5DF0ACAEFA3892D0F2AA /* Pods-KFXAdditions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXAdditions_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D1BC06210FBBECD493E47790DFC92838 /* Pods-KFXAdditions_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KFXAdditions_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D29616958C10F1CFC9634B94104E96B3 /* Pods-KFXAdditions_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KFXAdditions_Tests-dummy.m"; sourceTree = "<group>"; };
-		D2CFC54D0082515104D88649EFBB2030 /* KFXAdditions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KFXAdditions-umbrella.h"; sourceTree = "<group>"; };
-		D4B11E66CDB6A313DF58DA6ABC67B741 /* Pods-KFXAdditions_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KFXAdditions_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF598D57C335C8D88338C93C74E26235 /* Pods-KFXAdditions_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXAdditions_Example-resources.sh"; sourceTree = "<group>"; };
-		F4B4EC006B4CA812C933802A8B5AEFAB /* Pods-KFXAdditions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXAdditions_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FCFD633D86A92D60DAD9F2237C4E9763 /* KFXAdditions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KFXAdditions-prefix.pch"; sourceTree = "<group>"; };
-		FFED6D66DA6385B9DE19DFFB5862B9DD /* Pods-KFXAdditions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KFXAdditions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		1092390006C83A2A5E388D077CF46087 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3972BC54A1C39B0FB9905189D3E086B4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A513DEACB7269DD26B3757B7BC29B26C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				902CD4769995CFF6B3303ABF1A5372C7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AABE6D8971D4C2534018D49CDEFCF6AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04BBD29DB1694E0D44154BBDBAF4E979 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		0F75957CC2D254E5EB6276ED2EA86B8B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4A26CE734E41000142A0DC0204AE2AED /* Info.plist */,
-				8F8045D95AFB5C3AEFED5769DDF1E864 /* KFXAdditions.modulemap */,
-				6CBB7FC9372667BF75D1F3A5148BD0EE /* KFXAdditions.xcconfig */,
-				5A3C9120AF2A2AB70E6B8A93CA9EC0EA /* KFXAdditions-dummy.m */,
-				FCFD633D86A92D60DAD9F2237C4E9763 /* KFXAdditions-prefix.pch */,
-				D2CFC54D0082515104D88649EFBB2030 /* KFXAdditions-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KFXAdditions";
-			sourceTree = "<group>";
-		};
-		26C26A04FBBCF68C54C2298AB004D87D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A9A7F1AB74E6BE9299AD6DC43C458DEA /* KFXAdditions */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4067F4A8C099BCF2D4241D35B5CC89F2 /* KFXAdditions */ = {
-			isa = PBXGroup;
-			children = (
-				B0CC2BBCBE57308B3E319993A306E5C9 /* Classes */,
-			);
-			path = KFXAdditions;
-			sourceTree = "<group>";
-		};
-		6CAD6465987FC6A95B47C76DBD2C539E /* Pods-KFXAdditions_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				4C1DABC47820CEB24100D838290962D3 /* Info.plist */,
-				AB202C31DC28A8AF9B4C1ADBD1C7C61E /* Pods-KFXAdditions_Tests.modulemap */,
-				04DC2FAFD426F1FCCA3C9A30B938553A /* Pods-KFXAdditions_Tests-acknowledgements.markdown */,
-				FFED6D66DA6385B9DE19DFFB5862B9DD /* Pods-KFXAdditions_Tests-acknowledgements.plist */,
-				D29616958C10F1CFC9634B94104E96B3 /* Pods-KFXAdditions_Tests-dummy.m */,
-				5E79A0801B77F2186FF78F57E138E9DB /* Pods-KFXAdditions_Tests-frameworks.sh */,
-				AED6114B05E215F083EEB547C8045529 /* Pods-KFXAdditions_Tests-resources.sh */,
-				B410DEAC3AC06C9DC0C95F6FAE2AF713 /* Pods-KFXAdditions_Tests-umbrella.h */,
-				30DD06ACC67B816E537C021DB110B81C /* Pods-KFXAdditions_Tests.debug.xcconfig */,
-				39E76B325D151767EEDC77066843B98B /* Pods-KFXAdditions_Tests.release.xcconfig */,
-			);
-			name = "Pods-KFXAdditions_Tests";
-			path = "Target Support Files/Pods-KFXAdditions_Tests";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				26C26A04FBBCF68C54C2298AB004D87D /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				91CAD846CA705541B81CB7AF3D1FC2B5 /* Products */,
-				EFD7B3393DC3D744CF353F1B849F781C /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		91CAD846CA705541B81CB7AF3D1FC2B5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41A2C609C69A1F6E52648221CB2F61BD /* KFXAdditions.framework */,
-				364DCA302F69A0B6D9A3FCB00636FF11 /* Pods_KFXAdditions_Example.framework */,
-				AE443D38B51F754DAD8B1060D33DF63C /* Pods_KFXAdditions_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A9A7F1AB74E6BE9299AD6DC43C458DEA /* KFXAdditions */ = {
-			isa = PBXGroup;
-			children = (
-				4067F4A8C099BCF2D4241D35B5CC89F2 /* KFXAdditions */,
-				0F75957CC2D254E5EB6276ED2EA86B8B /* Support Files */,
-			);
-			name = KFXAdditions;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		B0CC2BBCBE57308B3E319993A306E5C9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5B5205E41CDB4FBA0047DB8E /* NSArray+KFXAdditions.h */,
-				5B5205E51CDB4FBA0047DB8E /* NSArray+KFXAdditions.m */,
-				5B5205EC1CDB4FCB0047DB8E /* UIImage+KFXAdditions.h */,
-				5B5205ED1CDB4FCB0047DB8E /* UIImage+KFXAdditions.m */,
-				5B5205F41CDB4FD20047DB8E /* NSObject+KFXAdditions.h */,
-				5B5205F51CDB4FD20047DB8E /* NSObject+KFXAdditions.m */,
-				5B5205FC1CDB4FDD0047DB8E /* NSString+KFXAdditions.h */,
-				5B5205FD1CDB4FDD0047DB8E /* NSString+KFXAdditions.m */,
-				5B5206041CDB4FE70047DB8E /* UIApplication+KFXAdditions.h */,
-				5B5206051CDB4FE70047DB8E /* UIApplication+KFXAdditions.m */,
-				5B52060C1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h */,
-				5B52060D1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		EFD7B3393DC3D744CF353F1B849F781C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FD78501F5641075F81C8C0E5699C4D4E /* Pods-KFXAdditions_Example */,
-				6CAD6465987FC6A95B47C76DBD2C539E /* Pods-KFXAdditions_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FD78501F5641075F81C8C0E5699C4D4E /* Pods-KFXAdditions_Example */ = {
-			isa = PBXGroup;
-			children = (
-				8CCE19F7BEBC353707FD836334AC9B63 /* Info.plist */,
-				4C1024DBEFDB10D91953BFA1344E460E /* Pods-KFXAdditions_Example.modulemap */,
-				D4B11E66CDB6A313DF58DA6ABC67B741 /* Pods-KFXAdditions_Example-acknowledgements.markdown */,
-				D1BC06210FBBECD493E47790DFC92838 /* Pods-KFXAdditions_Example-acknowledgements.plist */,
-				B706E1557A92AE39174B6D3A880E8ABF /* Pods-KFXAdditions_Example-dummy.m */,
-				8F4F4B3AF1FAF4B0D9C45FE9B0A33029 /* Pods-KFXAdditions_Example-frameworks.sh */,
-				DF598D57C335C8D88338C93C74E26235 /* Pods-KFXAdditions_Example-resources.sh */,
-				9DD94D4114D767BEA9B5857A8AEFA609 /* Pods-KFXAdditions_Example-umbrella.h */,
-				C2D06A43EB4E5DF0ACAEFA3892D0F2AA /* Pods-KFXAdditions_Example.debug.xcconfig */,
-				F4B4EC006B4CA812C933802A8B5AEFAB /* Pods-KFXAdditions_Example.release.xcconfig */,
-			);
-			name = "Pods-KFXAdditions_Example";
-			path = "Target Support Files/Pods-KFXAdditions_Example";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		8C2875DE2659FE3DF9AED1EF8E375CBB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B5205F81CDB4FD20047DB8E /* NSObject+KFXAdditions.h in Headers */,
-				5B5206101CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h in Headers */,
-				5B5206001CDB4FDD0047DB8E /* NSString+KFXAdditions.h in Headers */,
-				0E4F464F5E44ED57326651401665BFCE /* Pods-KFXAdditions_Tests-umbrella.h in Headers */,
-				5B5205F01CDB4FCB0047DB8E /* UIImage+KFXAdditions.h in Headers */,
-				5B5205E81CDB4FBA0047DB8E /* NSArray+KFXAdditions.h in Headers */,
-				5B5206081CDB4FE70047DB8E /* UIApplication+KFXAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B04B591235432517012F7D298B1BFFD6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B5205F61CDB4FD20047DB8E /* NSObject+KFXAdditions.h in Headers */,
-				5B52060E1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h in Headers */,
-				5B5205FE1CDB4FDD0047DB8E /* NSString+KFXAdditions.h in Headers */,
-				6FD8238AE017E2B32E2A11B82246EA34 /* KFXAdditions-umbrella.h in Headers */,
-				5B5205EE1CDB4FCB0047DB8E /* UIImage+KFXAdditions.h in Headers */,
-				5B5205E61CDB4FBA0047DB8E /* NSArray+KFXAdditions.h in Headers */,
-				5B5206061CDB4FE70047DB8E /* UIApplication+KFXAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3B7E51EE8D3E6A3E6D291A4006C84AC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B5205F71CDB4FD20047DB8E /* NSObject+KFXAdditions.h in Headers */,
-				5B52060F1CDB4FEE0047DB8E /* UIResponder+KFXAdditions.h in Headers */,
-				5B5205FF1CDB4FDD0047DB8E /* NSString+KFXAdditions.h in Headers */,
-				D73D4057A1B872A8F5936BA960579813 /* Pods-KFXAdditions_Example-umbrella.h in Headers */,
-				5B5205EF1CDB4FCB0047DB8E /* UIImage+KFXAdditions.h in Headers */,
-				5B5205E71CDB4FBA0047DB8E /* NSArray+KFXAdditions.h in Headers */,
-				5B5206071CDB4FE70047DB8E /* UIApplication+KFXAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		4086223AB42A61747DF28B4DCAD52193 /* KFXAdditions */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 21C32685CACDB05F8B536ECC7799228D /* Build configuration list for PBXNativeTarget "KFXAdditions" */;
-			buildPhases = (
-				E138028EFC6C075119589D24AA988419 /* Sources */,
-				1092390006C83A2A5E388D077CF46087 /* Frameworks */,
-				B04B591235432517012F7D298B1BFFD6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KFXAdditions;
-			productName = KFXAdditions;
-			productReference = 41A2C609C69A1F6E52648221CB2F61BD /* KFXAdditions.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		802FD0E077CCEA2416D81511A4BED108 /* Pods-KFXAdditions_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6CE46941D1C3BB6373ABB9C702476DE2 /* Build configuration list for PBXNativeTarget "Pods-KFXAdditions_Example" */;
-			buildPhases = (
-				A382DF2B45BD6AE01FD921DD9524DD3D /* Sources */,
-				A513DEACB7269DD26B3757B7BC29B26C /* Frameworks */,
-				F3B7E51EE8D3E6A3E6D291A4006C84AC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FC4F0DC63D9FB899CFA4560EE84E8E16 /* PBXTargetDependency */,
-			);
-			name = "Pods-KFXAdditions_Example";
-			productName = "Pods-KFXAdditions_Example";
-			productReference = 364DCA302F69A0B6D9A3FCB00636FF11 /* Pods_KFXAdditions_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B2DF0A4FE74B2110E705B02F7E5A73EB /* Pods-KFXAdditions_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A086FFB0C758310B46BDBCD4A87CE29 /* Build configuration list for PBXNativeTarget "Pods-KFXAdditions_Tests" */;
-			buildPhases = (
-				8D01D7CC448AFD70F77463E121F1F310 /* Sources */,
-				AABE6D8971D4C2534018D49CDEFCF6AC /* Frameworks */,
-				8C2875DE2659FE3DF9AED1EF8E375CBB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F8C73D0CDF091DCEC595B03951B7722 /* PBXTargetDependency */,
-			);
-			name = "Pods-KFXAdditions_Tests";
-			productName = "Pods-KFXAdditions_Tests";
-			productReference = AE443D38B51F754DAD8B1060D33DF63C /* Pods_KFXAdditions_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 91CAD846CA705541B81CB7AF3D1FC2B5 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				4086223AB42A61747DF28B4DCAD52193 /* KFXAdditions */,
-				802FD0E077CCEA2416D81511A4BED108 /* Pods-KFXAdditions_Example */,
-				B2DF0A4FE74B2110E705B02F7E5A73EB /* Pods-KFXAdditions_Tests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		8D01D7CC448AFD70F77463E121F1F310 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B52060B1CDB4FE70047DB8E /* UIApplication+KFXAdditions.m in Sources */,
-				5B5205EB1CDB4FBA0047DB8E /* NSArray+KFXAdditions.m in Sources */,
-				5B5206031CDB4FDD0047DB8E /* NSString+KFXAdditions.m in Sources */,
-				5B5205FB1CDB4FD20047DB8E /* NSObject+KFXAdditions.m in Sources */,
-				D5ACA931E9BD4B7AB4E9E972091CDFAA /* Pods-KFXAdditions_Tests-dummy.m in Sources */,
-				5B5206131CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m in Sources */,
-				5B5205F31CDB4FCB0047DB8E /* UIImage+KFXAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A382DF2B45BD6AE01FD921DD9524DD3D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B52060A1CDB4FE70047DB8E /* UIApplication+KFXAdditions.m in Sources */,
-				5B5205EA1CDB4FBA0047DB8E /* NSArray+KFXAdditions.m in Sources */,
-				5B5206021CDB4FDD0047DB8E /* NSString+KFXAdditions.m in Sources */,
-				5B5205FA1CDB4FD20047DB8E /* NSObject+KFXAdditions.m in Sources */,
-				5DDADD5305B14E2D336450009A44A5F8 /* Pods-KFXAdditions_Example-dummy.m in Sources */,
-				5B5206121CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m in Sources */,
-				5B5205F21CDB4FCB0047DB8E /* UIImage+KFXAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E138028EFC6C075119589D24AA988419 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B5206091CDB4FE70047DB8E /* UIApplication+KFXAdditions.m in Sources */,
-				4E463481DD4DC40E23C33244B122FE53 /* KFXAdditions-dummy.m in Sources */,
-				5B5206011CDB4FDD0047DB8E /* NSString+KFXAdditions.m in Sources */,
-				5B5205F91CDB4FD20047DB8E /* NSObject+KFXAdditions.m in Sources */,
-				5B5205E91CDB4FBA0047DB8E /* NSArray+KFXAdditions.m in Sources */,
-				5B5206111CDB4FEE0047DB8E /* UIResponder+KFXAdditions.m in Sources */,
-				5B5205F11CDB4FCB0047DB8E /* UIImage+KFXAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2F8C73D0CDF091DCEC595B03951B7722 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KFXAdditions;
-			target = 4086223AB42A61747DF28B4DCAD52193 /* KFXAdditions */;
-			targetProxy = 4802CD02B8C17EE3E57CDBEA479EE170 /* PBXContainerItemProxy */;
-		};
-		FC4F0DC63D9FB899CFA4560EE84E8E16 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KFXAdditions;
-			target = 4086223AB42A61747DF28B4DCAD52193 /* KFXAdditions */;
-			targetProxy = 8169FDC36EFBC5E31E91EAA922D789D0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		0EC87DAB5CFE892070B9F3F671D513E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CBB7FC9372667BF75D1F3A5148BD0EE /* KFXAdditions.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KFXAdditions/KFXAdditions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KFXAdditions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KFXAdditions/KFXAdditions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = KFXAdditions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		18F6E2527919E36A3ABB99849EDEC875 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39E76B325D151767EEDC77066843B98B /* Pods-KFXAdditions_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KFXAdditions_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KFXAdditions_Tests/Pods-KFXAdditions_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KFXAdditions_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		282786B8A29EFD4CC7A8C8E74FE2D2EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30DD06ACC67B816E537C021DB110B81C /* Pods-KFXAdditions_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KFXAdditions_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KFXAdditions_Tests/Pods-KFXAdditions_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KFXAdditions_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		661DA0804C00D11994902A77BDBAE4AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2D06A43EB4E5DF0ACAEFA3892D0F2AA /* Pods-KFXAdditions_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KFXAdditions_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KFXAdditions_Example/Pods-KFXAdditions_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KFXAdditions_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6E6FE9FD6BFEBF454FF83411C6F7C014 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4B4EC006B4CA812C933802A8B5AEFAB /* Pods-KFXAdditions_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KFXAdditions_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KFXAdditions_Example/Pods-KFXAdditions_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_KFXAdditions_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		90B782514EE2B444E3952359F70FCAF9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CBB7FC9372667BF75D1F3A5148BD0EE /* KFXAdditions.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KFXAdditions/KFXAdditions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KFXAdditions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KFXAdditions/KFXAdditions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = KFXAdditions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		21C32685CACDB05F8B536ECC7799228D /* Build configuration list for PBXNativeTarget "KFXAdditions" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0EC87DAB5CFE892070B9F3F671D513E8 /* Debug */,
-				90B782514EE2B444E3952359F70FCAF9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3A086FFB0C758310B46BDBCD4A87CE29 /* Build configuration list for PBXNativeTarget "Pods-KFXAdditions_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				282786B8A29EFD4CC7A8C8E74FE2D2EB /* Debug */,
-				18F6E2527919E36A3ABB99849EDEC875 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6CE46941D1C3BB6373ABB9C702476DE2 /* Build configuration list for PBXNativeTarget "Pods-KFXAdditions_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				661DA0804C00D11994902A77BDBAE4AB /* Debug */,
-				6E6FE9FD6BFEBF454FF83411C6F7C014 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0232B55F099DD94D1A46AE0D5D0128D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1796451893E33EA51942FB8042202C79</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>04BBD29DB1694E0D44154BBDBAF4E979</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>04DC2FAFD426F1FCCA3C9A30B938553A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0E4F464F5E44ED57326651401665BFCE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B410DEAC3AC06C9DC0C95F6FAE2AF713</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0F75957CC2D254E5EB6276ED2EA86B8B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4A26CE734E41000142A0DC0204AE2AED</string>
+				<string>8F8045D95AFB5C3AEFED5769DDF1E864</string>
+				<string>6CBB7FC9372667BF75D1F3A5148BD0EE</string>
+				<string>5A3C9120AF2A2AB70E6B8A93CA9EC0EA</string>
+				<string>FCFD633D86A92D60DAD9F2237C4E9763</string>
+				<string>D2CFC54D0082515104D88649EFBB2030</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/KFXAdditions</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>11EF76C512EBF87373A7B819DD41ACCC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>13E76800757327F5C821C87412BC1156</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>13E76800757327F5C821C87412BC1156</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1796451893E33EA51942FB8042202C79</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSObject+KFXAdditions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18F6E2527919E36A3ABB99849EDEC875</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>39E76B325D151767EEDC77066843B98B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-KFXAdditions_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-KFXAdditions_Tests/Pods-KFXAdditions_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_KFXAdditions_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>19F4441E9ED0E8D399DD62A42474CB79</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIApplication+KFXAdditions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F7F02C19167CB45EC485C8FF8CF1D8C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5A3C9120AF2A2AB70E6B8A93CA9EC0EA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>26C26A04FBBCF68C54C2298AB004D87D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A9A7F1AB74E6BE9299AD6DC43C458DEA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>282786B8A29EFD4CC7A8C8E74FE2D2EB</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>30DD06ACC67B816E537C021DB110B81C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-KFXAdditions_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-KFXAdditions_Tests/Pods-KFXAdditions_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_KFXAdditions_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>552D02D5BA751AC2E8790D2811D496CA</string>
+				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2DD7FD73176EE259D920C564106F6B23</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8A619F4F967DD473F8E118FD774D8F6D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>KFXAdditions</string>
+			<key>path</key>
+			<string>KFXAdditions</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F15561FDDF3DDDB2120B2E78402E651</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32221237482E01B4490B181CBB6A596D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2F8C73D0CDF091DCEC595B03951B7722</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>KFXAdditions</string>
+			<key>target</key>
+			<string>B1911864DE2555ECA2850D635A5D3881</string>
+			<key>targetProxy</key>
+			<string>4802CD02B8C17EE3E57CDBEA479EE170</string>
+		</dict>
+		<key>30DD06ACC67B816E537C021DB110B81C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32221237482E01B4490B181CBB6A596D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSString+KFXAdditions.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>364DCA302F69A0B6D9A3FCB00636FF11</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_KFXAdditions_Example.framework</string>
+			<key>path</key>
+			<string>Pods_KFXAdditions_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>39E76B325D151767EEDC77066843B98B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3A086FFB0C758310B46BDBCD4A87CE29</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>282786B8A29EFD4CC7A8C8E74FE2D2EB</string>
+				<string>18F6E2527919E36A3ABB99849EDEC875</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>3EDBF13FF913A5F30726762C477211FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>452985AFE4EBC37D74A93B8AD6B3896D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>41A2C609C69A1F6E52648221CB2F61BD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>KFXAdditions.framework</string>
+			<key>path</key>
+			<string>KFXAdditions.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>452985AFE4EBC37D74A93B8AD6B3896D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSArray+KFXAdditions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4802CD02B8C17EE3E57CDBEA479EE170</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B1911864DE2555ECA2850D635A5D3881</string>
+			<key>remoteInfo</key>
+			<string>KFXAdditions</string>
+		</dict>
+		<key>49EF83B5E178D187BEC6B9EFEAE9B9D8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSString+KFXAdditions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4A26CE734E41000142A0DC0204AE2AED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4AA980DAF17F37A28745A4F1002A69D8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSArray+KFXAdditions.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C1024DBEFDB10D91953BFA1344E460E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C1DABC47820CEB24100D838290962D3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4DB95E2548AA0360AFE8FF34541C6D22</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIImage+KFXAdditions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4E29FE49F1BA51DAE89F750C3BC50E19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIResponder+KFXAdditions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>552D02D5BA751AC2E8790D2811D496CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>5A3C9120AF2A2AB70E6B8A93CA9EC0EA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>KFXAdditions-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5DDADD5305B14E2D336450009A44A5F8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B706E1557A92AE39174B6D3A880E8ABF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5E79A0801B77F2186FF78F57E138E9DB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F1F066D66DABF9F55BF4F6B4C9F7D95</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1F7F02C19167CB45EC485C8FF8CF1D8C</string>
+				<string>7BED441C41C2A407C4D873DBBF1FBE18</string>
+				<string>7A5043ABCF487CB4AD50B98C60EB59D3</string>
+				<string>2F15561FDDF3DDDB2120B2E78402E651</string>
+				<string>ECB6717D4E022CF6A0D876EF9F47916D</string>
+				<string>DE868FC2BA783998D11356A8F9AC657C</string>
+				<string>D67EC3E45EF4DE39B8758FEF097D954B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>661DA0804C00D11994902A77BDBAE4AB</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C2D06A43EB4E5DF0ACAEFA3892D0F2AA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-KFXAdditions_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-KFXAdditions_Example/Pods-KFXAdditions_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_KFXAdditions_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6CAD6465987FC6A95B47C76DBD2C539E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4C1DABC47820CEB24100D838290962D3</string>
+				<string>AB202C31DC28A8AF9B4C1ADBD1C7C61E</string>
+				<string>04DC2FAFD426F1FCCA3C9A30B938553A</string>
+				<string>FFED6D66DA6385B9DE19DFFB5862B9DD</string>
+				<string>D29616958C10F1CFC9634B94104E96B3</string>
+				<string>5E79A0801B77F2186FF78F57E138E9DB</string>
+				<string>AED6114B05E215F083EEB547C8045529</string>
+				<string>B410DEAC3AC06C9DC0C95F6FAE2AF713</string>
+				<string>30DD06ACC67B816E537C021DB110B81C</string>
+				<string>39E76B325D151767EEDC77066843B98B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-KFXAdditions_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-KFXAdditions_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6CBB7FC9372667BF75D1F3A5148BD0EE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>KFXAdditions.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6CE46941D1C3BB6373ABB9C702476DE2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>661DA0804C00D11994902A77BDBAE4AB</string>
+				<string>6E6FE9FD6BFEBF454FF83411C6F7C014</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6E6FE9FD6BFEBF454FF83411C6F7C014</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F4B4EC006B4CA812C933802A8B5AEFAB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-KFXAdditions_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-KFXAdditions_Example/Pods-KFXAdditions_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_KFXAdditions_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>777CD76794DC13D73CF6C1CB53F800D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4DB95E2548AA0360AFE8FF34541C6D22</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7A5043ABCF487CB4AD50B98C60EB59D3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DE42966FF1CDA2E2EB68EC9C5CF0ED98</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7BED441C41C2A407C4D873DBBF1FBE18</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4AA980DAF17F37A28745A4F1002A69D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>26C26A04FBBCF68C54C2298AB004D87D</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>91CAD846CA705541B81CB7AF3D1FC2B5</string>
+				<string>EFD7B3393DC3D744CF353F1B849F781C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>802FD0E077CCEA2416D81511A4BED108</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>6CE46941D1C3BB6373ABB9C702476DE2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A382DF2B45BD6AE01FD921DD9524DD3D</string>
+				<string>A513DEACB7269DD26B3757B7BC29B26C</string>
+				<string>F3B7E51EE8D3E6A3E6D291A4006C84AC</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>FC4F0DC63D9FB899CFA4560EE84E8E16</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-KFXAdditions_Example</string>
+			<key>productName</key>
+			<string>Pods-KFXAdditions_Example</string>
+			<key>productReference</key>
+			<string>364DCA302F69A0B6D9A3FCB00636FF11</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>8169FDC36EFBC5E31E91EAA922D789D0</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B1911864DE2555ECA2850D635A5D3881</string>
+			<key>remoteInfo</key>
+			<string>KFXAdditions</string>
+		</dict>
+		<key>8A619F4F967DD473F8E118FD774D8F6D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>452985AFE4EBC37D74A93B8AD6B3896D</string>
+				<string>4AA980DAF17F37A28745A4F1002A69D8</string>
+				<string>1796451893E33EA51942FB8042202C79</string>
+				<string>DE42966FF1CDA2E2EB68EC9C5CF0ED98</string>
+				<string>49EF83B5E178D187BEC6B9EFEAE9B9D8</string>
+				<string>32221237482E01B4490B181CBB6A596D</string>
+				<string>19F4441E9ED0E8D399DD62A42474CB79</string>
+				<string>F5CEF35EBAD47711EA0F0945D3C157FC</string>
+				<string>4DB95E2548AA0360AFE8FF34541C6D22</string>
+				<string>E051A25417A8647E0BFC895F3B4812CF</string>
+				<string>4E29FE49F1BA51DAE89F750C3BC50E19</string>
+				<string>C72891226D7BB8F01D13037355520F94</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8C2875DE2659FE3DF9AED1EF8E375CBB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0E4F464F5E44ED57326651401665BFCE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8CCE19F7BEBC353707FD836334AC9B63</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D01D7CC448AFD70F77463E121F1F310</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D5ACA931E9BD4B7AB4E9E972091CDFAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8F4F4B3AF1FAF4B0D9C45FE9B0A33029</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8F8045D95AFB5C3AEFED5769DDF1E864</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>KFXAdditions.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>902CD4769995CFF6B3303ABF1A5372C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>91CAD846CA705541B81CB7AF3D1FC2B5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>41A2C609C69A1F6E52648221CB2F61BD</string>
+				<string>364DCA302F69A0B6D9A3FCB00636FF11</string>
+				<string>AE443D38B51F754DAD8B1060D33DF63C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9DD94D4114D767BEA9B5857A8AEFA609</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A14C889CBC22433A4A0A7C38C186895A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6CBB7FC9372667BF75D1F3A5148BD0EE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/KFXAdditions/KFXAdditions-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/KFXAdditions/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/KFXAdditions/KFXAdditions.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>KFXAdditions</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>A382DF2B45BD6AE01FD921DD9524DD3D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5DDADD5305B14E2D336450009A44A5F8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A513DEACB7269DD26B3757B7BC29B26C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>902CD4769995CFF6B3303ABF1A5372C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A9A7F1AB74E6BE9299AD6DC43C458DEA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2DD7FD73176EE259D920C564106F6B23</string>
+				<string>0F75957CC2D254E5EB6276ED2EA86B8B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>KFXAdditions</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AABE6D8971D4C2534018D49CDEFCF6AC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>04BBD29DB1694E0D44154BBDBAF4E979</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>AB202C31DC28A8AF9B4C1ADBD1C7C61E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE443D38B51F754DAD8B1060D33DF63C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_KFXAdditions_Tests.framework</string>
+			<key>path</key>
+			<string>Pods_KFXAdditions_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AED6114B05E215F083EEB547C8045529</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B1911864DE2555ECA2850D635A5D3881</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>FA5B707CA50F45B59EAEEB39F107C0F2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>5F1F066D66DABF9F55BF4F6B4C9F7D95</string>
+				<string>11EF76C512EBF87373A7B819DD41ACCC</string>
+				<string>D129AA26D783CF9B27AC119ABAF627E9</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>KFXAdditions</string>
+			<key>productName</key>
+			<string>KFXAdditions</string>
+			<key>productReference</key>
+			<string>41A2C609C69A1F6E52648221CB2F61BD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>B2DF0A4FE74B2110E705B02F7E5A73EB</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3A086FFB0C758310B46BDBCD4A87CE29</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8D01D7CC448AFD70F77463E121F1F310</string>
+				<string>AABE6D8971D4C2534018D49CDEFCF6AC</string>
+				<string>8C2875DE2659FE3DF9AED1EF8E375CBB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>2F8C73D0CDF091DCEC595B03951B7722</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-KFXAdditions_Tests</string>
+			<key>productName</key>
+			<string>Pods-KFXAdditions_Tests</string>
+			<key>productReference</key>
+			<string>AE443D38B51F754DAD8B1060D33DF63C</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>B410DEAC3AC06C9DC0C95F6FAE2AF713</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Tests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B706E1557A92AE39174B6D3A880E8ABF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BE99682D90E38FE8D8688B674CF0B3FE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4E29FE49F1BA51DAE89F750C3BC50E19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C2D06A43EB4E5DF0ACAEFA3892D0F2AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C72891226D7BB8F01D13037355520F94</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIResponder+KFXAdditions.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D129AA26D783CF9B27AC119ABAF627E9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F6064685E962DEED5A030D0A6F4E53A8</string>
+				<string>3EDBF13FF913A5F30726762C477211FB</string>
+				<string>0232B55F099DD94D1A46AE0D5D0128D8</string>
+				<string>FB0C9FE8B4825B9C26F795001F2D2953</string>
+				<string>D7683C1B968A8FFF3A8FEBD8201D0DBC</string>
+				<string>777CD76794DC13D73CF6C1CB53F800D7</string>
+				<string>BE99682D90E38FE8D8688B674CF0B3FE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D1BC06210FBBECD493E47790DFC92838</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D29616958C10F1CFC9634B94104E96B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D2CFC54D0082515104D88649EFBB2030</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>KFXAdditions-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>91CAD846CA705541B81CB7AF3D1FC2B5</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>B1911864DE2555ECA2850D635A5D3881</string>
+				<string>802FD0E077CCEA2416D81511A4BED108</string>
+				<string>B2DF0A4FE74B2110E705B02F7E5A73EB</string>
+			</array>
+		</dict>
+		<key>D4B11E66CDB6A313DF58DA6ABC67B741</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5ACA931E9BD4B7AB4E9E972091CDFAA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D29616958C10F1CFC9634B94104E96B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D67EC3E45EF4DE39B8758FEF097D954B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C72891226D7BB8F01D13037355520F94</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D73D4057A1B872A8F5936BA960579813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9DD94D4114D767BEA9B5857A8AEFA609</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D7683C1B968A8FFF3A8FEBD8201D0DBC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>19F4441E9ED0E8D399DD62A42474CB79</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DE42966FF1CDA2E2EB68EC9C5CF0ED98</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSObject+KFXAdditions.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE868FC2BA783998D11356A8F9AC657C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E051A25417A8647E0BFC895F3B4812CF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF598D57C335C8D88338C93C74E26235</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E051A25417A8647E0BFC895F3B4812CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIImage+KFXAdditions.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E1288DF22961DD58E86B8F6568D87DA5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6CBB7FC9372667BF75D1F3A5148BD0EE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/KFXAdditions/KFXAdditions-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/KFXAdditions/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/KFXAdditions/KFXAdditions.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>KFXAdditions</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>ECB6717D4E022CF6A0D876EF9F47916D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F5CEF35EBAD47711EA0F0945D3C157FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EFD7B3393DC3D744CF353F1B849F781C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FD78501F5641075F81C8C0E5699C4D4E</string>
+				<string>6CAD6465987FC6A95B47C76DBD2C539E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3B7E51EE8D3E6A3E6D291A4006C84AC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D73D4057A1B872A8F5936BA960579813</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F4B4EC006B4CA812C933802A8B5AEFAB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F5CEF35EBAD47711EA0F0945D3C157FC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIApplication+KFXAdditions.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6064685E962DEED5A030D0A6F4E53A8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D2CFC54D0082515104D88649EFBB2030</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FA5B707CA50F45B59EAEEB39F107C0F2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E1288DF22961DD58E86B8F6568D87DA5</string>
+				<string>A14C889CBC22433A4A0A7C38C186895A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>FB0C9FE8B4825B9C26F795001F2D2953</key>
+		<dict>
+			<key>fileRef</key>
+			<string>49EF83B5E178D187BEC6B9EFEAE9B9D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>FC4F0DC63D9FB899CFA4560EE84E8E16</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>KFXAdditions</string>
+			<key>target</key>
+			<string>B1911864DE2555ECA2850D635A5D3881</string>
+			<key>targetProxy</key>
+			<string>8169FDC36EFBC5E31E91EAA922D789D0</string>
+		</dict>
+		<key>FCFD633D86A92D60DAD9F2237C4E9763</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>KFXAdditions-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD78501F5641075F81C8C0E5699C4D4E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8CCE19F7BEBC353707FD836334AC9B63</string>
+				<string>4C1024DBEFDB10D91953BFA1344E460E</string>
+				<string>D4B11E66CDB6A313DF58DA6ABC67B741</string>
+				<string>D1BC06210FBBECD493E47790DFC92838</string>
+				<string>B706E1557A92AE39174B6D3A880E8ABF</string>
+				<string>8F4F4B3AF1FAF4B0D9C45FE9B0A33029</string>
+				<string>DF598D57C335C8D88338C93C74E26235</string>
+				<string>9DD94D4114D767BEA9B5857A8AEFA609</string>
+				<string>C2D06A43EB4E5DF0ACAEFA3892D0F2AA</string>
+				<string>F4B4EC006B4CA812C933802A8B5AEFAB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-KFXAdditions_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-KFXAdditions_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFED6D66DA6385B9DE19DFFB5862B9DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-KFXAdditions_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>
