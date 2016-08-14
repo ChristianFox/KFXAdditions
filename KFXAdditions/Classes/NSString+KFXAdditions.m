@@ -37,7 +37,19 @@
 
 }
 
-
++(NSString *)kfx_stringByCombiningComponents:(NSArray<NSString *> *)components separatedByString:(NSString *)separator{
+    
+    NSMutableString *mutString = [[NSMutableString alloc]init];
+    
+    NSInteger idx = 0;
+    for (NSString *subString in components) {
+        [mutString appendString:subString];
+        if (++idx < components.count) {
+            [mutString appendString:separator];
+        }
+    }
+    return [mutString copy];
+}
 
 
 
