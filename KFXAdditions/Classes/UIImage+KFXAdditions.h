@@ -5,7 +5,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (KFXAdditions)
 
-#pragma mark - Resizing
+#pragma mark - Resizing & Cropping
 /**
  *  Returns a copy of this image that is cropped to the given bounds. This method ignores the image's imageOrientation setting.
  *
@@ -34,12 +34,13 @@ NS_ASSUME_NONNULL_BEGIN
      interpolationQuality:(CGInterpolationQuality)quality;
 
 /**
- *  Resizes the image according to the given content mode, taking into account the image's orientation
+ *  Resizes the image according to the given content mode, taking into account the image's orientation & preserving aspect ratio. Essentially resize + crop.
  *
  */
 - (UIImage *)kfx_resizedImageWithContentMode:(UIViewContentMode)contentMode
                                   bounds:(CGSize)bounds
                     interpolationQuality:(CGInterpolationQuality)quality;
+
 
 #pragma mark - Alpha Channels
 
