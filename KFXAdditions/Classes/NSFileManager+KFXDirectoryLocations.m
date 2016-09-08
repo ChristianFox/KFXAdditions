@@ -8,8 +8,8 @@
 
 
 #import "NSFileManager+KFXDirectoryLocations.h"
-#import "KFXErrorHandler.h"
-#import "KFXErrorBuilder.h"
+//#import "KFXErrorHandler.h"
+//#import "KFXErrorBuilder.h"
 
 NSString * const DirectoryLocationDomain = @"NSFileManager+KFXDirectoryLocations";
 
@@ -73,10 +73,10 @@ NSString * const DirectoryLocationDomain = @"NSFileManager+KFXDirectoryLocations
 -(NSString*)kfx_tmp{
     NSString *fullPath;
     fullPath = NSTemporaryDirectory();
-    if (fullPath == NULL) {
-        NSError *error = [KFXErrorBuilder errorForDirectoryDoesNotExistAtDirectoryPath:fullPath
-                                                                   withDomainComponent:[DirectoryLocationDomain stringByAppendingString:@".kfx_temp"]];
-        [KFXErrorHandler handleError:error];
+    if (fullPath == nil) {
+//        NSError *error = [KFXErrorBuilder errorForDirectoryDoesNotExistAtDirectoryPath:fullPath
+//                                                                   withDomainComponent:[DirectoryLocationDomain stringByAppendingString:@".kfx_temp"]];
+//        [KFXErrorHandler handleError:error];
     }
     return fullPath;
 }
@@ -91,9 +91,10 @@ NSString * const DirectoryLocationDomain = @"NSFileManager+KFXDirectoryLocations
                            appendPathComponent:pathComponent
                                          error:&error];
     if (shouldHandleError) {
-        if (fullPath ==  NULL) {
-            if (error != NULL) {
-                [KFXErrorHandler handleError:error];
+        if (fullPath ==  nil) {
+            if (error != nil) {
+//                [KFXErrorHandler handleError:error];
+                NSLog(@"<<ERROR>> %@",error);
             }
         }
     }
@@ -154,11 +155,11 @@ NSString * const DirectoryLocationDomain = @"NSFileManager+KFXDirectoryLocations
 	NSArray* paths = NSSearchPathForDirectoriesInDomains(searchPathDirectory,domainMask,YES);
 	if ([paths count] == 0)
 	{
-		if (errorOut != NULL)
+		if (errorOut != nil)
 		{
-            localError = [KFXErrorBuilder errorForNoPathsFoundInDirectoryPath:[NSString stringWithFormat:@"NSSearchPathDirectory = %li",(unsigned long)searchPathDirectory]
-                                                          withDomainComponent:[DirectoryLocationDomain stringByAppendingString:@".findOrCreteDirectory"]];
-            *errorOut = localError;
+//            localError = [KFXErrorBuilder errorForNoPathsFoundInDirectoryPath:[NSString stringWithFormat:@"NSSearchPathDirectory = %li",(unsigned long)searchPathDirectory]
+//                                                          withDomainComponent:[DirectoryLocationDomain stringByAppendingString:@".findOrCreteDirectory"]];
+//            *errorOut = localError;
             /*
             NSDictionary *userInfo =
             [NSDictionary dictionaryWithObjectsAndKeys:
@@ -239,8 +240,12 @@ NSString * const DirectoryLocationDomain = @"NSFileManager+KFXDirectoryLocations
                                                  error:&error];
 	if (!result)
 	{
-        [KFXErrorHandler handleError:error];
-	}
+//        [KFXErrorHandler handleError:error];
+        if (error != nil) {
+            NSLog(@"<<ERROR>> %@",error);
+        }
+    
+    }
 	return result;
 }
 
