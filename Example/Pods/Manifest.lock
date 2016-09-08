@@ -1,5 +1,5 @@
 PODS:
-  - KFXAdditions (0.1.0)
+  - KFXAdditions (0.6.0)
 
 DEPENDENCIES:
   - KFXAdditions (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  KFXAdditions: 627abfa4a9f0df26db037ed10c9fbf0b8490a9ea
+  KFXAdditions: 353702e5458dad5c1208e8db78b8f98eb1bcc521
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: b5e26068a00e1259fd671e1fcb0549ef06ff7ce9
+
+COCOAPODS: 1.0.1

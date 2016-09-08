@@ -1,11 +1,12 @@
-use_frameworks!
 
-target 'KFXAdditions_Example', :exclusive => true do
-  pod 'KFXAdditions', :path => '../'
-end
 
-target 'KFXAdditions_Tests', :exclusive => true do
-  pod 'KFXAdditions', :path => '../'
+# use_frameworks!
 
-  
+target 'KFXAdditions_Example' do
+    pod 'KFXAdditions', :path => '../'
+    
+    target 'KFXAdditions_Tests' do
+        inherit! :search_paths
+        
+    end
 end
