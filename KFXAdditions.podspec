@@ -40,3 +40,4 @@ A collection of categories on Foundation & Cocoa classes. Including: NSString,NS
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+
