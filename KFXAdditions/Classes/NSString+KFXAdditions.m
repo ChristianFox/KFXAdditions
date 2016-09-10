@@ -51,6 +51,24 @@
     return [mutString copy];
 }
 
+-(BOOL)kfx_containsAlphaNumericCharacters{
+	
+	NSCharacterSet *s = [NSCharacterSet alphanumericCharacterSet];
+	NSRange r = [self rangeOfCharacterFromSet:s];
+	if (r.location == NSNotFound) {
+		return NO;
+	}else{
+		return YES;
+	}
+}
+
+
+-(NSAttributedString *)kfx_attributeStringWithAttributes:(NSDictionary *)attributes{
+	
+	NSAttributedString *attributedString = [[NSAttributedString alloc]initWithString:self
+																		  attributes:attributes];
+	return attributedString;
+}
 
 
 
