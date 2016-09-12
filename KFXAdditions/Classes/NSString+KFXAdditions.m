@@ -69,7 +69,7 @@
 
 
 //--------------------------------------------------------
-#pragma mark - Edit String
+#pragma mark - New String with edits
 //--------------------------------------------------------
 -(NSString *)kfx_stringByCapitalisingFirstLetter{
     
@@ -79,6 +79,11 @@
     return capitalised;    
 }
 
+-(NSString *)kfx_stringByAddingPercentEscapesUsingEncoding:(CFStringEncoding)encoding{
+    
+    NSString *escaped = CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)self, NULL, CFSTR("!#$&'()*+,/:;=?@[]"), encoding));
+    return escaped;
+}
 
 
 

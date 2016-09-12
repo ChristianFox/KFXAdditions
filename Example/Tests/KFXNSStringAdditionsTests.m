@@ -35,4 +35,38 @@
 }
 
 
+//--------------------------------------------------------
+#pragma mark - Percent Escaping Strings
+//--------------------------------------------------------
+-(void)testStringByAddingPercentEscapesUsingEncoding{
+    
+    
+    CFStringEncoding encoding = kCFStringEncodingUTF8;
+    
+    NSString *firstWord = @"Hello";
+    NSString *lastWord = @"World";
+    
+    NSArray *charactersToEscape = [@"! # $ & ' ( ) * + , / : ; = ? @ [ ]" componentsSeparatedByString:@" "];
+    NSArray *escapedCharacters = [@"%21 %23 %24 %26 %27 %28 %29 %2A %2B %2C %2F %3A %3B %3D %3F %40 %5B %5D" componentsSeparatedByString:@" "];
+    
+    XCTAssertEqual(charactersToEscape.count, escapedCharacters.count);
+    
+    for (NSInteger idx = 0; idx < charactersToEscape.count; idx++) {
+        
+        NSString *initialString = [NSString stringWithFormat:@"%@%@%@",firstWord,charactersToEscape[idx],lastWord];
+        NSString *expectedString = [NSString stringWithFormat:@"%@%@%@",firstWord,escapedCharacters[idx],lastWord];
+        NSString *receivedString = [initialString kfx_stringByAddingPercentEscapesUsingEncoding:encoding];
+        XCTAssertEqualObjects(receivedString, expectedString);
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+
 @end

@@ -24,9 +24,10 @@
 -(BOOL)kfx_containsAlphaNumericCharacters;
 
 //--------------------------------------------------------
-#pragma mark - Edit String
+#pragma mark - New String with edits
 //--------------------------------------------------------
 -(NSString*)kfx_stringByCapitalisingFirstLetter;
+-(NSString *)kfx_stringByAddingPercentEscapesUsingEncoding:(CFStringEncoding)encoding;
 
 //--------------------------------------------------------
 #pragma mark - Attributed String
