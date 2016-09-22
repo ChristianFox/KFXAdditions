@@ -206,7 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "KFXAdditions_Example" */;
 			buildPhases = (
-				A8E008DB2D47EB9196E17927 /* 📦 Check Pods Manifest.lock */,
+				A8E008DB2D47EB9196E17927 /* [CP] Check Pods Manifest.lock */,
 				AB883CF62FD3FB7FB2E3ADA1 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
@@ -229,7 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "KFXAdditions_Tests" */;
 			buildPhases = (
-				1499AD0AB4CE2446C15D058D /* 📦 Check Pods Manifest.lock */,
+				1499AD0AB4CE2446C15D058D /* [CP] Check Pods Manifest.lock */,
 				564E8C621BC4508BE0D71EEC /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
@@ -306,14 +306,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1499AD0AB4CE2446C15D058D /* 📦 Check Pods Manifest.lock */ = {
+		1499AD0AB4CE2446C15D058D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,14 +426,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFXAdditions_Tests/Pods-KFXAdditions_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A8E008DB2D47EB9196E17927 /* 📦 Check Pods Manifest.lock */ = {
+		A8E008DB2D47EB9196E17927 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFXAdditions"
-  s.version          = "0.8.0"
+  s.version          = "0.9.0"
   s.summary          = "A collection of categories on Foundation & Cocoa classes."
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 A collection of categories on Foundation & Cocoa classes. Including: NSString,NSArray, UIResponder, UIApplication.
                        DESC
 
-  s.homepage         = "https://kfxtech@bitbucket.org/kfxtech/kfxadditions_pod_private.git"
+  s.homepage         = "https://kfxtech@bitbucket.org/kfxteam/kfxadditions_pod_private.git"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Christian Fox" => "christianfox890@icloud.com" }
-  s.source           = { :git => "https://kfxtech@bitbucket.org/kfxtech/kfxadditions_pod_private.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://kfxtech@bitbucket.org/kfxteam/kfxadditions_pod_private.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
