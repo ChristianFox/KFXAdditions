@@ -206,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "KFXAdditions_Example" */;
 			buildPhases = (
+				DB0660DB1DAA748800B10B6C /* Run Script - Increment Build No. */,
 				A8E008DB2D47EB9196E17927 /* [CP] Check Pods Manifest.lock */,
 				AB883CF62FD3FB7FB2E3ADA1 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
@@ -470,6 +471,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KFXAdditions_Example/Pods-KFXAdditions_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DB0660DB1DAA748800B10B6C /* Run Script - Increment Build No. */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Increment Build No.";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n\n";
 		};
 		EAD4C9035A4A849453E6C251 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
