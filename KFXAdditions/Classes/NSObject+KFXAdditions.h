@@ -13,7 +13,8 @@
 
 #pragma mark - Blocks 
 -(void)kfx_waitUntilDone:(void(^)(void))waitBlock;
-- (void) kfx_performBlock: (dispatch_block_t) block
+// http://www.brianjcoleman.com/tutorial-run-a-block-of-code-after-a-delay/
+-(void)kfx_performBlock: (dispatch_block_t) block
            afterDelay: (NSTimeInterval) delay;
 
 
