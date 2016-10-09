@@ -1,13 +1,9 @@
-//
-//  NSMutableArray+KFXAdditions.h
-//  Pods
-//
-//  Created by Leu on 09/10/2016.
-//
-//
+
+
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 @interface NSMutableArray (KFXAdditions)
 
 /**
@@ -19,3 +15,4 @@
 -(BOOL)kfx_addObject:(id __nullable)object;
 
 @end
+NS_ASSUME_NONNULL_END

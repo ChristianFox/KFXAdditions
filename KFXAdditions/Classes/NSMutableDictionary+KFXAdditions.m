@@ -1,10 +1,5 @@
-//
-//  NSMutableDictionary+KFXAdditions.m
-//  Pods
-//
-//  Created by Eyeye on 07/09/2016.
-//
-//
+
+
 
 #import "NSMutableDictionary+KFXAdditions.h"
 

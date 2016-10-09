@@ -1,13 +1,7 @@
-//
-//  KFXMutableSet+KFXAdditions.h
-//  Pods
-//
-//  Created by Leu on 09/10/2016.
-//
-//
 
 
 
+NS_ASSUME_NONNULL_BEGIN
 @interface NSMutableSet (KFXAdditions)
 
 /**
@@ -19,3 +13,4 @@
 -(BOOL)kfx_addObject:(id __nullable)object;
 
 @end
+NS_ASSUME_NONNULL_END
