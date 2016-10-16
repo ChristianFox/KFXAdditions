@@ -28,4 +28,14 @@
     }
 }
 
+-(BOOL)kfx_isBetweenStartDate:(NSDate *)startDate andEndDate:(NSDate *)endDate{
+    
+    if ([self kfx_isLaterThanDate:startDate] && [self kfx_isEarlierThanDate:endDate]) {
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
+
 @end

@@ -74,6 +74,31 @@
 }
 
 
+#pragma mark - is Date Inbetween - should be NO
+-(void)testIsDateInbetween_WithDateThatIsNot_ShouldReturnNO{
+    
+    NSDate *rangeStartDate = [NSDate dateWithTimeIntervalSince1970:0];
+    NSDate *rangeEndDate = [NSDate dateWithTimeIntervalSince1970:1000];
+    NSDate *theDate = [NSDate dateWithTimeIntervalSince1970:1001];
+    BOOL isInbetween = NO;
+    isInbetween = [theDate kfx_isBetweenStartDate:rangeStartDate andEndDate:rangeEndDate];
+    XCTAssertFalse(isInbetween);
+    
+}
+
+
+#pragma mark - is Date Inbetween - should be YES
+-(void)testIsDateInbetween_WithDateThatIs_ShouldReturnYES{
+    
+    NSDate *rangeStartDate = [NSDate dateWithTimeIntervalSince1970:0];
+    NSDate *rangeEndDate = [NSDate dateWithTimeIntervalSince1970:1000];
+    NSDate *theDate = [NSDate dateWithTimeIntervalSince1970:500];
+    BOOL isInbetween = NO;
+    isInbetween = [theDate kfx_isBetweenStartDate:rangeStartDate andEndDate:rangeEndDate];
+    XCTAssertTrue(isInbetween);
+    
+}
+
 
 
 @end
