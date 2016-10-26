@@ -35,6 +35,8 @@
 		CBBF6DDAFE4A1A608A12B760C0D1A2DF /* NSArray+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FCED549120BB09810F2CE61F4414D5 /* NSArray+KFXAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3F70502FC274614B48DC1C859871523 /* NSMutableSet+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B729077029F42785F74538CEF9C54DF3 /* NSMutableSet+KFXAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D884C76E3CFE5C4CD83FF6320032AA02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DB6BB7301DC0E7D800ED7305 /* UIColor+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6BB72E1DC0E7D800ED7305 /* UIColor+KFXAdditions.h */; };
+		DB6BB7311DC0E7D800ED7305 /* UIColor+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6BB72F1DC0E7D800ED7305 /* UIColor+KFXAdditions.m */; };
 		EFE92C6A50C4D5735E804F92FFD37631 /* NSDate+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C8811A5EF877658EFA2EBB7A2B35DCC1 /* NSDate+KFXAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F19B1351023780C09EB27839216C3271 /* NSDate+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0581FAC5F138B9EC119A22EE4CEA18F8 /* NSDate+KFXAdditions.m */; };
 /* End PBXBuildFile section */
@@ -91,6 +93,8 @@
 		C8811A5EF877658EFA2EBB7A2B35DCC1 /* NSDate+KFXAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+KFXAdditions.h"; sourceTree = "<group>"; };
 		C987208C59E36F652915586338E532C8 /* NSMutableDictionary+KFXAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+KFXAdditions.h"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB6BB72E1DC0E7D800ED7305 /* UIColor+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KFXAdditions.h"; sourceTree = "<group>"; };
+		DB6BB72F1DC0E7D800ED7305 /* UIColor+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KFXAdditions.m"; sourceTree = "<group>"; };
 		E41F13FB0221A41D3F406033C791F268 /* Pods-KFXAdditions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXAdditions_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E8EEF43293138278E7508B5E82613FEA /* libKFXAdditions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKFXAdditions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5FB7AF32CF0C75A661C8857590C42F /* NSFileManager+KFXDirectoryLocations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+KFXDirectoryLocations.h"; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 				899B60A46DD7D28C6D9328B9CB4DD15F /* UIResponder+KFXAdditions.m */,
 				59C21E67E066D907ED63289C642B6671 /* UIView+KFXAdditions.h */,
 				2D8EE8285D4144D26F093F2FBB9370ED /* UIView+KFXAdditions.m */,
+				DB6BB72E1DC0E7D800ED7305 /* UIColor+KFXAdditions.h */,
+				DB6BB72F1DC0E7D800ED7305 /* UIColor+KFXAdditions.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 				CBBF6DDAFE4A1A608A12B760C0D1A2DF /* NSArray+KFXAdditions.h in Headers */,
 				EFE92C6A50C4D5735E804F92FFD37631 /* NSDate+KFXAdditions.h in Headers */,
 				2E3D24FC44A625549E897101E6339C79 /* NSFileManager+KFXDirectoryLocations.h in Headers */,
+				DB6BB7301DC0E7D800ED7305 /* UIColor+KFXAdditions.h in Headers */,
 				B62A4A2648FE652E19320A244293C4FC /* NSMutableArray+KFXAdditions.h in Headers */,
 				124E8EDC8431B1AAE5713AFF8F1DE215 /* NSMutableDictionary+KFXAdditions.h in Headers */,
 				D3F70502FC274614B48DC1C859871523 /* NSMutableSet+KFXAdditions.h in Headers */,
@@ -391,6 +398,7 @@
 				F19B1351023780C09EB27839216C3271 /* NSDate+KFXAdditions.m in Sources */,
 				08DCEEF0F341AAA1FF0BCE03D78FB3ED /* NSFileManager+KFXDirectoryLocations.m in Sources */,
 				55D03BF233AE66CEA80929E89E43460A /* NSMutableArray+KFXAdditions.m in Sources */,
+				DB6BB7311DC0E7D800ED7305 /* UIColor+KFXAdditions.m in Sources */,
 				89FCC15B531CE342EE0AA75E0118429D /* NSMutableDictionary+KFXAdditions.m in Sources */,
 				0A190BD468AD663D5C21F29E6B9C77B5 /* NSMutableSet+KFXAdditions.m in Sources */,
 				8EAB9BB4BA4CA87935D7149C0B048198 /* NSObject+KFXAdditions.m in Sources */,
