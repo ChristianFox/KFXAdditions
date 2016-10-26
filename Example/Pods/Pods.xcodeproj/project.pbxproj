@@ -32,6 +32,10 @@
 		D2C309B0A3F5BB45F182227E10A40D7C /* NSDate+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 910BB75AD31E326F09F17CAAC133B382 /* NSDate+KFXAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D43891B2390C1FEC202FB4A06C81A46A /* UIImage+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C234F2FDE4F78C92BCC8DDA8AF947106 /* UIImage+KFXAdditions.m */; };
 		D884C76E3CFE5C4CD83FF6320032AA02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DBB8ABF51DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB8ABF31DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.h */; };
+		DBB8ABF61DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB8ABF41DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.m */; };
+		DBB8ABF91DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB8ABF71DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.h */; };
+		DBB8ABFA1DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB8ABF81DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.m */; };
 		DE6B5B9FE5E96A52726BCAC5F51854EA /* UIView+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E66B8AA02C97D40101FD5AE7E0AFB2 /* UIView+KFXAdditions.m */; };
 		E3453DDF550B347717F00DA260186403 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		EA694F834A8868ABFBC5320FBFB745F8 /* NSFileManager+KFXDirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F98016984008570A6E8F8CF68C69DC0 /* NSFileManager+KFXDirectoryLocations.m */; };
@@ -95,6 +99,10 @@
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D19FC025CE19609C8324B12E72BEBD57 /* NSArray+KFXAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+KFXAdditions.m"; sourceTree = "<group>"; };
 		D9FF4B2627516502E1A164F64ED40B10 /* UIImage+KFXAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+KFXAdditions.h"; sourceTree = "<group>"; };
+		DBB8ABF31DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver+KFXAdditions.h"; sourceTree = "<group>"; };
+		DBB8ABF41DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedArchiver+KFXAdditions.m"; sourceTree = "<group>"; };
+		DBB8ABF71DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+KFXAdditions.h"; sourceTree = "<group>"; };
+		DBB8ABF81DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedUnarchiver+KFXAdditions.m"; sourceTree = "<group>"; };
 		DE08F5C687F0AA7881583CA47E505C6E /* NSObject+KFXAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+KFXAdditions.h"; sourceTree = "<group>"; };
 		E41F13FB0221A41D3F406033C791F268 /* Pods-KFXAdditions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXAdditions_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E8EEF43293138278E7508B5E82613FEA /* libKFXAdditions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKFXAdditions.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +246,10 @@
 		B67E7FAB17FDD6D7EF0593DFC7A296CF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DBB8ABF31DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.h */,
+				DBB8ABF41DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.m */,
+				DBB8ABF71DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.h */,
+				DBB8ABF81DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.m */,
 				1A7FE697E8D49F5BBB712074CFE390E8 /* NSArray+KFXAdditions.h */,
 				D19FC025CE19609C8324B12E72BEBD57 /* NSArray+KFXAdditions.m */,
 				910BB75AD31E326F09F17CAAC133B382 /* NSDate+KFXAdditions.h */,
@@ -287,8 +299,10 @@
 				D2C309B0A3F5BB45F182227E10A40D7C /* NSDate+KFXAdditions.h in Headers */,
 				37BDF8D61E3BD1F0FF93AD62F8792323 /* NSFileManager+KFXDirectoryLocations.h in Headers */,
 				5D36C0FF0AE68754DDF4F4786F17DADE /* NSMutableArray+KFXAdditions.h in Headers */,
+				DBB8ABF91DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.h in Headers */,
 				F4AAD14D3134F28B768B0C5E13D71FF3 /* NSMutableDictionary+KFXAdditions.h in Headers */,
 				BC7EE2E8479E9F7A3C4B08B8CF57F2E5 /* NSMutableSet+KFXAdditions.h in Headers */,
+				DBB8ABF51DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.h in Headers */,
 				8CABE736F3080DDBC13E65EE6EAD8E1D /* NSObject+KFXAdditions.h in Headers */,
 				C328B8B4133ECD9161452866C8EE7F0D /* NSString+KFXAdditions.h in Headers */,
 				18E7651D651416DC220CA0EFCB62607B /* UIApplication+KFXAdditions.h in Headers */,
@@ -401,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB8ABFA1DC136D60019EB3B /* NSKeyedUnarchiver+KFXAdditions.m in Sources */,
 				D03001CA8FE66C5F59BD1F4D34EB652C /* KFXAdditions-dummy.m in Sources */,
 				2EB4FF917A9CD902771FFD32E00C5BB0 /* NSArray+KFXAdditions.m in Sources */,
 				D2A5A2A83B624286D5E7AEB1BC1B3BAE /* NSDate+KFXAdditions.m in Sources */,
@@ -414,6 +429,7 @@
 				92D975D609226AA893298C3183058282 /* UIColor+KFXAdditions.m in Sources */,
 				D43891B2390C1FEC202FB4A06C81A46A /* UIImage+KFXAdditions.m in Sources */,
 				F929C9B45E0C9F09AD4DA3C894369173 /* UIResponder+KFXAdditions.m in Sources */,
+				DBB8ABF61DC135AF0019EB3B /* NSKeyedArchiver+KFXAdditions.m in Sources */,
 				DE6B5B9FE5E96A52726BCAC5F51854EA /* UIView+KFXAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
