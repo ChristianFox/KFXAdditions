@@ -129,9 +129,24 @@
         return nil;
     }else{
         
+        /*
+         For some reason I was having an issue setting the component values to 0.0 or 1.0 exactly which resulted in a UIColor object with incorrect values... possibly due to a floating point rounding error 
+         Whatever the reason using slightly off values gets rid of it and should result in an inperceptable colour difference.
+         */
         CGFloat newHue = hue + hueAlterAmount;
+        if (newHue > 1.000) {
+            newHue = 0.9999999;
+        }else if (newHue < 0.000){
+            newHue = 0.0000001;
+        }
         CGFloat newSaturation = saturation + saturationAlterAmount;
+        if (newSaturation < 0.000) {
+            newSaturation = 0.0000001;
+        }
         CGFloat newBrightness = brightness + brightnessAlterAmount;
+        if (newBrightness < 0.0000) {
+            newBrightness = 0.0000001;
+        }
         CGFloat newAlpha = alpha + alphaAlterAmount;
         UIColor *newColour = [UIColor colorWithHue:newHue
                                         saturation:newSaturation

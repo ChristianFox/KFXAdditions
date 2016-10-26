@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 //--------------------------------------------------------
 /**
  * @brief Create a UIColor from a hex string
- * @param hexStr A NSString representing a hex colour value
+ * @param hexStr A NSString representing a hex colour value. Should be in either the #FFF or #FFFFFF format.
  * @param alpha The value to use for the alpha channel. Should be between 0.0 & 1.0
  * @return A UIColor object representing the same colour as defined by the hexStr parameter
  * @ref  http://iosdevelopertips.com/conversion/how-to-create-a-uicolor-object-from-a-hex-value.html
