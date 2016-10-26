@@ -46,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN@interface NSString (KFXAdditions)
 //--------------------------------------------------------
 #pragma mark - Attributed String
 //--------------------------------------------------------
--(NSAttributedString *)kfx_attributeStringWithAttributes:(NSDictionary *)attributes;
+-(NSAttributedString *)kfx_attributedStringWithAttributes:(NSDictionary *)attributes;
 
 
 @end
