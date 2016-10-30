@@ -5,7 +5,7 @@
 
 @implementation NSKeyedUnarchiver (KFXAdditions)
 
--(id)kfx_unarchiveObjectFromDirectoryPath:(NSString *)dirPath
++(id)kfx_unarchiveObjectFromDirectoryPath:(NSString *)dirPath
                              withFileName:(NSString *)fileName
                                     error:(NSError * _Nullable __autoreleasing *)error{
     

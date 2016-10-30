@@ -4,7 +4,7 @@
 
 @implementation NSKeyedArchiver (KFXAdditions)
 
--(BOOL)kfx_archiveRootObject:(id)object
++(BOOL)kfx_archiveRootObject:(id)object
              toDirectoryPath:(NSString *)dirPath
                 withFileName:(NSString *)fileName
                        error:(NSError * _Nullable __autoreleasing *)error{
