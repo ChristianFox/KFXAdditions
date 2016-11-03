@@ -26,6 +26,8 @@
 		93D07289102AABD585DD35CB /* libPods-KFXAdditions_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F197D916DC3BEA099B2998 /* libPods-KFXAdditions_Example.a */; };
 		DB4922E91DB35301003A7C0B /* KFXNSDateAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4922E81DB35301003A7C0B /* KFXNSDateAdditionsTests.m */; };
 		DB6BB7331DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6BB7321DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m */; };
+		DB88D6E11DCB699B00A205EB /* KFXCLLocationAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB88D6E01DCB699B00A205EB /* KFXCLLocationAdditionsTests.m */; };
+		DB88D6E91DCB783600A205EB /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = DB88D6E81DCB783600A205EB /* CHANGELOG.md */; };
 		FF3E1A45B806DCE53E7B17F2 /* libPods-KFXAdditions_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D801BF18078DDAA1FA8685 /* libPods-KFXAdditions_Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		D6D4DC6EFC54CEC13449C8FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DB4922E81DB35301003A7C0B /* KFXNSDateAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFXNSDateAdditionsTests.m; sourceTree = "<group>"; };
 		DB6BB7321DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFXUIColorAdditionsTests.m; sourceTree = "<group>"; };
+		DB88D6E01DCB699B00A205EB /* KFXCLLocationAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFXCLLocationAdditionsTests.m; sourceTree = "<group>"; };
+		DB88D6E81DCB783600A205EB /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		F9F06F152E0ADB100525DC9A /* Pods-KFXAdditions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXAdditions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFXAdditions_Tests/Pods-KFXAdditions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB4D313FEDC9DEB58B209F1E /* Pods-KFXAdditions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXAdditions_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFXAdditions_Tests/Pods-KFXAdditions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +173,7 @@
 				5B680FB21D60E43F006F25F0 /* KFXNSStringAdditionsTests.m */,
 				DB4922E81DB35301003A7C0B /* KFXNSDateAdditionsTests.m */,
 				DB6BB7321DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m */,
+				DB88D6E01DCB699B00A205EB /* KFXCLLocationAdditionsTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -190,6 +195,7 @@
 				7E6AD55AD075699DE5228B03 /* KFXAdditions.podspec */,
 				34DDAC9B44AF28C59B2783E5 /* README.md */,
 				D6D4DC6EFC54CEC13449C8FA /* LICENSE */,
+				DB88D6E81DCB783600A205EB /* CHANGELOG.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -517,6 +523,7 @@
 				6003F59E195388D20070C39A /* KFXAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* KFXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				DB88D6E91DCB783600A205EB /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +533,7 @@
 			files = (
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 				DB6BB7331DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m in Sources */,
+				DB88D6E11DCB699B00A205EB /* KFXCLLocationAdditionsTests.m in Sources */,
 				DB4922E91DB35301003A7C0B /* KFXNSDateAdditionsTests.m in Sources */,
 				5B680FB31D60E43F006F25F0 /* KFXNSStringAdditionsTests.m in Sources */,
 			);

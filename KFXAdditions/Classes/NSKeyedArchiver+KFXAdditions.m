@@ -41,9 +41,9 @@
                       && !isDirectory){
                 
                 message = NSLocalizedString(@"The directoryPath points to a file not a directory",@"The directoryPath points to a file not a directory");
-            }else if (![self kfx_doObjectsConformToNSCoding:object]){
-            
-                message = NSLocalizedString(@"The root object or a sub-object does not conform to NSCoding", @"The root object or a sub-object does not conform to NSCoding");
+//            }else if (![self kfx_doObjectsConformToNSCoding:object]){
+//            
+//                message = NSLocalizedString(@"The root object or a sub-object does not conform to NSCoding", @"The root object or a sub-object does not conform to NSCoding");
             }else{
                 
                 message = NSLocalizedString(@"Unknown Error when attempting to archive",@"");

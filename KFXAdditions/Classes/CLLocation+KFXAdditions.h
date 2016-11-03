@@ -6,6 +6,14 @@
 
 
 //--------------------------------------------------------
+#pragma mark - Initilisation
+//--------------------------------------------------------
+-(instancetype)locationByAdjustingCoordinatesInDegreesWithLatitude:(CLLocationDegrees)latitudeAdjustment
+                                            longitude:(CLLocationDegrees)longitudeAdjustment;
+-(instancetype)locationByAdjustingCoordinatesInMetresWithLatitude:(double)latitudeAdjustment
+                                           longitude:(double)longitudeAdjustment;
+
+//--------------------------------------------------------
 #pragma mark - Queries
 //--------------------------------------------------------
 #pragma mark Accuracy

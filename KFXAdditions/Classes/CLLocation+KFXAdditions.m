@@ -8,12 +8,61 @@
 #define clLoc_dequal(a,b) (fabs((a) - (b)) < DBL_EPSILON)
 #define clLoc_dequalzero(a) (fabs(a) < DBL_EPSILON)
 
+//--------------------------------------------------------
+#pragma mark - GeoLocation Constants
+//--------------------------------------------------------
+double const k_MetresPerDegreeLatitude = 110574.27608210722;
+double const k_MetresPerDegreeLongitude = 111319.2895857656;
+double const k_DegreesPerMetreLatitude = 0.0000090437;
+double const k_DegreesPerMetreLongitude = 0.0000089832;
+
 
 #import "CLLocation+KFXAdditions.h"
 #import "NSDate+KFXAdditions.h"
 
 @implementation CLLocation (KFXAdditions)
 
+
+
+//======================================================
+#pragma mark - ** Public Methods **
+//======================================================
+//--------------------------------------------------------
+#pragma mark - Initilisation
+//--------------------------------------------------------
+-(instancetype)locationByAdjustingCoordinatesInDegreesWithLatitude:(CLLocationDegrees)latitudeAdjustment
+                                                         longitude:(CLLocationDegrees)longitudeAdjustment{
+    
+    CLLocationDegrees newLat = self.coordinate.latitude + latitudeAdjustment;
+    CLLocationDegrees newLong = self.coordinate.longitude + longitudeAdjustment;
+    if (newLat > 90.000000000000 || newLat < -90.000000000000) {
+        return nil;
+    }else if (newLong > 180.000000000000 || newLong < -180.000000000000){
+        return nil;
+    }
+
+    CLLocationCoordinate2D newCoord = CLLocationCoordinate2DMake(newLat, newLong);
+    if (!CLLocationCoordinate2DIsValid(newCoord)) {
+        return nil;
+    }
+    CLLocation *location = [[CLLocation alloc]initWithCoordinate:newCoord
+                                                        altitude:self.altitude
+                                              horizontalAccuracy:self.horizontalAccuracy
+                                                verticalAccuracy:self.verticalAccuracy
+                                                          course:self.course
+                                                           speed:self.speed
+                                                       timestamp:self.timestamp];
+    return location;
+}
+
+-(instancetype)locationByAdjustingCoordinatesInMetresWithLatitude:(double)latitudeAdjustment
+                                                        longitude:(double)longitudeAdjustment{
+    
+    CLLocationDegrees latDegrees = latitudeAdjustment * k_DegreesPerMetreLatitude;
+    CLLocationDegrees longDegrees = longitudeAdjustment * k_DegreesPerMetreLongitude;
+    return [self locationByAdjustingCoordinatesInDegreesWithLatitude:latDegrees
+                                                           longitude:longDegrees];
+}
 
 //--------------------------------------------------------
 #pragma mark - Queries
