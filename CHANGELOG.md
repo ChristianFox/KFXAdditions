@@ -1,11 +1,13 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.17.0 | 09/11/2016
+- Adds -kfx_age method to CLLocation+KFXAdditions
+
 ## 0.16.0
 - Adds UIAlertController+KFXAdditions category with 3 convinence initilisers
 
 ## 0.15.0
-- Adds methods to KFXGeoLocationHelper to create one CLLocation from another and adjust the lat & long of the new one in either degrees or metres
 
 
 

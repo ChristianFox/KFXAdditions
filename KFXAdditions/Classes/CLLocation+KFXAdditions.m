@@ -81,19 +81,22 @@ double const k_DegreesPerMetreLongitude = 0.0000089832;
 #pragma mark Freshness
 -(BOOL)kfx_isFresh:(NSTimeInterval)desiredAge{
     
-    NSTimeInterval locationAge = -[self.timestamp timeIntervalSinceNow];
-    return locationAge <= desiredAge;
+    return [self kfx_age] <= desiredAge;
 }
 
 -(BOOL)kfx_isStale:(NSTimeInterval)desiredAge{
     
-    NSTimeInterval locationAge = -[self.timestamp timeIntervalSinceNow];
-    return locationAge > desiredAge;
+    return [self kfx_age] > desiredAge;
 }
 
 -(BOOL)kfx_isMoreRecentThan:(NSDate *)date{
     
     return [self.timestamp kfx_isEarlierThanDate:date];
+}
+
+-(NSTimeInterval)kfx_age{
+    NSTimeInterval locationAge = -[self.timestamp timeIntervalSinceNow];
+    return locationAge;
 }
 
 #pragma mark Coordinate Validity

@@ -24,6 +24,7 @@
 -(BOOL)kfx_isFresh:(NSTimeInterval)desiredAge;
 -(BOOL)kfx_isStale:(NSTimeInterval)desiredAge;
 -(BOOL)kfx_isMoreRecentThan:(NSDate*)date;
+-(NSTimeInterval)kfx_age;
 
 #pragma mark Coordinate Validity
 -(BOOL)kfx_isCoordinateValid;
