@@ -206,7 +206,9 @@ double const k_DegreesPerMetreLongitude = 0.0000089832;
     return self.timestamp.description;
 }
 
-
+-(NSString *)kfx_formattedAge{
+    return [NSString stringWithFormat:@"Age: %.1f secs",[self kfx_age]];
+}
 
 
 

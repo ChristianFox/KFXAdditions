@@ -51,5 +51,6 @@
 -(NSString*)kfx_formattedSpeed;
 -(NSString*)kfx_formattedCourse;
 -(NSString*)kfx_formattedTimeStamp;
+-(NSString*)kfx_formattedAge;
 
 @end

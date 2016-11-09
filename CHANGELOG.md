@@ -1,8 +1,14 @@
 
 # ChangeLog - KFXAdditions
 
+
+## 0.18.0 | 09/11/2016
+- Adds -kfx_formattedAge to CLLocation+KFXAdditions
+
+
 ## 0.17.0 | 09/11/2016
 - Adds -kfx_age method to CLLocation+KFXAdditions
+
 
 ## 0.16.0
 - Adds UIAlertController+KFXAdditions category with 3 convinence initilisers
