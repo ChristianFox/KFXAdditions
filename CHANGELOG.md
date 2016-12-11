@@ -2,6 +2,10 @@
 # ChangeLog - KFXAdditions
 
 
+## 0.19.0 | 2016/12/11
+- Adds -kfx_normalisedString to NSString+KFXAdditions
+
+
 ## 0.18.0 | 09/11/2016
 - Adds -kfx_formattedAge to CLLocation+KFXAdditions
 

@@ -45,6 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Creates a new string and replaces any white space with a length greater than 1 with a single space. If the receiver does not contain any excessive white space it is returned
 -(NSString*)kfx_stringByRemovingExcessiveWhiteSpace;
 -(NSString*)kfx_stringByTrimmingWhiteSpaceAndNewLines;
+-(NSString*)kfx_normalisedString;
 
 //--------------------------------------------------------
 #pragma mark - Attributed String

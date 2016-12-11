@@ -173,6 +173,19 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+-(NSString *)kfx_normalisedString{
+	
+	NSString *normalised;
+	normalised = [self lowercaseString];
+	normalised = [normalised kfx_stringByRemovingExcessiveWhiteSpace];
+	normalised = [normalised stringByReplacingOccurrencesOfString:@"'" withString:@""];
+	normalised = [[normalised componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@" "];
+	NSMutableString *mutString = [normalised mutableCopy];
+	CFStringTransform((__bridge CFMutableStringRef)mutString, NULL, kCFStringTransformStripCombiningMarks, NO);
+	normalised = [mutString copy];
+	return normalised;
+	
+}
 
 
 //--------------------------------------------------------
