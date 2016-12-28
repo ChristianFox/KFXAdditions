@@ -96,9 +96,289 @@
     BOOL isInbetween = NO;
     isInbetween = [theDate kfx_isBetweenStartDate:rangeStartDate andEndDate:rangeEndDate];
     XCTAssertTrue(isInbetween);
-    
+}
+
+//--------------------------------------------------------
+#pragma mark - Components between dates
+//--------------------------------------------------------
+#pragma mark : -daysSinceDate
+-(void)testDaysSinceDate_WithValidFutureDate_IncludeToday_ShouldReturnNegativeNumber{
+	
+	// GIVEN
+	NSDate *mainDate = [NSDate date];
+	NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:60*60*24*10];
+	NSInteger expected = -10;
+	
+	// WHEN
+	NSInteger received = [mainDate kfx_daysSinceDate:otherDate
+						 includeCurrentIncompleteDay:YES];
+	
+	// THEN
+	XCTAssertTrue(received < 0);
+	XCTAssertEqual(received, expected);
+}
+
+-(void)testDaysSinceDate_WithValidPastDate_IncludeToday_ShouldReturnPositiveNumber{
+	
+	// GIVEN
+	NSDate *mainDate = [NSDate date];
+	NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:-60*60*24*10];
+	NSInteger expected = 10;
+	
+	// WHEN
+	NSInteger received = [mainDate kfx_daysSinceDate:otherDate
+						 includeCurrentIncompleteDay:YES];
+	
+	// THEN
+	XCTAssertTrue(received > 0);
+	XCTAssertEqual(received, expected);
+}
+
+
+-(void)testDaysSinceDate_WithValidFutureDate_DoNotIncludeToday_ShouldReturnNegativeNumber{
+	
+	// GIVEN
+	NSDate *mainDate = [NSDate date];
+	NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:(60*60*24*10) - 1];
+	NSInteger expected = -9;
+	
+	// WHEN
+	NSInteger received = [mainDate kfx_daysSinceDate:otherDate
+						 includeCurrentIncompleteDay:NO];
+	
+	// THEN
+	XCTAssertTrue(received < 0);
+	XCTAssertEqual(received, expected);
+}
+
+-(void)testDaysSinceDate_WithValidPastDate_DoNotIncludeToday_ShouldReturnPositiveNumber{
+	
+	// GIVEN
+	NSDate *mainDate = [NSDate date];
+	NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:(-60*60*24*10) + 1];
+	NSInteger expected = 9;
+	
+	// WHEN
+	NSInteger received = [mainDate kfx_daysSinceDate:otherDate
+						 includeCurrentIncompleteDay:NO];
+	
+	// THEN
+	XCTAssertTrue(received > 0);
+	XCTAssertEqual(received, expected);
+}
+
+
+#pragma mark : -hoursSinceDate
+-(void)testHoursSinceDate_WithValidFutureDate_IncludeCurrentHour_ShouldReturnNegativeNumber{
+	
+	// GIVEN
+	NSDate *mainDate = [NSDate date];
+	NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:60*60*10];
+	NSInteger expected = -10;
+	
+	// WHEN
+	NSInteger received = [mainDate kfx_hoursSinceDate:otherDate
+						 includeCurrentIncompleteHour:YES];
+	
+	// THEN
+	XCTAssertTrue(received < 0);
+	XCTAssertEqual(received, expected);
+}
+
+-(void)testHoursSinceDate_WithValidPastDate_IncludeCurrentHour_ShouldReturnPositiveNumber{
+	
+	// GIVEN
+	NSDate *mainDate = [NSDate date];
+	NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:-60*60*10];
+	NSInteger expected = 10;
+	
+	// WHEN
+	NSInteger received = [mainDate kfx_hoursSinceDate:otherDate
+						 includeCurrentIncompleteHour:YES];
+	
+	// THEN
+	XCTAssertTrue(received > 0);
+	XCTAssertEqual(received, expected);
+}
+
+
+-(void)testHoursSinceDate_WithValidFutureDate_DoNotIncludeCurrentHour_ShouldReturnNegativeNumber{
+	
+	// GIVEN
+	NSDate *mainDate = [NSDate date];
+	NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:(60*60*10) - 1];
+	NSInteger expected = -9;
+	
+	// WHEN
+	NSInteger received = [mainDate kfx_hoursSinceDate:otherDate
+						 includeCurrentIncompleteHour:NO];
+	
+	// THEN
+	XCTAssertTrue(received < 0);
+	XCTAssertEqual(received, expected);
+}
+
+-(void)testHoursSinceDate_WithValidPastDate_DoNotIncludeCurrentHour_ShouldReturnPositiveNumber{
+	
+	// GIVEN
+	NSDate *mainDate = [NSDate date];
+	NSDate *otherDate = [NSDate dateWithTimeIntervalSinceNow:(-60*60*10) + 1];
+	NSInteger expected = 9;
+	
+	// WHEN
+	NSInteger received = [mainDate kfx_hoursSinceDate:otherDate
+						 includeCurrentIncompleteHour:NO];
+	
+	// THEN
+	XCTAssertTrue(received > 0);
+	XCTAssertEqual(received, expected);
+}
+
+
+//--------------------------------------------------------
+#pragma mark - Equality
+//--------------------------------------------------------
+-(void)testIsDayEqualToDate_WithSameDate_ShouldReturnYES{
+	
+	// GIVEN
+	NSDate *dateA = [NSDate date];
+	NSDate *dateB = dateA;
+
+	// WHEN
+	BOOL received = [dateA kfx_isDayEqualToDate:dateB];
+	
+	// THEN
+	XCTAssertTrue(received);
+}
+
+-(void)testIsDayEqualToDate_WithSimilarDate_ShouldReturnYES_UnlessAlmostMidnight{
+	
+	// GIVEN
+	NSDate *dateA = [NSDate date];
+	NSDate *dateB = [NSDate dateWithTimeIntervalSinceNow:10];
+	
+	// WHEN
+	BOOL received = [dateA kfx_isDayEqualToDate:dateB];
+	
+	// THEN
+	XCTAssertTrue(received);
+}
+
+
+-(void)testIsDayEqualToDate_WithFarawayDate_ShouldReturnNO{
+	
+	// GIVEN
+	NSDate *dateA = [NSDate date];
+	NSDate *dateB = [NSDate dateWithTimeIntervalSinceNow:60*60*24];
+	
+	// WHEN
+	BOOL received = [dateA kfx_isDayEqualToDate:dateB];
+	
+	// THEN
+	XCTAssertFalse(received);
+}
+
+
+-(void)testIsHourEqualToDate_WithSameDate_ShouldReturnYES{
+	
+	// GIVEN
+	NSDate *dateA = [NSDate date];
+	NSDate *dateB = dateA;
+	
+	// WHEN
+	BOOL received = [dateA kfx_isHourEqualToDate:dateB];
+	
+	// THEN
+	XCTAssertTrue(received);
+}
+
+-(void)testIsHourEqualToDate_WithSimilarDate_ShouldReturnYES{
+	
+	// GIVEN
+	NSDate *dateA = [NSDate date];
+	NSDate *dateB = [NSDate dateWithTimeIntervalSinceNow:100];
+	
+	// WHEN
+	BOOL received = [dateA kfx_isHourEqualToDate:dateB];
+	
+	// THEN
+	XCTAssertTrue(received);
+}
+
+
+-(void)testIsHourEqualToDate_WithFarawayDate_ShouldReturnNO{
+	
+	// GIVEN
+	NSDate *dateA = [NSDate date];
+	NSDate *dateB = [NSDate dateWithTimeIntervalSinceNow:60*60];
+	
+	// WHEN
+	BOOL received = [dateA kfx_isHourEqualToDate:dateB];
+	
+	// THEN
+	XCTAssertFalse(received);
+}
+
+-(void)testIsMinuteEqualToDate_WithSameDate_ShouldReturnYES{
+	
+	// GIVEN
+	NSDate *dateA = [NSDate date];
+	NSDate *dateB = dateA;
+	
+	// WHEN
+	BOOL received = [dateA kfx_isMinuteEqualToDate:dateB];
+	
+	// THEN
+	XCTAssertTrue(received);
+}
+
+-(void)testIsMinuteEqualToDate_WithSimilarDate_ShouldReturnYES{
+	
+	// GIVEN
+	NSDate *dateA = [NSDate date];
+	NSDate *dateB = [NSDate dateWithTimeIntervalSinceNow:1];
+	
+	// WHEN
+	BOOL received = [dateA kfx_isMinuteEqualToDate:dateB];
+	
+	// THEN
+	XCTAssertTrue(received);
+}
+
+
+-(void)testIsMinuteEqualToDate_WithFarawayDate_ShouldReturnNO{
+	
+	// GIVEN
+	NSDate *dateA = [NSDate date];
+	NSDate *dateB = [NSDate dateWithTimeIntervalSinceNow:60*2];
+	
+	// WHEN
+	BOOL received = [dateA kfx_isMinuteEqualToDate:dateB];
+	
+	// THEN
+	XCTAssertFalse(received);
 }
 
 
 
+
+
+
+
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+

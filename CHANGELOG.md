@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.20.0 | 2016/12/28
+- Adds more methods to NSDate+KFXAdditions
 
 ## 0.19.0 | 2016/12/11
 - Adds -kfx_normalisedString to NSString+KFXAdditions
