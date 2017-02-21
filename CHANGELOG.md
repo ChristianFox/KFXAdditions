@@ -1,6 +1,11 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.21.0 | 2017/02/21
+- Adds -kfx_cleanTelephoneNumber; method to NSString
+- Adds UIImageView+KFXAdditions
+- Add -kfx_addBorderWithRadius:width:colour: to UIImageView+KFXAdditions
+
 ## 0.20.0 | 2016/12/28
 - Adds more methods to NSDate+KFXAdditions
 

@@ -187,6 +187,11 @@
 	
 }
 
+-(NSString *)kfx_cleanTelephoneNumber{
+	NSString *cleanedPhoneNumber = [[self componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"0123456789-+()"] invertedSet]] componentsJoinedByString:@""];
+	return cleanedPhoneNumber;
+}
+
 
 //--------------------------------------------------------
 #pragma mark - Attributed String

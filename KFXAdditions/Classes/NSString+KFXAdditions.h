@@ -46,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString*)kfx_stringByRemovingExcessiveWhiteSpace;
 -(NSString*)kfx_stringByTrimmingWhiteSpaceAndNewLines;
 -(NSString*)kfx_normalisedString;
+-(NSString*)kfx_cleanTelephoneNumber;
 
 //--------------------------------------------------------
 #pragma mark - Attributed String
