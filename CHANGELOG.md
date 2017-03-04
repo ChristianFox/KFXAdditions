@@ -1,6 +1,14 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.22.0
+- Fixes bug with NSString kfx_randomStringOfLength: withStringComponents: that caused the bitmask to not be read correctly
+- Adds -kfx_insertObject:atIndex: to NSMutableArray+KFXAdditions
+- Adds NSAttributedString+KFXAdditions with 4 convienence initilisers
+- Adds UIViewController, UITableViewController, UICollectionViewController + KFXAdditions
+- Moves -kfx_addBorderWithRadius:width:colour: to UIView+KFXAdditions
+
+
 ## 0.21.0 | 2017/02/21
 - Adds -kfx_cleanTelephoneNumber; method to NSString
 - Adds UIImageView+KFXAdditions

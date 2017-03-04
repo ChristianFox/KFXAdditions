@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFXAdditions"
-  s.version          = "0.21.0"
+  s.version          = "0.22.0"
   s.summary          = "A collection of categories on Foundation & Cocoa classes."
 
 # This description is used to generate tags and improve search results.

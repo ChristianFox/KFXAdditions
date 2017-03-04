@@ -10,13 +10,6 @@
 
 @implementation UIImageView (KFXAdditions)
 
--(void)kfx_addBorderWithRadius:(CGFloat)radius width:(CGFloat)borderWidth colour:(UIColor *)colour{
-	
-	self.layer.cornerRadius = radius;
-	self.layer.borderWidth = borderWidth;
-	self.layer.masksToBounds = YES;
-	self.layer.borderColor = colour.CGColor;
 
-}
 
 @end

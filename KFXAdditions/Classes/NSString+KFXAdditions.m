@@ -18,19 +18,26 @@
         
         return nil;
         
-    }else if (components & KFXStringComponentAlpha){
+    }
+	if (components & KFXStringComponentAlpha){
         
         [characterPool appendString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"];
         
-    }else if (components & KFXStringComponentNumerical){
+    }
+ 
+	if (components & KFXStringComponentNumerical){
         
         [characterPool appendString:@"0123456789"];
     
-    }else if (components & KFXStringComponentSymbolsCommon){
+    }
+ 
+	if (components & KFXStringComponentSymbolsCommon){
     
         [characterPool appendString:@"<>!@£$%%&*€#?+-=_"];
         
-    }else if (components & KFXStringComponentSymbolsExtensive){
+    }
+ 
+	if (components & KFXStringComponentSymbolsExtensive){
         
         [characterPool appendString:@"§±!@£$%%^&*()_+=-€#¡¢∞§¶•ªº–≠œ∑®®†¥¨^øπ“‘«æ…¬˚∆˙©ƒ∂ßåΩ≈ç√∫~µ≤≥÷?><,./;'\\[]}{|\":`~"];
     }
