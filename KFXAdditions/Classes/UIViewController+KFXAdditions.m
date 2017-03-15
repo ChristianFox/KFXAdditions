@@ -50,17 +50,36 @@
 }
 
 -(void)kfx_showErrorAlertWithMessage:(NSString *)message{
-	
-	[self kfx_showSimpleAlertWithTitle:NSLocalizedString(@"Error", @"An error occurred")
-							   message:message
-						   buttonTitle:nil];
+    
+    [self kfx_showSimpleAlertWithTitle:NSLocalizedString(@"Error", @"An error occurred")
+                               message:message
+                           buttonTitle:nil];
+}
+
+-(void)kfx_showErrorAlertWithMessage:(NSString*)message
+                okayButtonCompletion:(void(^)(UIAlertAction *action))completionBlock{
+    
+    [self kfx_showSimpleAlertWithTitle:NSLocalizedString(@"Error", @"An error occurred")
+                               message:message
+                           buttonTitle:NSLocalizedString(@"Okay", @"Okay / agree / accept")
+                      buttonCompletion:completionBlock];
 }
 
 -(void)kfx_showSuccessAlertWithMessage:(NSString *)message{
-	
-	[self kfx_showSimpleAlertWithTitle:NSLocalizedString(@"Success", @"The operation was a success")
-							   message:message
-						   buttonTitle:nil];
+    
+    [self kfx_showSimpleAlertWithTitle:NSLocalizedString(@"Success", @"The operation was a success")
+                               message:message
+                           buttonTitle:nil];
+}
+
+-(void)kfx_showSuccessAlertWithMessage:(NSString*)message
+                  okayButtonCompletion:(void(^)(UIAlertAction *action))completionBlock{
+    
+    [self kfx_showSimpleAlertWithTitle:NSLocalizedString(@"Success", @"The operation was a success")
+                               message:message
+                           buttonTitle:NSLocalizedString(@"Okay", @"Okay / agree / accept")
+                      buttonCompletion:completionBlock];
+    
 }
 
 //--------------------------------------------------------

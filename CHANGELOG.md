@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.23.0
+- Adds -kfx_applyBlurWithRadius:(CGFloat)blurRadius to UIImage+KFXAdditions
+
 ## 0.22.0
 - Fixes bug with NSString kfx_randomStringOfLength: withStringComponents: that caused the bitmask to not be read correctly
 - Adds -kfx_insertObject:atIndex: to NSMutableArray+KFXAdditions

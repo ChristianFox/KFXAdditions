@@ -1,18 +1,24 @@
-//
-//  UIAlertController+KFXAdditions.m
-//  Pods
-//
-//  Created by Leu on 03/11/2016.
-//
-//
+
 
 #import "UIAlertController+KFXAdditions.h"
+#import "UIApplication+KFXAdditions.h"
 
 @implementation UIAlertController (KFXAdditions)
 
 //======================================================
 #pragma mark - ** Public Method **
 //======================================================
+//--------------------------------------------------------
+#pragma mark - Query Alerts
+//--------------------------------------------------------
++(BOOL)kfx_isAlertControllerShowing{
+    
+    UIViewController *topVC = [[UIApplication sharedApplication]kfx_topViewController];
+    if ([topVC isKindOfClass:[UIAlertController class]]) {
+        return YES;
+    }
+    return NO;
+}
 //--------------------------------------------------------
 #pragma mark - Build Alerts
 //--------------------------------------------------------

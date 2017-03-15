@@ -8,6 +8,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIAlertController (KFXAdditions)
 
 //--------------------------------------------------------
+#pragma mark - Query Alerts
+//--------------------------------------------------------
++(BOOL)kfx_isAlertControllerShowing;
+
+//--------------------------------------------------------
 #pragma mark - Convienence Initilisers
 //--------------------------------------------------------
 /// Convinience method to build an UIAlertController

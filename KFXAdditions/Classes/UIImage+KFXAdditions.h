@@ -75,6 +75,25 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIImage *)kfx_roundedCornerImage:(NSInteger)cornerSize borderSize:(NSInteger)borderSize;
 
+
+//--------------------------------------------------------
+#pragma mark - Blurs
+//--------------------------------------------------------
+- (UIImage *)kfx_applyBlurWithRadius:(CGFloat)blurRadius;
+
+
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END
+
+
+
+
+
+
+
+
+

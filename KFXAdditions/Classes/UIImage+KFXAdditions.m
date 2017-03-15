@@ -211,6 +211,29 @@
 }
 
 
+//--------------------------------------------------------
+#pragma mark - Blurs
+//--------------------------------------------------------
+- (UIImage *)kfx_applyBlurWithRadius:(CGFloat)blurRadius{
+    
+    CIImage *originalImage = [CIImage imageWithCGImage: self.CGImage];
+    CIFilter *filter = [CIFilter filterWithName: @"CIGaussianBlur"
+                                  keysAndValues: kCIInputImageKey, originalImage,
+                        @"inputRadius", @(blurRadius), nil];
+    
+    CIImage *outputImage = filter.outputImage;
+    CIContext *context = [CIContext contextWithOptions:nil];
+    
+    CGImageRef outImage = [context createCGImage: outputImage
+                                        fromRect: [outputImage extent]];
+    
+    UIImage *ret = [UIImage imageWithCGImage: outImage];
+    
+    CGImageRelease(outImage);
+    
+    return ret;
+}
+
 
 
 

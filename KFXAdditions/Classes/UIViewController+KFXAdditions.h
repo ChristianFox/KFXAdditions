@@ -32,14 +32,16 @@
 							message:(NSString*)message
 						buttonTitle:(NSString*)buttonTitle;
 
+
 /**
  * @brief Present a UIAlertController with a single button, if no button title is provided then a localised string 'Okay' will be used.
+ * @param completionBlock A block to be called when the button is tapped
  * @since 0.22.0
  **/
 -(void)kfx_showSimpleAlertWithTitle:(NSString*)title
-							message:(NSString*)message
-						buttonTitle:(NSString*)buttonTitle
-				   buttonCompletion:(void(^)(UIAlertAction *action))completionBlock;
+                            message:(NSString*)message
+                        buttonTitle:(NSString*)buttonTitle
+                   buttonCompletion:(void(^)(UIAlertAction *action))completionBlock;
 /**
  * @brief Present a UIAlertController with a single button and the title is a localised string 'Error', if no button title is provided then a localised string 'Okay' will be used. Nil is passed as the UIAlertAction handler.
  * @since 0.22.0
@@ -47,10 +49,27 @@
 -(void)kfx_showErrorAlertWithMessage:(NSString*)message;
 
 /**
+ * @brief Present a UIAlertController with a single button and the title is a localised string 'Error', if no button title is provided then a localised string 'Okay' will be used. Nil is passed as the UIAlertAction handler.
+ * @param completionBlock A block to be called when the button is tapped
+ * @since 0.23.0
+ **/
+-(void)kfx_showErrorAlertWithMessage:(NSString*)message
+                okayButtonCompletion:(void(^)(UIAlertAction *action))completionBlock;
+
+/**
  * @brief Present a UIAlertController with a single button and the title is a localised string 'Success', if no button title is provided then a localised string 'Okay' will be used. Nil is passed as the UIAlertAction handler.
  * @since 0.22.0
  **/
 -(void)kfx_showSuccessAlertWithMessage:(NSString*)message;
+
+/**
+ * @brief Present a UIAlertController with a single button and the title is a localised string 'Success', if no button title is provided then a localised string 'Okay' will be used. Nil is passed as the UIAlertAction handler.
+ * @param completionBlock A block to be called when the button is tapped
+ * @since 0.23.0
+ **/
+-(void)kfx_showSuccessAlertWithMessage:(NSString*)message
+                  okayButtonCompletion:(void(^)(UIAlertAction *action))completionBlock;
+
 
 //--------------------------------------------------------
 #pragma mark - Child View Controllers
