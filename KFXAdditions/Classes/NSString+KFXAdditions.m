@@ -2,6 +2,7 @@
 
 
 #import "NSString+KFXAdditions.h"
+#import "NSAttributedString+KFXAdditions.h"
 
 @implementation NSString (KFXAdditions)
 
@@ -203,16 +204,24 @@
 //--------------------------------------------------------
 #pragma mark - Attributed String
 //--------------------------------------------------------
+-(NSAttributedString *)kfx_attributedString{
+	
+	return [NSAttributedString kfx_instanceWithString:self];
+}
 
 -(NSAttributedString *)kfx_attributedStringWithAttributes:(NSDictionary *)attributes{
 	
-	NSAttributedString *attributedString = [[NSAttributedString alloc]initWithString:self
-																		  attributes:attributes];
-	return attributedString;
+	return [NSAttributedString kfx_instanceWithString:self
+										   attributes:attributes];
 }
 
 
-
+//--------------------------------------------------------
+#pragma mark - Ranges
+//--------------------------------------------------------
+-(NSRange)kfx_rangeOfString{
+	return NSMakeRange(0, self.length);
+}
 
 
 

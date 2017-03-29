@@ -11,4 +11,9 @@
 +(instancetype)kfx_instanceWithFormat:(NSString*)format,...;
 +(instancetype)kfx_instanceWithAttributes:(NSDictionary*)attributes format:(NSString*)format,...;
 
+//--------------------------------------------------------
+#pragma mark - Ranges
+//--------------------------------------------------------
+-(NSRange)kfx_rangeOfString;
+
 @end

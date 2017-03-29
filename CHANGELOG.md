@@ -1,6 +1,10 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.25.0
+- Adds -kfx_rangeOfString; to NSString & NSAttributedString
+- Adds -kfx_attributedString; to NSString
+
 ## 0.24.0
 - Fixes bug (wrong image used as a parameter) in method -kfx_applyBlurWithRadius:(CGFloat)blurRadius
 - Adds -hasBeenPresentedModally to UIViewController+KFXAdditions

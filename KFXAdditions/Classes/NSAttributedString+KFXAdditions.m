@@ -44,4 +44,11 @@
 
 }
 
+//--------------------------------------------------------
+#pragma mark - Ranges
+//--------------------------------------------------------
+-(NSRange)kfx_rangeOfString{
+	return NSMakeRange(0, self.string.length);
+}
+
 @end

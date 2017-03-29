@@ -51,7 +51,15 @@ NS_ASSUME_NONNULL_BEGIN
 //--------------------------------------------------------
 #pragma mark - Attributed String
 //--------------------------------------------------------
+-(NSAttributedString *)kfx_attributedString;
 -(NSAttributedString *)kfx_attributedStringWithAttributes:(NSDictionary *)attributes;
+
+//--------------------------------------------------------
+#pragma mark - Ranges
+//--------------------------------------------------------
+-(NSRange)kfx_rangeOfString;
+
+
 
 
 @end
