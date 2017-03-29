@@ -1,6 +1,10 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.24.0
+- Fixes bug (wrong image used as a parameter) in method -kfx_applyBlurWithRadius:(CGFloat)blurRadius
+- Adds -hasBeenPresentedModally to UIViewController+KFXAdditions
+
 ## 0.23.0
 - Adds -kfx_applyBlurWithRadius:(CGFloat)blurRadius to UIImage+KFXAdditions
 

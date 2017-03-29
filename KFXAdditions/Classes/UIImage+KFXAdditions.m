@@ -217,6 +217,7 @@
 - (UIImage *)kfx_applyBlurWithRadius:(CGFloat)blurRadius{
     
     CIImage *originalImage = [CIImage imageWithCGImage: self.CGImage];
+    //  Setting up Gaussian Blur
     CIFilter *filter = [CIFilter filterWithName: @"CIGaussianBlur"
                                   keysAndValues: kCIInputImageKey, originalImage,
                         @"inputRadius", @(blurRadius), nil];
@@ -224,8 +225,10 @@
     CIImage *outputImage = filter.outputImage;
     CIContext *context = [CIContext contextWithOptions:nil];
     
+    /*  CIGaussianBlur has a tendency to shrink the image a little, this ensures it matches
+     *  up exactly to the bounds of our original image */
     CGImageRef outImage = [context createCGImage: outputImage
-                                        fromRect: [outputImage extent]];
+                                        fromRect: [originalImage extent]];
     
     UIImage *ret = [UIImage imageWithCGImage: outImage];
     
@@ -233,6 +236,7 @@
     
     return ret;
 }
+
 
 
 
