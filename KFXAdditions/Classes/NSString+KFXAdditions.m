@@ -95,6 +95,13 @@
     return [mutString copy];
 }
 
++(NSString*)kfx_yesOrNo:(BOOL)boolValue{
+    return (boolValue) ? @"Yes" : @"No";
+}
+
++(NSString*)kfx_trueOrFalse:(BOOL)boolValue{
+    return (boolValue) ? @"True" : @"False";
+}
 
 
 //======================================================

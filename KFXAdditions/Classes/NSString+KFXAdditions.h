@@ -23,8 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString*)kfx_randomStringOfLength:(int)length withStringComponents:(KFXStringComponent)components;
 +(NSString*)kfx_randomStringOfLength:(int)length fromCharacterPool:(NSString*)characterPool;
 +(NSString*__nullable)kfx_stringByCombiningComponents:(NSArray<NSString*>*)components separatedByString:(NSString*)separator;
-
-
++(NSString*)kfx_yesOrNo:(BOOL)boolValue;
++(NSString*)kfx_trueOrFalse:(BOOL)boolValue;
 
 //======================================================
 #pragma mark - ** Instance Methods **

@@ -32,5 +32,40 @@
 }
 
 
++(BOOL)kfx_hasBackgroundModeEnabled{
+	
+	static BOOL isEnabled;
+	static dispatch_once_t dispatchOnceToken;
+	dispatch_once(&dispatchOnceToken, ^{
+		
+		// Retrieve application information Property List
+		NSDictionary *applicationInformation = [[NSBundle mainBundle] infoDictionary];
+		
+		if ([applicationInformation objectForKey:@"UIBackgroundModes"]) {
+			
+			NSArray *backgroundModes = [applicationInformation valueForKey:@"UIBackgroundModes"];
+			NSArray *suitableModes = @[@"audio",
+									   @"bluetooth-central",
+									   @"bluetooth-peripheral",
+									   @"external-accessory",
+									   @"fetch",
+									   @"location",
+									   @"newsstand-content",
+									   @"remote-notification",
+									   @"voip",
+									   ];
+			[backgroundModes enumerateObjectsUsingBlock:^(id mode, NSUInteger modeIdx, BOOL *modeEnumeratorStop) {
+				
+				isEnabled = [suitableModes containsObject:mode];
+				*modeEnumeratorStop = isEnabled;
+			}];
+		}
+	});
+	
+	
+	return isEnabled;
+
+}
+
 
 @end

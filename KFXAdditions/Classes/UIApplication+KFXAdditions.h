@@ -17,4 +17,11 @@
  */
 -(UIViewController*)kfx_topViewController;
 
+
+/**
+ * @brief Reads the local info-plist file and looks for any background mode keys that are set. Will return YES if any of the available keys are set
+ * @return YES if the background mode is enabled, NO if it is not
+ **/
++(BOOL)kfx_hasBackgroundModeEnabled;
+
 @end

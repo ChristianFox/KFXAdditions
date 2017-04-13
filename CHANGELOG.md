@@ -1,6 +1,12 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.26.0
+- Adds +kfx_yesOrNo: and +kfx_trueOrFalse: methods to NSString
+- Adds +kfx_hasBackgroundModeEnabled to UIApplication
+- Adds -kfx_setText:withDefault: to UILabel
+- Adds -kfx_setText:withDefault: to UITextView
+
 ## 0.25.0
 - Adds -kfx_rangeOfString; to NSString & NSAttributedString
 - Adds -kfx_attributedString; to NSString
