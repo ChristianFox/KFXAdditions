@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1535271EA774C50001077B /* NSArrayKFXAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1535261EA774C50001077B /* NSArrayKFXAdditionsTests.m */; };
+		5B1535291EA77B3E0001077B /* NSDictionaryKFXAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1535281EA77B3E0001077B /* NSDictionaryKFXAdditionsTests.m */; };
+		5B15352B1EA77D320001077B /* NSSetKFXAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B15352A1EA77D320001077B /* NSSetKFXAdditionsTests.m */; };
 		5B5206151CDB53780047DB8E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5206141CDB53780047DB8E /* Launch Screen.storyboard */; };
 		5B680FB31D60E43F006F25F0 /* KFXNSStringAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B680FB21D60E43F006F25F0 /* KFXNSStringAdditionsTests.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -45,6 +48,9 @@
 		33F197D916DC3BEA099B2998 /* libPods-KFXAdditions_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFXAdditions_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DDAC9B44AF28C59B2783E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		53D801BF18078DDAA1FA8685 /* libPods-KFXAdditions_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFXAdditions_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1535261EA774C50001077B /* NSArrayKFXAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayKFXAdditionsTests.m; sourceTree = "<group>"; };
+		5B1535281EA77B3E0001077B /* NSDictionaryKFXAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryKFXAdditionsTests.m; sourceTree = "<group>"; };
+		5B15352A1EA77D320001077B /* NSSetKFXAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetKFXAdditionsTests.m; sourceTree = "<group>"; };
 		5B5206141CDB53780047DB8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5B680FB21D60E43F006F25F0 /* KFXNSStringAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFXNSStringAdditionsTests.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KFXAdditions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFXAdditions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +180,9 @@
 				DB4922E81DB35301003A7C0B /* KFXNSDateAdditionsTests.m */,
 				DB6BB7321DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m */,
 				DB88D6E01DCB699B00A205EB /* KFXCLLocationAdditionsTests.m */,
+				5B1535261EA774C50001077B /* NSArrayKFXAdditionsTests.m */,
+				5B1535281EA77B3E0001077B /* NSDictionaryKFXAdditionsTests.m */,
+				5B15352A1EA77D320001077B /* NSSetKFXAdditionsTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -338,7 +347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		24DDF11EFF7C2E54C2A571DD /* 📦 Embed Pods Frameworks */ = {
@@ -458,7 +467,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AB883CF62FD3FB7FB2E3ADA1 /* [CP] Check Pods Manifest.lock */ = {
@@ -538,9 +547,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1535271EA774C50001077B /* NSArrayKFXAdditionsTests.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 				DB6BB7331DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m in Sources */,
+				5B15352B1EA77D320001077B /* NSSetKFXAdditionsTests.m in Sources */,
 				DB88D6E11DCB699B00A205EB /* KFXCLLocationAdditionsTests.m in Sources */,
+				5B1535291EA77B3E0001077B /* NSDictionaryKFXAdditionsTests.m in Sources */,
 				DB4922E91DB35301003A7C0B /* KFXNSDateAdditionsTests.m in Sources */,
 				5B680FB31D60E43F006F25F0 /* KFXNSStringAdditionsTests.m in Sources */,
 			);

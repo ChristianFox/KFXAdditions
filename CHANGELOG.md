@@ -1,6 +1,12 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.27.0
+- Adds -kfx_setTextToNumber:withDefault: to UILabel
+- Adds NSDictionary+KFXAdditions
+- Adds NSSet+KFXAdditions
+- Adds -kfx_depth; to NSArray, NSDictionary, NSSet
+
 ## 0.26.0
 - Adds +kfx_yesOrNo: and +kfx_trueOrFalse: methods to NSString
 - Adds +kfx_hasBackgroundModeEnabled to UIApplication
