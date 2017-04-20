@@ -67,5 +67,37 @@
 
 }
 
+-(void)kfx_openURL:(NSURL *)url options:(NSDictionary *)options completionHandler:(void (^)(BOOL))completion{
+    
+    if ([self respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+        if ([self canOpenURL:url]) {
+            [self openURL:url
+                         options:options
+               completionHandler:completion];
+        }else{
+            completion(NO);
+        }
+    } else {
+        BOOL success = [self openURL:url];
+        completion(success);
+        
+    }
+
+}
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

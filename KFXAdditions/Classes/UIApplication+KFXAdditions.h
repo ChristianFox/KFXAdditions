@@ -24,4 +24,9 @@
  **/
 +(BOOL)kfx_hasBackgroundModeEnabled;
 
+
+-(void)kfx_openURL:(NSURL*)url
+           options:(NSDictionary*)options
+ completionHandler:(void (^)(BOOL success))completion;
+
 @end

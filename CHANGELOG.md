@@ -1,6 +1,11 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.28.0
+- Adds -kfx_openURL:options:completionHandler: to UIApplication
+- Adds UIFont+KFXAddtions
+- Adds +logAvailableFonts; to UIFont
+
 ## 0.27.0
 - Adds -kfx_setTextToNumber:withDefault: to UILabel
 - Adds NSDictionary+KFXAdditions
