@@ -24,7 +24,7 @@
 //--------------------------------------------------------
 #pragma mark - Presentation
 //--------------------------------------------------------
--(BOOL)hasBeenPresentedModally;
+-(BOOL)kfx_hasBeenPresentedModally;
 
 //--------------------------------------------------------
 #pragma mark Alerts

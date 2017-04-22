@@ -22,4 +22,13 @@
 -(BOOL)kfx_setTextToNumber:(NSNumber*)number withDefault:(NSString*)defaultText;
 
 
+/**
+ * @brief Sets the text property of the label only if the text is non nil, not equal to  NSNull and has a string.length > 0. Otherwise sets the text property to the defaultText without checking its validity.
+ * @param text the NSAttributedString to set the text property to
+ * @param defaultText the NSAttributedString to use if the text string fails any of the checks
+ * @return YES if the text was used, NO if the defaultText was used
+ **/
+-(BOOL)kfx_setAttributedText:(NSAttributedString*)text withDefault:(NSAttributedString*)defaultText;
+
+
 @end

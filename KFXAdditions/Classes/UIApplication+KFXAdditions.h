@@ -29,4 +29,9 @@
            options:(NSDictionary*)options
  completionHandler:(void (^)(BOOL success))completion;
 
+
+
+-(BOOL)kfx_pushNotificationsEnabled;
+
+
 @end

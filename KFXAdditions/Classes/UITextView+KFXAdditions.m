@@ -16,4 +16,17 @@
     }
 }
 
+-(BOOL)kfx_setAttributedText:(NSAttributedString *)text withDefault:(NSAttributedString *)defaultText{
+    
+    if (text == nil || [text isEqual:[NSNull null]] || text.string.length == 0) {
+        self.attributedText = defaultText;
+        return NO;
+    }else{
+        self.attributedText = text;
+        return YES;
+    }
+    
+}
+
+
 @end

@@ -1,6 +1,13 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.29.0 ...
+- Adds -kfx_pushNotificationsEnabled; to UIApplication
+- UIViewController : Changes -hasBeenPresentedModally to -kfx_hasBeenPresentedModally;
+- Adds comments to Crayon colour s of UIColor+KFXAdditions
+- Adds -kfx_setAttributedText:withDefault: to UILabel
+- Adds -kfx_setAttributedText:withDefault: to UITextView
+
 ## 0.28.0
 - Adds -kfx_openURL:options:completionHandler: to UIApplication
 - Adds UIFont+KFXAddtions

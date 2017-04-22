@@ -105,7 +105,7 @@ NS_ASSUME_NONNULL_BEGIN
 //======================================================
 #pragma mark - ** Colours **
 //======================================================
-/* Pink becuase there is no pink by default. */
+/* Pink becuase there is no pink by default. */ // - It is magenta!
 +(instancetype)kfx_pinkColour;
 
 #pragma mark Highlight Markers
@@ -135,58 +135,111 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark Crayons
 /* Based on Crayons in OSX color picker */
+
 // Foods
+/// A deep red (full red with 50% brightness)
 +(instancetype)kfx_cayenneColour;
+/// Greeny-Yellow (50% brightness)
 +(instancetype)kfx_asparagusColour;
+/// Bright Purple (50% brightness)
 +(instancetype)kfx_plumColour;
+/// A browny-orange (50% brightness)
 +(instancetype)kfx_mochaColour;
+/// Vivid Purple (50% brightness)
 +(instancetype)kfx_eggplantColour;
+/// Bright Yellow
 +(instancetype)kfx_lemonColour;
+/// Strong deep Blue
 +(instancetype)kfx_blueberryColour;
+/// Bright Orange
 +(instancetype)kfx_tangerineColour;
+/// Bright Lime Green
 +(instancetype)kfx_limeColour;
+/// Bright Purple
 +(instancetype)kfx_grapeColour;
+/// Bright Red-Pink
 +(instancetype)kfx_strawberryColour;
+/// Pale Red
 +(instancetype)kfx_salmonColour;
+/// Pale Bright Yellow (60% saturation)
 +(instancetype)kfx_bananaColour;
+/// Pale Purple-Pink (60% saturation)
 +(instancetype)kfx_bubblegumColour;
+/// Pale Orange (60% saturation)
 +(instancetype)kfx_cantaloupeColour;
+/// Pale Greeny-Yellow (60% saturation)
 +(instancetype)kfx_honeydewColour;
+/// Black (100% black)
 +(instancetype)kfx_licoriceColour;
+
 // Plants
+/// Medium Green (50% brightness)
 +(instancetype)kfx_cloverColour;
+/// Medium Green (50% brightness)
 +(instancetype)kfx_fernColour;
+/// Medium Green (50% brightness)
 +(instancetype)kfx_mossColour;
+/// Pale Bright Green (60% saturation)
 +(instancetype)kfx_floraColour;
+/// Pale Purple (60% saturation)
 +(instancetype)kfx_orchidColour;
+/// Pale Bright Purple (60% saturation)
 +(instancetype)kfx_lavenderColour;
+/// Pale Pink (60% saturation)
 +(instancetype)kfx_carnationColour;
+
 // Metals
+/// Medium gray (50% black)
 +(instancetype)kfx_tinColour;
+/// Medium gray (50% black)
 +(instancetype)kfx_nickelColour;
+/// A medium-dark gray (60% black)
 +(instancetype)kfx_steelColour;
+/// A medium-light gray (40% black)
 +(instancetype)kfx_aluminumColour;
+/// A medium-dark gray (70% black)
 +(instancetype)kfx_ironColour;
+/// A medium-light gray (30% black)
 +(instancetype)kfx_magnesiumColour;
+/// A dark gray (80% black)
 +(instancetype)kfx_tungstenColour;
+/// A light gray (20% black)
 +(instancetype)kfx_silverColour;
+/// a very dark gray (90% black)
 +(instancetype)kfx_leadColour;
+/// A very light gray (10% black)
 +(instancetype)kfx_mercuryColour;
+
 // Watery
+/// Deep Blue (50% brightness)
 +(instancetype)kfx_oceanColour;
+/// Bright Light Green
 +(instancetype)kfx_seaFoamColour;
+/// Bright Pale Blue
 +(instancetype)kfx_aquaColour;
+/// Pale Bright Blue (60% saturation)
 +(instancetype)kfx_iceColour;
+/// White
 +(instancetype)kfx_snowColour;
+
 // misc
+/// Green-Blue (50% brightness)
 +(instancetype)kfx_tealColour;
+/// Red with Purple hint (50% brightness)
 +(instancetype)kfx_maroonColour;
+/// Bright Light Blue
 +(instancetype)kfx_turquoiseColour;
+/// Bright Purpley-Pink
 +(instancetype)kfx_magentaColour;
+/// Rich Blue (50% brightness)
 +(instancetype)kfx_midnightColour;
+/// Bright Red
 +(instancetype)kfx_maraschinoColour;
+/// Bright Green
 +(instancetype)kfx_springColour;
+/// Pale Bright Blue (60% saturation)
 +(instancetype)kfx_spindriftColour;
+/// Pale Bright Blue (60% saturation)
 +(instancetype)kfx_skyColour;
 
 

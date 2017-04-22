@@ -22,7 +22,7 @@
 //--------------------------------------------------------
 #pragma mark - Presentation
 //--------------------------------------------------------
--(BOOL)hasBeenPresentedModally{
+-(BOOL)kfx_hasBeenPresentedModally{
 	
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
