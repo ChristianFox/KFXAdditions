@@ -79,4 +79,55 @@ static const char *getPropertyType(objc_property_t property) {
                    block);
 }
 
+
+//--------------------------------------------------------
+#pragma mark Copy
+//--------------------------------------------------------
+-(id<NSCoding>)kfx_deepCopy{
+    
+    id deepCopy = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:self]];
+    return deepCopy;
+}
+
+
+
+
+
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

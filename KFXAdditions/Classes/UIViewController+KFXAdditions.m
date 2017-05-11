@@ -12,11 +12,27 @@
 #pragma mark - Navigation
 //--------------------------------------------------------
 -(void)kfx_dismissViewController{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if ([NSThread isMainThread]) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:YES completion:nil];
+
+        });
+    }
 }
 
 -(void)kfx_dismissViewControllerFromPresenting{
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    if ([NSThread isMainThread]) {
+        [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+
+        });
+    }
 }
 
 //--------------------------------------------------------
@@ -52,28 +68,42 @@
 //--------------------------------------------------------
 -(void)kfx_showSimpleAlertWithTitle:(NSString *)title message:(NSString *)message buttonTitle:(NSString *)buttonTitle{
 	
-	dispatch_async(dispatch_get_main_queue(), ^{
-		NSString *buttonTitle2 = buttonTitle;
-		if (buttonTitle2 == nil) {
-			buttonTitle2 = NSLocalizedString(@"Okay", @"Okay / agree / accept");
-		}
-		UIAlertController *alert = [UIAlertController kfx_alertControllerWithTitle:title message:message singleButtonTitle:buttonTitle2];
-		[self presentViewController:alert animated:YES completion:nil];
-	});
-	
+    dispatch_block_t alertBlock = ^{
+        NSString *buttonTitle2 = buttonTitle;
+        if (buttonTitle2 == nil) {
+            buttonTitle2 = NSLocalizedString(@"Okay", @"Okay / agree / accept");
+        }
+        UIAlertController *alert = [UIAlertController kfx_alertControllerWithTitle:title message:message singleButtonTitle:buttonTitle2];
+        [self presentViewController:alert animated:YES completion:nil];
+    };
+    
+    if ([NSThread mainThread]) {
+        alertBlock();
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            alertBlock();
+        });
+    }
 }
 
 -(void)kfx_showSimpleAlertWithTitle:(NSString *)title message:(NSString *)message buttonTitle:(NSString *)buttonTitle buttonCompletion:(void (^)(UIAlertAction *))completionBlock{
 	
-	dispatch_async(dispatch_get_main_queue(), ^{
-		NSString *buttonTitle2 = buttonTitle;
-		if (buttonTitle2 == nil) {
-			buttonTitle2 = NSLocalizedString(@"Okay", @"Okay / agree / accept");
-		}
-		UIAlertController *alert = [UIAlertController kfx_alertControllerWithTitle:title message:message singleButtonTitle:buttonTitle2 buttonTappedCompletionBlock:completionBlock];
-		[self presentViewController:alert animated:YES completion:nil];
-	});
-	
+    dispatch_block_t alertBlock = ^{
+        NSString *buttonTitle2 = buttonTitle;
+        if (buttonTitle2 == nil) {
+            buttonTitle2 = NSLocalizedString(@"Okay", @"Okay / agree / accept");
+        }
+        UIAlertController *alert = [UIAlertController kfx_alertControllerWithTitle:title message:message singleButtonTitle:buttonTitle2 buttonTappedCompletionBlock:completionBlock];
+        [self presentViewController:alert animated:YES completion:nil];
+    };
+    
+    if ([NSThread mainThread]) {
+        alertBlock();
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            alertBlock();
+        });
+    }
 }
 
 -(void)kfx_showErrorAlertWithMessage:(NSString *)message{

@@ -1,7 +1,13 @@
 
 # ChangeLog - KFXAdditions
 
-## 0.29.0 ...
+## 0.30.0
+- Improves additions in UITableViewController and UIViewController which were switching to main thread without checking if already on main thread, now check first and only switch if necessary
+- Adds -kfx_deepCopy; to NSObject
+- Adds +(UIImage*)kfx_colorizeImage:(UIImage *)image withColor:(UIColor *)color to UIImage
+- UIApplication : adds +kfx_isActive, +kfx_isInactive, +kfx_isBackground
+
+## 0.29.0
 - Adds -kfx_pushNotificationsEnabled; to UIApplication
 - UIViewController : Changes -hasBeenPresentedModally to -kfx_hasBeenPresentedModally;
 - Adds comments to Crayon colour s of UIColor+KFXAdditions

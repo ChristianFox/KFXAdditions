@@ -34,4 +34,9 @@
 -(BOOL)kfx_pushNotificationsEnabled;
 
 
++(BOOL)kfx_isActive;
++(BOOL)kfx_isInactive;
++(BOOL)kfx_isBackground;
+
+
 @end

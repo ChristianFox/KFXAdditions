@@ -98,6 +98,18 @@
     }
 }
 
++(BOOL)kfx_isActive{
+	return ([self sharedApplication].applicationState == UIApplicationStateActive);
+}
+
++(BOOL)kfx_isInactive{
+	return ([self sharedApplication].applicationState == UIApplicationStateInactive);
+}
+
++(BOOL)kfx_isBackground{
+	return ([self sharedApplication].applicationState == UIApplicationStateBackground);
+}
+
 
 @end
 

@@ -82,6 +82,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIImage *)kfx_applyBlurWithRadius:(CGFloat)blurRadius;
 
 
+//--------------------------------------------------------
+#pragma mark Tint Image
+//--------------------------------------------------------
++(UIImage*)kfx_tintImage:(UIImage *)image withColor:(UIColor *)color;
 
 
 

@@ -35,6 +35,8 @@
 }
 
 
+
+
 -(NSUInteger)kfx_depth{
     
     NSUInteger highestCount = 0;
@@ -53,6 +55,8 @@
     }
     return highestCount;
 }
+
+
 
 
 -(NSUInteger)kfx_depthOfCollection:(id)collection{

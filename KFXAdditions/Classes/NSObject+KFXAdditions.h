@@ -21,4 +21,13 @@
            afterDelay: (NSTimeInterval) delay;
 
 
+//--------------------------------------------------------
+#pragma mark Copy
+//--------------------------------------------------------
+/*
+ * Returns a deep copy of the object by first archiving using NSKeyedArchiver and then unarchiving using NSKeyedUnarchiver
+ * @warning This class and all its components must implement NSCoding.
+ */
+-(id<NSCoding>)kfx_deepCopy;
+
 @end
