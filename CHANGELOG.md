@@ -1,10 +1,13 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.31.0
+- Adds NSError+KFXAdditions with a well populated error code enum and many useful methods
+
 ## 0.30.0
 - Improves additions in UITableViewController and UIViewController which were switching to main thread without checking if already on main thread, now check first and only switch if necessary
 - Adds -kfx_deepCopy; to NSObject
-- Adds +(UIImage*)kfx_colorizeImage:(UIImage *)image withColor:(UIColor *)color to UIImage
+- Adds +(UIImage*)kfx_tintImage:(UIImage *)image withColor:(UIColor *)color to UIImage
 - UIApplication : adds +kfx_isActive, +kfx_isInactive, +kfx_isBackground
 
 ## 0.29.0

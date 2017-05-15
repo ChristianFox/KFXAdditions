@@ -25,6 +25,8 @@
 		4ABEE3D5DC33520684273B12ACAE30FE /* UIViewController+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAF65E987975BA7E4486C1A5C5ACD54 /* UIViewController+KFXAdditions.m */; };
 		54EAD1406CEECCDE58AA5BDCCD539816 /* Pods-KFXAdditions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A06E188295403B3974E27D5DB9B3D /* Pods-KFXAdditions_Tests-dummy.m */; };
 		57C6D7766E12FDFCDBDF08E4BA92C826 /* UIApplication+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8196C2D9C23F890533CD6A9067B53F /* UIApplication+KFXAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B2C3EC31EC9DA69001046E0 /* NSError+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B2C3EC11EC9DA69001046E0 /* NSError+KFXAdditions.h */; };
+		5B2C3EC41EC9DA69001046E0 /* NSError+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2C3EC21EC9DA69001046E0 /* NSError+KFXAdditions.m */; };
 		5BAA62DE1EA8FBFD0090E927 /* UIFont+KFXAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BAA62DC1EA8FBFD0090E927 /* UIFont+KFXAdditions.h */; };
 		5BAA62DF1EA8FBFD0090E927 /* UIFont+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA62DD1EA8FBFD0090E927 /* UIFont+KFXAdditions.m */; };
 		5EF329A3B0CC222B211756AE29FBC88B /* UILabel+KFXAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8C0A0D1F69EA45F4C92B2B23224E1E /* UILabel+KFXAdditions.m */; };
@@ -103,6 +105,8 @@
 		59933482C6E57F43C7EBA526B91AC3F0 /* UIColor+KFXAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+KFXAdditions.h"; sourceTree = "<group>"; };
 		59BEC9C0609274F45EE1A8C38D1E102F /* Pods-KFXAdditions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXAdditions_Tests-resources.sh"; sourceTree = "<group>"; };
 		5A8B9B876947916570343602BE120C22 /* UIViewController+KFXAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KFXAdditions.h"; sourceTree = "<group>"; };
+		5B2C3EC11EC9DA69001046E0 /* NSError+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+KFXAdditions.h"; sourceTree = "<group>"; };
+		5B2C3EC21EC9DA69001046E0 /* NSError+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+KFXAdditions.m"; sourceTree = "<group>"; };
 		5BAA62DC1EA8FBFD0090E927 /* UIFont+KFXAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+KFXAdditions.h"; sourceTree = "<group>"; };
 		5BAA62DD1EA8FBFD0090E927 /* UIFont+KFXAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+KFXAdditions.m"; sourceTree = "<group>"; };
 		5CF98A4A1C360736D73A67E3373A8B42 /* UIColor+KFXAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KFXAdditions.m"; sourceTree = "<group>"; };
@@ -296,6 +300,8 @@
 				AC558C4584EE7641D19E9710749B3D75 /* NSDate+KFXAdditions.m */,
 				494681FACA88C730EAC8BBA5C28C4538 /* NSDictionary+KFXAdditions.h */,
 				B5733AA7147C092EA2A00E13184BEDE5 /* NSDictionary+KFXAdditions.m */,
+				5B2C3EC11EC9DA69001046E0 /* NSError+KFXAdditions.h */,
+				5B2C3EC21EC9DA69001046E0 /* NSError+KFXAdditions.m */,
 				90B55C35093DAA958461AE4D9624D086 /* NSFileManager+KFXDirectoryLocations.h */,
 				CFE5F60CC79921658553A5A150911DFC /* NSFileManager+KFXDirectoryLocations.m */,
 				C8FED55261DF8A7AB56EEE245AAD8BB0 /* NSKeyedArchiver+KFXAdditions.h */,
@@ -380,6 +386,7 @@
 				95FC83B304F113FDECEFD7BB62300838 /* NSMutableDictionary+KFXAdditions.h in Headers */,
 				E58A01B92B3A8DBBF71FEAEC566B5E7D /* NSMutableSet+KFXAdditions.h in Headers */,
 				6323F666053B9FACD65007A51C1C9E44 /* NSObject+KFXAdditions.h in Headers */,
+				5B2C3EC31EC9DA69001046E0 /* NSError+KFXAdditions.h in Headers */,
 				CDB76B088C134FA87E54C931C684DFBE /* NSSet+KFXAdditions.h in Headers */,
 				24E97B1F6A327C2DFD19199BFCF4D86D /* NSString+KFXAdditions.h in Headers */,
 				EDAC5E6993DCCDEEA79DD2318EE21D8D /* UIAlertController+KFXAdditions.h in Headers */,
@@ -522,6 +529,7 @@
 				9CEC38383D6085C750999C73E8364D39 /* UIImage+KFXAdditions.m in Sources */,
 				E66B3848C02919155471C47BA9A83963 /* UIImageView+KFXAdditions.m in Sources */,
 				5EF329A3B0CC222B211756AE29FBC88B /* UILabel+KFXAdditions.m in Sources */,
+				5B2C3EC41EC9DA69001046E0 /* NSError+KFXAdditions.m in Sources */,
 				C4ACAE22DB0E6873ED5298D9D39B94AF /* UIResponder+KFXAdditions.m in Sources */,
 				273CD3E59A9F2C848C048F3456510058 /* UITableViewController+KFXAdditions.m in Sources */,
 				28236087EB8AE193A7B9A670DA83CF19 /* UITextView+KFXAdditions.m in Sources */,
