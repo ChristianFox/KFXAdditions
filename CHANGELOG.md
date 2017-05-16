@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.32.0
+- NSError+KFXAdditions: Adds some new error codes and fixes some typos
+
 ## 0.31.0
 - Adds NSError+KFXAdditions with a well populated error code enum and many useful methods
 

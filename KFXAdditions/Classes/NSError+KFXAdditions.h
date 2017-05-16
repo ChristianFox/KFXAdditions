@@ -20,13 +20,15 @@ typedef NS_ENUM(NSUInteger, KFXErrorCode){
 	KFXErrorCodeParameterIsNull,
 	KFXErrorCodeParameterIsNotOfExpectedClass,
 	// # Collections
-	KFXErrorCodeCollectionCountIsZero,
 	KFXErrorCodeNSArrayCountIsZero,
 	KFXErrorCodeNSDictionaryCountIsZero,
 	KFXErrorCodeNSSetCountIsZero,
-	KFXErrorCodeNSArrayCountIsNil,
-	KFXErrorCodeNSDictionaryCountIsNil,
-	KFXErrorCodeNSSetCountIsNil,
+	KFXErrorCodeNSArrayIsNil,
+	KFXErrorCodeNSDictionaryIsNil,
+	KFXErrorCodeNSSetIsNil,
+	KFXErrorCodeNSArrayIsNilOrCountIsZero,
+	KFXErrorCodeNSDictionaryIsNilOrCountIsZero,
+	KFXErrorCodeNSSetIsNilOrCountIsZero,
 	KFXErrorCodeIndexOutOfBoundsForArray,
 	KFXErrorCodeArrayIndexIsLessThanZero,
 	KFXErrorCodeArrayIndexIsGreaterThanArrayCount,
@@ -36,6 +38,7 @@ typedef NS_ENUM(NSUInteger, KFXErrorCode){
 	// # Strings
 	KFXErrorCodeStringLengthIsZero,
 	KFXErrorCodeStringIsNil,
+	KFXErrorCodeStringIsNilOrLengthIsZero,
 	KFXErrorCodeStringOnlyContainsWhitespace,
 	KFXErrorCodeStringDoesNotFormatToDate,
 	KFXErrorCodeStringDoesNotFormatToNumber,
@@ -54,6 +57,7 @@ typedef NS_ENUM(NSUInteger, KFXErrorCode){
 	KFXErrorCodeManagedObjectContextIsNil,
 	KFXErrorCodeManagedObjectIsNil
 };
+
 
 
 @interface NSError (KFXAdditions)

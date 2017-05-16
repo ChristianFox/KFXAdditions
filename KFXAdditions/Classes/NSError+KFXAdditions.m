@@ -198,10 +198,6 @@
 			description = @"KFXErrorCodeParameterIsNotOfExpectedClass";
 			break;
 		}
-		case KFXErrorCodeCollectionCountIsZero:{
-			description = @"KFXErrorCodeCollectionCountIsZero";
-			break;
-		}
 		case KFXErrorCodeNSArrayCountIsZero:{
 			description = @"KFXErrorCodeNSArrayCountIsZero";
 			break;
@@ -214,16 +210,28 @@
 			description = @"KFXErrorCodeNSSetCountIsZero";
 			break;
 		}
-		case KFXErrorCodeNSArrayCountIsNil:{
-			description = @"KFXErrorCodeNSArrayCountIsNil";
+		case KFXErrorCodeNSArrayIsNil:{
+			description = @"KFXErrorCodeNSArrayIsNil";
 			break;
 		}
-		case KFXErrorCodeNSDictionaryCountIsNil:{
-			description = @"KFXErrorCodeNSDictionaryCountIsNil";
+		case KFXErrorCodeNSDictionaryIsNil:{
+			description = @"KFXErrorCodeNSDictionaryIsNil";
 			break;
 		}
-		case KFXErrorCodeNSSetCountIsNil:{
-			description = @"KFXErrorCodeNSSetCountIsNil";
+		case KFXErrorCodeNSSetIsNil:{
+			description = @"KFXErrorCodeNSSetIsNil";
+			break;
+		}
+		case KFXErrorCodeNSArrayIsNilOrCountIsZero:{
+			description = @"KFXErrorCodeNSArrayIsNilOrCountIsZero";
+			break;
+		}
+		case KFXErrorCodeNSDictionaryIsNilOrCountIsZero:{
+			description = @"KFXErrorCodeNSDictionaryIsNilOrCountIsZero";
+			break;
+		}
+		case KFXErrorCodeNSSetIsNilOrCountIsZero:{
+			description = @"KFXErrorCodeNSSetIsNilOrCountIsZero";
 			break;
 		}
 		case KFXErrorCodeIndexOutOfBoundsForArray:{
@@ -256,6 +264,10 @@
 		}
 		case KFXErrorCodeStringIsNil:{
 			description = @"KFXErrorCodeStringIsNil";
+			break;
+		}
+		case KFXErrorCodeStringIsNilOrLengthIsZero:{
+			description = @"KFXErrorCodeStringIsNilOrLengthIsZero";
 			break;
 		}
 		case KFXErrorCodeStringOnlyContainsWhitespace:{
