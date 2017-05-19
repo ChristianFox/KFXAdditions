@@ -30,7 +30,6 @@
 		DB4922E91DB35301003A7C0B /* KFXNSDateAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4922E81DB35301003A7C0B /* KFXNSDateAdditionsTests.m */; };
 		DB6BB7331DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6BB7321DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m */; };
 		DB88D6E11DCB699B00A205EB /* KFXCLLocationAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB88D6E01DCB699B00A205EB /* KFXCLLocationAdditionsTests.m */; };
-		DB88D6E91DCB783600A205EB /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = DB88D6E81DCB783600A205EB /* CHANGELOG.md */; };
 		FF3E1A45B806DCE53E7B17F2 /* libPods-KFXAdditions_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D801BF18078DDAA1FA8685 /* libPods-KFXAdditions_Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -539,7 +538,6 @@
 				6003F59E195388D20070C39A /* KFXAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* KFXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				DB88D6E91DCB783600A205EB /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
