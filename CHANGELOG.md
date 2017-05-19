@@ -1,7 +1,17 @@
 
 # ChangeLog - KFXAdditions
 
-## 0.32.0
+## 0.33.0
+- NSError+KFXAdditions: fixes some string format errors
+- NSDate+KFXAdditions: Adds -kfx_isTimeEqualToDate:, -kfx_isEarlierThanOrEqualToDate:, -kfx_isLaterThanOrEqualToDate
+- Adds NSNumber+KFXAdditions with comparison methods
+- Adds masking method to UIImage
+- Adds -className & +className methods to NSObject
+- Adds more methods to UIColor
+- Adds +kfx_instantiateFromNib; method to UIView & UIViewController
+- Adds two new resize image methods to UIImage
+
+## 0.32.0 NSError+KFXAdditions update
 - NSError+KFXAdditions: Adds some new error codes and fixes some typos
 
 ## 0.31.0

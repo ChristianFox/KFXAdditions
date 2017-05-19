@@ -12,16 +12,16 @@
 #pragma mark Base
 //--------------------------------------------------------
 +(instancetype)kfx_errorWithCode:(NSInteger)code userInfo:(NSDictionary *)userInfo sender:(id)sender{
-
+	
 	NSError *error = [NSError errorWithDomain:[self kfx_errorDomainWithSender:sender]
 										 code:code
 									 userInfo:userInfo];
 	return error;
-
+	
 }
 
 +(instancetype)kfx_errorWithCode:(NSInteger)code localisedDescription:(NSString*)localisedDescription sender:(id)sender{
-
+	
 	NSDictionary *userInfo = @{NSLocalizedDescriptionKey:localisedDescription};
 	NSError *error = [self kfx_errorWithCode:code
 									userInfo:userInfo
@@ -30,7 +30,7 @@
 }
 
 +(instancetype)kfx_errorWithCode:(KFXErrorCode)code sender:(id)sender{
-
+	
 	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"An error occured with code: '%ld'; name: '%@'", @"A generic description of an error where a numerical code and error name will be inserted"),(long)code,[self kfx_descriptionForErrorCode:code]];
 	return [self kfx_errorWithCode:code
 			  localisedDescription:description
@@ -44,8 +44,8 @@
 +(instancetype)kfx_invalidParameterError:(NSString*)paramName
 						   withErrorCode:(KFXErrorCode)errorCode
 								  sender:(id)sender{
-
-	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"The parameter with name '%@' is invalid. Error name: '%@'", @""),(long)errorCode,[self kfx_descriptionForErrorCode:errorCode]];
+	
+	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"The parameter with name '%@' is invalid. Error name: '%@'", @""),paramName,[self kfx_descriptionForErrorCode:errorCode]];
 	
 	return [self kfx_errorWithCode:errorCode
 			  localisedDescription:description
@@ -55,14 +55,14 @@
 +(instancetype)kfx_invalidLocalVariableError:(NSString*)variableName
 							   withErrorCode:(KFXErrorCode)errorCode
 									  sender:(id)sender{
-
 	
-	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"The local variable with name '%@' is invalid. Error name: '%@'", @""),(long)errorCode,[self kfx_descriptionForErrorCode:errorCode]];
+	
+	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"The local variable with name '%@' is invalid. Error name: '%@'", @""),variableName,[self kfx_descriptionForErrorCode:errorCode]];
 	
 	return [self kfx_errorWithCode:errorCode
 			  localisedDescription:description
 							sender:sender];
-
+	
 }
 
 +(instancetype)kfx_invalidMemberVariableError:(NSString*)variableName
@@ -70,29 +70,29 @@
 									errorCode:(KFXErrorCode)errorCode
 									   sender:(id)sender{
 	
-	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"The member variable with name '%@' of class: '%@' is invalid. Error name: '%@'", @""),(long)errorCode,NSStringFromClass([object class]),[self kfx_descriptionForErrorCode:errorCode]];
+	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"The member variable with name '%@' of class: '%@' is invalid. Error name: '%@'", @""),variableName,NSStringFromClass([object class]),[self kfx_descriptionForErrorCode:errorCode]];
 	
 	return [self kfx_errorWithCode:errorCode
 			  localisedDescription:description
 							sender:sender];
-
+	
 }
 
 +(instancetype)kfx_invalidCollectionError:(NSString*)collectionName
 							withErrorCode:(KFXErrorCode)errorCode
 									  sender:(id)sender{
 	
-	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"The collection with name '%@' is invalid. Error name: '%@'", @""),(long)errorCode,[self kfx_descriptionForErrorCode:errorCode]];
+	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"The collection with name '%@' is invalid. Error name: '%@'", @""),collectionName,[self kfx_descriptionForErrorCode:errorCode]];
 	
 	return [self kfx_errorWithCode:errorCode
 			  localisedDescription:description
 							sender:sender];
-
+	
 }
 
 +(instancetype)kfx_importFailedWithErrorCode:(KFXErrorCode)errorCode sender:(id)sender{
-
-	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"Import failed with error name: '%@'", @""),(long)errorCode,[self kfx_descriptionForErrorCode:errorCode]];
+	
+	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"Import failed with error name: '%@'", @""),[self kfx_descriptionForErrorCode:errorCode]];
 	
 	return [self kfx_errorWithCode:errorCode
 			  localisedDescription:description
@@ -100,8 +100,8 @@
 }
 
 +(instancetype)kfx_fileSystemAccessFailedWithErrorCode:(KFXErrorCode)errorCode sender:(id)sender{
-
-	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"File system access failed with error name: '%@'", @""),(long)errorCode,[self kfx_descriptionForErrorCode:errorCode]];
+	
+	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"File system access failed with error name: '%@'", @""),[self kfx_descriptionForErrorCode:errorCode]];
 	
 	return [self kfx_errorWithCode:errorCode
 			  localisedDescription:description
@@ -109,8 +109,8 @@
 }
 
 +(instancetype)kfx_findObjectsFailedWithErrorCode:(KFXErrorCode)errorCode sender:(id)sender{
-
-	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"Find objects failed with error name: '%@'", @""),(long)errorCode,[self kfx_descriptionForErrorCode:errorCode]];
+	
+	NSString *description = [NSString stringWithFormat:NSLocalizedString(@"Find objects failed with error name: '%@'", @""),[self kfx_descriptionForErrorCode:errorCode]];
 	
 	return [self kfx_errorWithCode:errorCode
 			  localisedDescription:description
@@ -122,13 +122,13 @@
 #pragma mark Specific
 //--------------------------------------------------------
 +(instancetype)kfx_managedObjectContextIsNilErrorWithSender:(id)sender{
-
+	
 	NSString *message = NSLocalizedString(@"ManagedObjectContext is nil", @"");
 	NSError *error = [self kfx_errorWithCode:KFXErrorCodeManagedObjectContextIsNil
 						localisedDescription:message
 									  sender:sender];
 	return error;
-
+	
 }
 
 //--------------------------------------------------------
@@ -155,7 +155,7 @@
 #pragma mark Error Code Descriptions
 //--------------------------------------------------------
 +(NSString*)kfx_descriptionForErrorCode:(KFXErrorCode)errorCode{
-
+	
 	NSString *description;
 	switch (errorCode) {
 		case KFXErrorCodeUndefined:{
@@ -326,7 +326,7 @@
 			description = @"KFXErrorCodeManagedObjectIsNil";
 			break;
 		}
-
+			
 		default:
 			NSAssert(NO,@"Hit default case of a switch statement. %s. Value is : %ld",__PRETTY_FUNCTION__, (long)errorCode);
 			break;

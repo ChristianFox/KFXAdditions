@@ -14,8 +14,10 @@
 //--------------------------------------------------------
 #pragma mark - Comparison Convience methods
 //--------------------------------------------------------
--(BOOL)kfx_isLaterThanDate:(NSDate*)anotherDate;
 -(BOOL)kfx_isEarlierThanDate:(NSDate*)anotherDate;
+-(BOOL)kfx_isLaterThanDate:(NSDate*)anotherDate;
+-(BOOL)kfx_isEarlierThanOrEqualToDate:(NSDate*)anotherDate;
+-(BOOL)kfx_isLaterThanOrEqualToDate:(NSDate*)anotherDate;
 -(BOOL)kfx_isBetweenStartDate:(NSDate*)startDate andEndDate:(NSDate*)endDate;
 
 
@@ -25,6 +27,7 @@
 -(BOOL)kfx_isDayEqualToDate:(NSDate*)anotherDate;
 -(BOOL)kfx_isHourEqualToDate:(NSDate*)anotherDate;
 -(BOOL)kfx_isMinuteEqualToDate:(NSDate*)anotherDate;
+-(BOOL)kfx_isTimeEqualToDate:(NSDate*)anotherDate;
 
 
 //--------------------------------------------------------
@@ -33,11 +36,14 @@
 /// If the receiver is earlier than the otherDate then the return value will be negative.
 -(NSInteger)kfx_daysSinceDate:(NSDate*)otherDate
   includeCurrentIncompleteDay:(BOOL)includeToday;
+
 /// If the receiver is earlier than the otherDate then the return value will be negative.
 -(NSInteger)kfx_hoursSinceDate:(NSDate*)otherDate
   includeCurrentIncompleteHour:(BOOL)includeToday;
 
+/// Returns the number of hours since midnight of the receiver's date
 -(NSInteger)hoursSinceMidnight;
+
 
 
 //--------------------------------------------------------

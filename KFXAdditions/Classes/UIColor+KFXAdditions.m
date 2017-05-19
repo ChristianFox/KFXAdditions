@@ -159,6 +159,113 @@
 }
 
 
+//--------------------------------------------------------
+#pragma mark Inverted Colours
+//--------------------------------------------------------
+/// Return the invert color corresponding to the receiver
+-(UIColor*)kfx_invertedColour{
+
+	const CGFloat *components = CGColorGetComponents(self.CGColor);
+	
+	UIColor *invertedColor = [[UIColor alloc] initWithRed:1.f - components[0]
+													green:1.f - components[1]
+													 blue:1.f - components[2]
+													alpha:components[3]];
+	
+	return invertedColor;
+}
+
+
+
+
+//======================================================
+#pragma mark - ** Query  **
+//======================================================
+//--------------------------------------------------------
+#pragma mark Component
+//--------------------------------------------------------
+/// Return non-normalized red color components (0 - 255)
+-(NSUInteger)kfx_redComponent{
+	return (NSUInteger)roundf(255.f * self.kfx_normalisedRedComponent);
+}
+
+/// Return non-normalized blue color components (0 - 255)
+-(NSUInteger)kfx_blueComponent{
+	return (NSUInteger)roundf(255.f * self.kfx_normalisedBlueComponent);
+}
+
+/// Return non-normalized green color components (0 - 255)
+-(NSUInteger)kfx_greenComponent{
+	return (NSUInteger)roundf(255.f * self.kfx_normalisedGreenComponent);
+}
+
+/// Return normalized red color components (0.f - 1.f)
+-(CGFloat)kfx_normalisedRedComponent{
+	const CGFloat *components = CGColorGetComponents(self.CGColor);
+	return components[0];
+}
+
+/// Return normalized blue color components (0.f - 1.f)
+-(CGFloat)kfx_normalisedBlueComponent{
+	const CGFloat *components = CGColorGetComponents(self.CGColor);
+	return components[1];
+}
+
+/// Return normalized green color components (0.f - 1.f)
+-(CGFloat)kfx_normalisedGreenComponent{
+	const CGFloat *components = CGColorGetComponents(self.CGColor);
+	return components[2];
+}
+
+
+//--------------------------------------------------------
+#pragma mark Colour Description
+//--------------------------------------------------------
+-(NSString*)kfx_hexString{
+	
+	const CGFloat *components = CGColorGetComponents(self.CGColor);
+	
+	CGFloat red = components[0];
+	CGFloat greeen = components[1];
+	CGFloat blue = components[2];
+	
+	return [NSString stringWithFormat:@"%02lX%02lX%02lX", lroundf(red * 255), lroundf(greeen * 255), lroundf(blue * 255)];
+}
+
+
+//--------------------------------------------------------
+#pragma mark Comparison
+//--------------------------------------------------------
+-(BOOL)kfx_isEqualToColor:(UIColor*)anotherColor{
+	
+	if (self == anotherColor)
+		return YES;
+	
+	CGColorSpaceRef colorSpaceRGB = CGColorSpaceCreateDeviceRGB();
+	
+	UIColor *(^convertColorToRGBSpace)(UIColor*) = ^(UIColor *color)
+	{
+		if (CGColorSpaceGetModel(CGColorGetColorSpace(color.CGColor)) == kCGColorSpaceModelMonochrome)
+		{
+			const CGFloat *oldComponents = CGColorGetComponents(color.CGColor);
+			CGFloat components[4] = {oldComponents[0], oldComponents[0], oldComponents[0], oldComponents[1]};
+			CGColorRef colorRef = CGColorCreate(colorSpaceRGB, components);
+			UIColor *color = [UIColor colorWithCGColor:colorRef];
+			CGColorRelease(colorRef);
+			return color;
+		}
+		else
+			return color;
+	};
+	
+	UIColor *selfColor = convertColorToRGBSpace(self);
+	anotherColor = convertColorToRGBSpace(anotherColor);
+	CGColorSpaceRelease(colorSpaceRGB);
+	
+	return [selfColor isEqual:anotherColor];
+}
+
+
 //======================================================
 #pragma mark - ** Colours **
 //======================================================

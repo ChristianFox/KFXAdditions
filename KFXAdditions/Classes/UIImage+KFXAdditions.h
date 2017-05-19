@@ -5,6 +5,15 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (KFXAdditions)
 
+
+//--------------------------------------------------------
+#pragma mark Initilise
+//--------------------------------------------------------
++(instancetype)kfx_imageWithColour:(UIColor*)colour size:(CGSize)size;
+
+
+
+
 #pragma mark - Resizing & Cropping
 /**
  *  Returns a copy of this image that is cropped to the given bounds. This method ignores the image's imageOrientation setting.
@@ -43,6 +52,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIImage *)kfx_resizedImageWithContentMode:(UIViewContentMode)contentMode
                                   bounds:(CGSize)bounds
                     interpolationQuality:(CGInterpolationQuality)quality;
+
+/**
+ *  Resizes the image to the specified size
+ * @param size the size to make the final image
+ * @return a new image, scaled to the appropriate size
+ */
+-(UIImage*)kfx_resizedImageToSize:(CGSize)size;
+
+
+/**
+ *  Resizes the image to fit in the specified size.
+ * @param boundingSize the size that the final image should fit within
+ * @param scale Should the image be scaled up if it is already smaller than the bounding size
+ * @return a new image, scaled to the appropriate size
+ */
+-(UIImage*)kfx_resizedImageToFitInSize:(CGSize)boundingSize scaleIfSmaller:(BOOL)scale;
 
 
 #pragma mark - Alpha Channels
@@ -86,6 +111,22 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark Tint Image
 //--------------------------------------------------------
 +(UIImage*)kfx_tintImage:(UIImage *)image withColor:(UIColor *)color;
+-(UIImage*)kfx_tintedImageWthColor:(UIColor *)color;
+
+
+//--------------------------------------------------------
+#pragma mark Masks
+//--------------------------------------------------------
+/**
+ *  Creates a copy of this image masked with the given image
+ *
+ *  @param maskImage The image to use as a mask. This image should contain grayscale pixesl. 100% result in the receiver's pixels being opaque, 0% black result in total transparency
+ *
+ *  @return a copy of this image masked by the given image
+ */
+
+-(UIImage*)kfx_imageMaskedWithImage:(UIImage *)maskImage;
+
 
 
 

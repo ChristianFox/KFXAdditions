@@ -7,6 +7,16 @@
 @implementation UIViewController (KFXAdditions)
 
 
+//--------------------------------------------------------
+#pragma mark Init
+//--------------------------------------------------------
++(instancetype)kfx_instantiateFromNib{
+	return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class])
+										 owner:nil
+									   options:nil].firstObject;
+}
+
+
 
 //--------------------------------------------------------
 #pragma mark - Navigation

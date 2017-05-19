@@ -6,6 +6,20 @@
 
 @implementation NSObject (KFXAdditions)
 
+
+//--------------------------------------------------------
+#pragma mark Class Name
+//--------------------------------------------------------
++(NSString*)kfx_className{
+	return NSStringFromClass(self);
+}
+
+-(NSString*)kfx_className{
+	return NSStringFromClass([self class]);
+}
+
+
+
 #pragma mark - Properties of a class (introspection?)
 static const char *getPropertyType(objc_property_t property) {
     const char *attributes = property_getAttributes(property);

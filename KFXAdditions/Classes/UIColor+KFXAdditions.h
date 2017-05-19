@@ -7,7 +7,9 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface UIColor (KFXAdditions)
 
-
+//======================================================
+#pragma mark - ** Create Colours **
+//======================================================
 //--------------------------------------------------------
 #pragma mark - Hex Colours
 //--------------------------------------------------------
@@ -48,6 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @ref https://gist.github.com/kylefox/1689973
  **/
 +(UIColor*)kfx_randomColourAvoidingBlackAndWhiteWithAlpha:(CGFloat)alpha;
+
 
 
 //--------------------------------------------------------
@@ -100,6 +103,52 @@ NS_ASSUME_NONNULL_BEGIN
                                  saturation:(CGFloat)saturation
                                  brightness:(CGFloat)brightness
                                       alpha:(CGFloat)alpha;
+
+
+//--------------------------------------------------------
+#pragma mark Inverted Colours
+//--------------------------------------------------------
+/// Return the invert color corresponding to the receiver
+-(UIColor*)kfx_invertedColour;
+
+
+
+//======================================================
+#pragma mark - ** Read  **
+//======================================================
+//--------------------------------------------------------
+#pragma mark Components
+//--------------------------------------------------------
+/// Return non-normalized red color components (0 - 255)
+-(NSUInteger)kfx_redComponent;
+
+/// Return non-normalized blue color components (0 - 255)
+-(NSUInteger)kfx_blueComponent;
+
+/// Return non-normalized green color components (0 - 255)
+-(NSUInteger)kfx_greenComponent;
+
+/// Return normalized red color components (0.f - 1.f)
+-(CGFloat)kfx_normalisedRedComponent;
+
+/// Return normalized blue color components (0.f - 1.f)
+-(CGFloat)kfx_normalisedBlueComponent;
+
+/// Return normalized green color components (0.f - 1.f)
+-(CGFloat)kfx_normalisedGreenComponent;
+
+
+//--------------------------------------------------------
+#pragma mark Colour Description
+//--------------------------------------------------------
+-(NSString*)kfx_hexString;
+
+
+//--------------------------------------------------------
+#pragma mark Comparison
+//--------------------------------------------------------
+-(BOOL)kfx_isEqualToColor:(UIColor*)colour;
+
 
 
 //======================================================

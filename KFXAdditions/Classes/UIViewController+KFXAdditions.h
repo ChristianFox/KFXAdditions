@@ -5,6 +5,11 @@
 @interface UIViewController (KFXAdditions)
 
 
+//--------------------------------------------------------
+#pragma mark Init
+//--------------------------------------------------------
+/// Assumes the nib has the same name as the class. Loads nib with nil owner and options
++(instancetype)kfx_instantiateFromNib;
 
 
 //--------------------------------------------------------

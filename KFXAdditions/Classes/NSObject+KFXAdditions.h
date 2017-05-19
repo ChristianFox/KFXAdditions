@@ -6,6 +6,16 @@
 @interface NSObject (KFXAdditions)
 
 
+
+//--------------------------------------------------------
+#pragma mark Class Name
+//--------------------------------------------------------
++(NSString*)kfx_className;
+-(NSString*)kfx_className;
+
+
+
+
 #pragma mark - Properties of a class (introspection?)
 + (NSDictionary *)kfx_propertiesOfClass:(Class)klass;
 
