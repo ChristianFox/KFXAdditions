@@ -1,5 +1,10 @@
 
 # ChangeLog - KFXAdditions
+## 0.34.0
+- Updates Licence file
+
+## 0.33.1
+- Fix code error: NSError+KFXAdditions not getting the bundleId correctly
 
 ## 0.33.0
 - NSError+KFXAdditions: fixes some string format errors

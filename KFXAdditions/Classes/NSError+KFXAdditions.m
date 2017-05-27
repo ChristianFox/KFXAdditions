@@ -135,8 +135,8 @@
 #pragma mark Error Domain / Bundle id
 //--------------------------------------------------------
 +(NSString*)kfx_appBundleIdentifier{
-	
-	return [[NSBundle mainBundle]objectForInfoDictionaryKey:@"CFBundleIdentifer"];
+    NSString *bundleID = [[NSBundle mainBundle]bundleIdentifier];
+    return bundleID;
 }
 +(NSString*)kfx_errorDomainWithSender:(id)sender{
 	
