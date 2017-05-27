@@ -1,10 +1,12 @@
-//
-//  NSFileManager+KFXDirectoryLocations.h
-//  FilesAndDocumentsExperiments
-//
-//  Created by Eyeye on 28/08/2014.
-//  Copyright (c) 2014 KFX Tech LTD. All rights reserved.
-//
+/********************************
+ *
+ * Copyright © 2016-2017 Christian Fox
+ * All Rights Reserved
+ * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ *
+ * This file is included with KFXAdditions
+ *
+ ************************************/
 
 #import <Foundation/Foundation.h>
 

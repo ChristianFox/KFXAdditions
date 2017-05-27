@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.35.1
+- Updates License headers
+
 ## 0.35.0
 - Sort categories into folders
 
