@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.35.2
+- updates podspec
+
 ## 0.35.1
 - Updates License headers
 
