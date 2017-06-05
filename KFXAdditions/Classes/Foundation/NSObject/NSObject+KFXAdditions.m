@@ -88,12 +88,12 @@ static const char *getPropertyType(objc_property_t property) {
 
 
 #pragma mark - Blocks
--(void)kfx_waitUntilDone:(void(^)(void))waitBlock {
-    //use your statement or call method here
-    if(waitBlock){
-        waitBlock();
-    }
-}
+//-(void)kfx_waitUntilDone:(void(^)(void))waitBlock {
+//    //use your statement or call method here
+//    if(waitBlock){
+//        waitBlock();
+//    }
+//}
 - (void) kfx_performBlock: (dispatch_block_t) block
            afterDelay: (NSTimeInterval) delay;
 {

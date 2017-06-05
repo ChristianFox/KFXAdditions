@@ -95,8 +95,14 @@
         return (types & UIUserNotificationTypeAlert);
     }
     else {
-        UIRemoteNotificationType types = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
-        return (types & UIRemoteNotificationTypeAlert);
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+		
+		UIRemoteNotificationType types = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
+		return (types & UIRemoteNotificationTypeAlert);
+		
+#pragma clang diagnostic pop
+
     }
 }
 

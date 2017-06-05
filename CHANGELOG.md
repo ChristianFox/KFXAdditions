@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.35.3
+- Adds #pragma clang diagnostic ignored '-Wdeprecated-declarations' to UIApplication+KFXAdditions +kfx_pushNotificationsEnabled; 
+
 ## 0.35.2
 - updates podspec
 

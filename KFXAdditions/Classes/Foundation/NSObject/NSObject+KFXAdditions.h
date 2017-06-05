@@ -30,7 +30,7 @@
 
 
 #pragma mark - Blocks 
--(void)kfx_waitUntilDone:(void(^)(void))waitBlock;
+//-(void)kfx_waitUntilDone:(void(^)(void))waitBlock;
 
 /**
  * @ref http://www.brianjcoleman.com/tutorial-run-a-block-of-code-after-a-delay/
