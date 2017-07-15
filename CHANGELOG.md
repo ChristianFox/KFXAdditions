@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.36.0 - Switch to new bb repo
+
 ## 0.35.3
 - Adds #pragma clang diagnostic ignored '-Wdeprecated-declarations' to UIApplication+KFXAdditions +kfx_pushNotificationsEnabled; 
 
