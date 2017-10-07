@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/NSObject+KFXAdditions.h
+../../../../../KFXAdditions/Classes/Foundation/NSObject/NSObject+KFXAdditions.h

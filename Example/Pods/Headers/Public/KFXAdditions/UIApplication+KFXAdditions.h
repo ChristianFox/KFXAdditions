@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/UIApplication+KFXAdditions.h
+../../../../../KFXAdditions/Classes/UIKit/UIApplication/UIApplication+KFXAdditions.h

@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/UIResponder+KFXAdditions.h
+../../../../../KFXAdditions/Classes/UIKit/UIResponder/UIResponder+KFXAdditions.h

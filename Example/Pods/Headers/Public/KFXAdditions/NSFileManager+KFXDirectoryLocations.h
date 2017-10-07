@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/NSFileManager+KFXDirectoryLocations.h
+../../../../../KFXAdditions/Classes/Foundation/NSFileManager/NSFileManager+KFXDirectoryLocations.h

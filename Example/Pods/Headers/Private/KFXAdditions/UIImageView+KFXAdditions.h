@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/UIImageView+KFXAdditions.h
+../../../../../KFXAdditions/Classes/UIKit/UIImageView/UIImageView+KFXAdditions.h

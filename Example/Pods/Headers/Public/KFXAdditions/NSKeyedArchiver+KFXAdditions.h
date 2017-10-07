@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/NSKeyedArchiver+KFXAdditions.h
+../../../../../KFXAdditions/Classes/Foundation/Archiving/NSKeyedArchiver+KFXAdditions.h

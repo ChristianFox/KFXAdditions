@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/UICollectionViewController+KFXAdditions.h
+../../../../../KFXAdditions/Classes/UIKit/View Controllers/UICollectionViewController+KFXAdditions.h

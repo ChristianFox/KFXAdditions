@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/NSDate+KFXAdditions.h
+../../../../../KFXAdditions/Classes/Foundation/NSDate/NSDate+KFXAdditions.h

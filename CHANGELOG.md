@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXAdditions
 
+## 0.36.1 - Fix bug because calling [NSThread mainThread] instead of [NSThread isMainThread]
+
 ## 0.36.0 - Switch to new bb repo
 
 ## 0.35.3

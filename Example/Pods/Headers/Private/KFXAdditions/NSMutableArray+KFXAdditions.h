@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/NSMutableArray+KFXAdditions.h
+../../../../../KFXAdditions/Classes/Foundation/Collections/NSMutableArray+KFXAdditions.h

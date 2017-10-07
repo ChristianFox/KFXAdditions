@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/NSDictionary+KFXAdditions.h
+../../../../../KFXAdditions/Classes/Foundation/Collections/NSDictionary+KFXAdditions.h

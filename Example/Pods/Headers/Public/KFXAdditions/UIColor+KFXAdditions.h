@@ -1,1 +1,1 @@
-../../../../../KFXAdditions/Classes/UIColor+KFXAdditions.h
+../../../../../KFXAdditions/Classes/UIKit/UIColor/UIColor+KFXAdditions.h
