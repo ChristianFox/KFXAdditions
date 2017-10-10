@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFXAdditions"
-  s.version          = "0.36.1"
+  s.version          = "1.0.0"
   s.summary          = "A collection of categories on Foundation & Cocoa classes."
 
   s.description      = <<-DESC

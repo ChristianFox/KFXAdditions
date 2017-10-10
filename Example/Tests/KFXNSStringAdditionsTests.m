@@ -266,13 +266,55 @@
 
 
 //--------------------------------------------------------
-#pragma mark -
+#pragma mark - -indexOfSubstring
 //--------------------------------------------------------
+-(void)testIndexOfSubstring{
+    
+    // GIVEN
+    NSString *string = @"123456789 ten ten ten 11 12";
+    NSString *substring = @"ten";
+    NSUInteger expected = 10;
+    
+    // WHEN
+    NSUInteger received = [string kfx_indexOfSubstring:substring];
+    
+    // THEN
+    XCTAssertEqual(received, expected);
+}
 
+-(void)testIndexOfSubstringFromIndex{
+    
+    // GIVEN
+    NSString *string = @"123456789 ten ten ten 11 12";
+    NSString *substring = @"ten";
+    NSUInteger expected1 = 10;
+    NSUInteger expected2 = 14;
+    NSUInteger expected3 = 18;
+    
+    // WHEN
+    NSUInteger received1 = [string kfx_indexOfSubstring:substring fromIndex:0];
+    NSUInteger received2 = [string kfx_indexOfSubstring:substring fromIndex:received1+1];
+    NSUInteger received3 = [string kfx_indexOfSubstring:substring fromIndex:received2+1];
+    
+    // THEN
+    XCTAssertEqual(received1, expected1);
+    XCTAssertEqual(received2, expected2);
+    XCTAssertEqual(received3, expected3);
+}
 
-
-
-
+-(void)testIndexOfLastSubstring{
+    
+    // GIVEN
+    NSString *string = @"123456789 ten ten ten 11 12";
+    NSString *substring = @"ten";
+    NSUInteger expected = 18;
+    
+    // WHEN
+    NSUInteger received = [string kfx_indexOfLastSubstring:substring];
+    
+    // THEN
+    XCTAssertEqual(received, expected);
+}
 
 
 

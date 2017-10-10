@@ -1,6 +1,15 @@
 
 # ChangeLog - KFXAdditions
 
+## 1.0.0 -
+- Adds convience headers for importing all additions
+- Adds UIButton+KFXAdditions
+- Adds UITableView+KFXAdditions
+- Adds MKMapKit+KFXAdditions
+- Adds methods to UIView+KFXAdditions
+- Adds methods to NSString+KFXAdditions
+- Adds methods to NSDate+KFXAdditions
+
 ## 0.36.1 - Fix bug because calling [NSThread mainThread] instead of [NSThread isMainThread]
 
 ## 0.36.0 - Switch to new bb repo
