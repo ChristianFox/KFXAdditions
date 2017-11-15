@@ -3,7 +3,7 @@
 
 #import <XCTest/XCTest.h>
 // SUT
-#import "NSSet+KFXAdditions.h"
+#import <KFXAdditions/NSSet+KFXAdditions.h>
 
 @interface NSSetKFXAdditionsTests : XCTestCase
 

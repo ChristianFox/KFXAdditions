@@ -27,6 +27,6 @@
 #import <KFXAdditions/NSObject+KFXAdditions.h>
 #import <KFXAdditions/NSAttributedString+KFXAdditions.h>
 #import <KFXAdditions/NSString+KFXAdditions.h>
-
+#import <KFXAdditions/NSURL+KFXAdditions.h>
 
 #endif /* FoundationAdditions_h */

@@ -1,6 +1,14 @@
 
 # ChangeLog - KFXAdditions
 
+### 1.1.0 - More additions
+- Adds UIBezierPath+KFXAdditions
+- Adds +kfx_arrayByCombingObjectsFromArrays: to NSArray
+- Adds documenting comments to CLLocation+KFXAdditions
+- Adds new initiliser to CLLocation
+- Adds -kfx_addRoundedCorners: to UIView
+- Adds NSURL+KFXAdditions with kfx_queryParameters
+
 ## 1.0.0 -
 - Adds convience headers for importing all additions
 - Adds UIButton+KFXAdditions

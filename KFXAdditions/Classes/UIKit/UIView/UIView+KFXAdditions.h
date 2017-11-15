@@ -48,6 +48,11 @@
 -(void)kfx_addBorderWithRadius:(CGFloat)radius
 						 width:(CGFloat)borderWidth
 						colour:(UIColor*)colour;
+/*
+ https://coderwall.com/p/rxat4a/uiview-category-for-rounding-just-the-corners-which-you-want-not-all-like-calayer-cornerradius
+ */
+/// Round only the specified corners
+-(void)kfx_addRoundedCorners:(UIRectCorner)corners radius:(CGFloat)radius;
 
 
 //--------------------------------------------------------

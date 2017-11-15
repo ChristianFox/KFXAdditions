@@ -5,6 +5,15 @@
 target 'KFXAdditions_Example' do
     pod 'KFXAdditions', :path => '../'
     
+    ## Sources
+    ### If using private pods
+    source 'https://kfxtech@bitbucket.org/kfx_pods/kfxsharedspecs'
+    
+    
+    ### If using from trunk
+    source 'http://github.com/Cocoapods/Specs.git'
+
+    
     target 'KFXAdditions_Tests' do
         inherit! :search_paths
         
