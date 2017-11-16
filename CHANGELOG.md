@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXAdditions
 
+### 1.1.1 - minor fixes
+
 ### 1.1.0 - More additions
 - Adds UIBezierPath+KFXAdditions
 - Adds +kfx_arrayByCombingObjectsFromArrays: to NSArray
