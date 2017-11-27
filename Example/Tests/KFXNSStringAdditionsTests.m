@@ -317,6 +317,156 @@
 }
 
 
+//--------------------------------------------------------
+#pragma mark Queries
+//--------------------------------------------------------
+-(void)testMatchPercentageWithOtherString_WithTwoEmptyStrings{
+    
+    // GIVEN
+    NSString *reciver = @"";
+    NSString *other = @"";
+    CGFloat expected = 0.0;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+-(void)testMatchPercentageWithOtherString_WithTwoEqualOneLetterStrings{
+    
+    // GIVEN
+    NSString *reciver = @"a";
+    NSString *other = @"a";
+    CGFloat expected = 1.0;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+-(void)testMatchPercentageWithOtherString_WithTwoUnequalOneLetterStrings{
+    
+    // GIVEN
+    NSString *reciver = @"a";
+    NSString *other = @"b";
+    CGFloat expected = 0.0;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+-(void)testMatchPercentageWithOtherString_WithUnequalStrings_1{
+    
+    // GIVEN
+    NSString *reciver = @"ab";
+    NSString *other = @"a";
+    CGFloat expected = 0.5;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+-(void)testMatchPercentageWithOtherString_WithUnequalStrings_2{
+    
+    // GIVEN
+    NSString *reciver = @"abc";
+    NSString *other = @"abc";
+    CGFloat expected = 1.0;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+-(void)testMatchPercentageWithOtherString_WithUnequalStrings_3{
+    
+    // GIVEN
+    NSString *reciver = @"abcd";
+    NSString *other = @"a";
+    CGFloat expected = 0.25;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+-(void)testMatchPercentageWithOtherString_WithUnequalStrings_4{
+    
+    // GIVEN
+    NSString *reciver = @"abcd";
+    NSString *other = @"abc";
+    CGFloat expected = 0.75;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+-(void)testMatchPercentageWithOtherString_WithUnequalStrings_5{
+    
+    // GIVEN
+    NSString *reciver = @"ab";
+    NSString *other = @"abcd";
+    CGFloat expected = 0.5;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+-(void)testMatchPercentageWithOtherString_WithUnequalStrings_6{
+    
+    // GIVEN
+    NSString *reciver = @"a";
+    NSString *other = @"abcd";
+    CGFloat expected = 0.75;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+-(void)testMatchPercentageWithOtherString_WithUnequalStrings_7{
+    
+    // GIVEN
+    NSString *reciver = @"abcdEFGHIJKLMNOP";
+    NSString *other = @"abcdefghijklmnop";
+    CGFloat expected = 0.25;
+    
+    // WHEN
+    CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
+    
+    // THEN
+    XCTAssertEqual(expected, result);
+}
+
+
+
+
+
+
+
+
 
 
 @end

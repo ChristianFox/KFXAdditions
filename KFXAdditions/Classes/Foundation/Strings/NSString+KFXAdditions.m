@@ -176,6 +176,43 @@
     return finalIndex;
 }
 
+-(CGFloat)kfx_matchPercentageWithOtherString:(NSString *)visitorString{
+    
+    if ([self isEqualToString:visitorString]) {
+        return 1.0;
+    }
+    
+    NSInteger matchCount = 0;
+    NSInteger receiverLength = self.length;
+    NSInteger visitorLength = visitorString.length;
+    NSInteger longestLength;
+
+    if (receiverLength >= visitorLength) {
+        longestLength = receiverLength;
+        for (NSInteger idx = 0; idx < receiverLength; idx++) {
+            
+            if (idx < visitorLength) {
+                unichar rC = [self characterAtIndex:idx];
+                unichar vC = [visitorString characterAtIndex:idx];
+                matchCount += (rC == vC);
+            }
+        }
+    }else{
+        longestLength = visitorLength;
+        for (NSInteger idx = 0; idx < visitorLength; idx++) {
+            
+            if (idx < receiverLength) {
+                unichar rC = [self characterAtIndex:idx];
+                unichar vC = [visitorString characterAtIndex:idx];
+                matchCount += (rC == vC);
+            }
+        }
+    }
+    
+    return (CGFloat)matchCount / (CGFloat)longestLength;
+}
+
+
 //--------------------------------------------------------
 #pragma mark - New String with edits
 //--------------------------------------------------------

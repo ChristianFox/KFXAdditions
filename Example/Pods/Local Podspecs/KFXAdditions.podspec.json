@@ -1,6 +1,6 @@
 {
   "name": "KFXAdditions",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "summary": "A collection of categories on Foundation & Cocoa classes.",
   "description": "A collection of categories on Foundation & Cocoa classes. Including: NSString,NSArray, UIResponder, UIApplication.",
   "homepage": "https://kfxtech@bitbucket.org/kfx_pods/kfxadditions.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://kfxtech@bitbucket.org/kfx_pods/kfxadditions.git",
-    "tag": "1.1.0"
+    "tag": "1.2.0"
   },
   "platforms": {
     "ios": "8.0"

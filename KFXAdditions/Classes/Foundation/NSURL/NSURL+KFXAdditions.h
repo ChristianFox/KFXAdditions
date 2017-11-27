@@ -13,7 +13,7 @@
 
 @interface NSURL (KFXAdditions)
 
-
+/// Returns the keys and values of the parameters from the url
 -(NSDictionary<NSString*,NSString*>*)kfx_queryParameters;
 
 @end

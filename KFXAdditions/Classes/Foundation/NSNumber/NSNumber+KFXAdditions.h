@@ -17,10 +17,16 @@
 #pragma mark Comparison Convienence Methods
 //--------------------------------------------------------
 /// Returns the lowest number out of the receiver and anotherNumber
-- (NSNumber *)kfx_lowestNumber:(NSNumber *)anotherNumber;
+-(NSNumber *)kfx_lowestNumber:(NSNumber *)anotherNumber;
+
+/// Returns the lowest number from the array of numbers
++(NSNumber *)kfx_lowestNumberFromNumbers:(NSArray<NSNumber*>*)otherNumbers;
 
 /// Returns the highest number out of the receiver and anotherNumber
-- (NSNumber *)kfx_highestNumber:(NSNumber *)anotherNumber;
+-(NSNumber *)kfx_highestNumber:(NSNumber *)anotherNumber;
+
+/// Returns the highest number from the array of numbers
++(NSNumber *)kfx_highestNumberFromNumbers:(NSArray<NSNumber*>*)otherNumbers;
 
 /// Returns YES if the receiver == anotherNumber
 -(BOOL)kfx_isEqualToNumber:(NSNumber *)anotherNumber;

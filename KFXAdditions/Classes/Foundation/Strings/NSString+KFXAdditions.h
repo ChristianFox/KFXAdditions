@@ -86,6 +86,17 @@ NS_ASSUME_NONNULL_BEGIN
  **/
 -(NSUInteger)kfx_indexOfLastSubstring:(NSString*)substring;
 
+
+/*
+ TODO: -kfx_matchPercentageWithOtherString:
+ */
+/**
+ * @brief Calculate the percentage of characters in the otherString that match with the receiver
+ * @param otherString An NSString to compare with the receiver
+ * @return A value between 0.0 & 1.0 representing the percentage of matching characters
+ **/
+-(CGFloat)kfx_matchPercentageWithOtherString:(NSString*)otherString;
+
 //--------------------------------------------------------
 #pragma mark - New String with edits
 //--------------------------------------------------------
@@ -113,12 +124,16 @@ NS_ASSUME_NONNULL_BEGIN
 //--------------------------------------------------------
 #pragma mark - Attributed String
 //--------------------------------------------------------
+/// Returns an NSAttributedString with the string set to the receiver and no attributes
 -(NSAttributedString *)kfx_attributedString;
+
+/// Returns an NSAttributedString with the string set to the receiver and with the given attributes
 -(NSAttributedString *)kfx_attributedStringWithAttributes:(NSDictionary *)attributes;
 
 //--------------------------------------------------------
 #pragma mark - Ranges
 //--------------------------------------------------------
+/// Returns the NSRange for the receiver
 -(NSRange)kfx_rangeOfString;
 
 

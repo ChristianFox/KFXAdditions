@@ -14,6 +14,15 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface NSKeyedArchiver (KFXAdditions)
 
+
+/**
+ * @brief Archive an object to disk
+ * @param object The object to archive
+ * @param dirPath The path of the directory to save the object to
+ * @param fileName The name of the file
+ * @param error If an error occurs, upon return contains an NSError object that describes the problem.
+ * @return YES if the object was archived, NO if not
+ **/
 +(BOOL)kfx_archiveRootObject:(id)object
              toDirectoryPath:(NSString*)dirPath
                 withFileName:(NSString*)fileName

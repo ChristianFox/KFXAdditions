@@ -1,6 +1,12 @@
 
 # ChangeLog - KFXAdditions
 
+### 1.2.0
+- Adds more documenting comments
+- Adds more methods to NSDate: -kfx_isToday;, -kfx_isThisMonth;, -kfx_isThisYear;
+- Adds more convinence initilisers to NSAttributedString
+- Adds -kfx_matchPercentageWithOtherString: to NSString
+
 ### 1.1.1 - minor fixes
 
 ### 1.1.0 - More additions

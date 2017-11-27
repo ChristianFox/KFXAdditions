@@ -90,6 +90,34 @@
 			&& [compA minute]==[compB minute]);
 }
 
+//--------------------------------------------------------
+#pragma mark Queries
+//--------------------------------------------------------
+/// Returns YES is the receiver takes place in today
+-(BOOL)kfx_isToday{
+    
+    NSDateComponents *thisComp = [self kfx_currentCalendarDateComponents];
+    NSDateComponents *todayComp = [[NSDate date] kfx_currentCalendarDateComponents];
+    return (thisComp.year == todayComp.year
+            && thisComp.weekOfYear == todayComp.weekOfYear
+            && thisComp.day == todayComp.day);
+}
+
+/// Returns YES is the receiver takes place this month
+-(BOOL)kfx_isThisMonth{
+    NSDateComponents *thisComp = [self kfx_currentCalendarDateComponents];
+    NSDateComponents *todayComp = [[NSDate date] kfx_currentCalendarDateComponents];
+    return (thisComp.year == todayComp.year
+            && thisComp.month == todayComp.month);
+}
+
+/// Returns YES is the receiver takes place this year
+-(BOOL)kfx_isThisYear{
+    NSDateComponents *thisComp = [self kfx_currentCalendarDateComponents];
+    NSDateComponents *todayComp = [[NSDate date] kfx_currentCalendarDateComponents];
+    return (thisComp.year == todayComp.year);
+}
+
 
 
 //--------------------------------------------------------
@@ -180,7 +208,7 @@
 	
 	NSCalendar *calendar = [NSCalendar currentCalendar];
 	
-	return [calendar components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitWeekday | NSCalendarUnitWeekOfMonth| NSCalendarUnitHour | NSCalendarUnitMinute fromDate:self];
+	return [calendar components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitWeekday | NSCalendarUnitWeekOfMonth| NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:self];
 }
 
 

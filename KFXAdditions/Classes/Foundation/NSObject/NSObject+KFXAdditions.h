@@ -18,14 +18,16 @@
 //--------------------------------------------------------
 #pragma mark Class Name
 //--------------------------------------------------------
+/// Returns the class name for the receiving class
 +(NSString*)kfx_className;
+
+/// Returns the class name for the receiving object
 -(NSString*)kfx_className;
 
 
-
-
 #pragma mark - Properties of a class (introspection?)
-+ (NSDictionary *)kfx_propertiesOfClass:(Class)klass;
+/// Returns an NSDictionary where keys are property names and values ar the property type
++(NSDictionary *)kfx_propertiesOfClass:(Class)klass;
 
 
 
