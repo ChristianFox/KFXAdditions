@@ -10,6 +10,9 @@
 
 
 #import <Foundation/Foundation.h>
+@import UIKit.UIFont;
+@import UIKit.UIColor;
+@import CoreGraphics;
 
 @interface NSAttributedString (KFXAdditions)
 

@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXAdditions
 
+### 1.2.1
+- Fixes issue with NSAttributedString+KFXAdditions because UIFont, UIColor and CoreGraphics needed to be imported
+
 ### 1.2.0
 - Adds more documenting comments
 - Adds more methods to NSDate: -kfx_isToday;, -kfx_isThisMonth;, -kfx_isThisYear;
