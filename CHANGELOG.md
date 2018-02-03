@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXAdditions
 
+### 1.2.2
+- Fixes issue with NSAttributedString+KFXAdditions because NSText needed to be imported
+
 ### 1.2.1
 - Fixes issue with NSAttributedString+KFXAdditions because UIFont, UIColor and CoreGraphics needed to be imported
 
