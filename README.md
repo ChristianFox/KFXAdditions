@@ -20,9 +20,18 @@ it, simply add the following line to your Podfile:
 pod "KFXAdditions"
 ```
 
+## Overview
+
+Various categories of Cocoa/Touch classes including classes from UIKit, Foundation and CoreLocation.
+
+
+## Note
+
+The code in these categories comes from various sources and have been collected over a number of years. Some is lifted straight from StackOverflow, some has been half-inched from other open source libraries and some I've written myself. I've tried to put credits when the code was written by someone else but I know I haven't always so if you recognised some code and care enough to want a credit & link then let me know and I'll be happy to oblige.
+
 ## Author
 
-Christian Fox, christianfox890@icloud.com
+Christian Fox, christianfox@kfxtech.com
 
 ## License
 

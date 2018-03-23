@@ -1,6 +1,10 @@
 
 # ChangeLog - KFXAdditions
 
+### 2.0.0...
+- Update Readme, Licence and podspec
+- Move project to github
+
 ### 1.2.2
 - Fixes issue with NSAttributedString+KFXAdditions because NSText needed to be imported
 

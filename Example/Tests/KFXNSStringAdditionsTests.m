@@ -1,10 +1,3 @@
-//
-//  KFXNSStringAdditionsTests.m
-//  KFXAdditions
-//
-//  Created by Eyeye on 14/08/2016.
-//  Copyright © 2016 Christian Fox. All rights reserved.
-//
 
 #import <XCTest/XCTest.h>
 #import "NSString+KFXAdditions.h"
@@ -325,7 +318,7 @@
     // GIVEN
     NSString *reciver = @"";
     NSString *other = @"";
-    CGFloat expected = 0.0;
+    CGFloat expected = 1.0;
     
     // WHEN
     CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
@@ -437,7 +430,7 @@
     // GIVEN
     NSString *reciver = @"a";
     NSString *other = @"abcd";
-    CGFloat expected = 0.75;
+    CGFloat expected = 0.25;
     
     // WHEN
     CGFloat result = [reciver kfx_matchPercentageWithOtherString:other];
