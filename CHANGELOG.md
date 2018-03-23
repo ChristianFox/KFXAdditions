@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXAdditions
 
+### 2.0.1 | Updates README.md, adds unimplemented method to NSAttributedString+KFXAdditions
+
 ### 2.0.0...
 - Update Readme, Licence and podspec
 - Move project to github

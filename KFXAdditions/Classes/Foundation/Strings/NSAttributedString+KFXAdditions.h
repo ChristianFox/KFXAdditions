@@ -57,6 +57,12 @@
                                colour:(UIColor*)colour
                             kerning:(CGFloat)kerning;
 
+/// Returns an NSAttributedString with the given string and the attributes
++(instancetype)kfx_instanceWithString:(NSString*)string
+                                 font:(UIFont*)font
+                               colour:(UIColor*)colour
+                            alignment:(NSTextAlignment)alignment
+                              kerning:(CGFloat)kerning;
 
 //--------------------------------------------------------
 #pragma mark - Ranges

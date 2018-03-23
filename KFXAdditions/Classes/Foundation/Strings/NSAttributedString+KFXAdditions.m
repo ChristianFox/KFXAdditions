@@ -112,8 +112,26 @@
 +(instancetype)kfx_instanceWithString:(NSString*)string
                                  font:(UIFont*)font
                                colour:(UIColor*)colour
-                            alignment:(NSTextAlignment)alignment
                           kerning:(CGFloat)kerning{
+    
+    if (string == nil || font == nil || colour == nil) {
+        return nil;
+    }
+    NSDictionary *attributes = @{
+                                 NSFontAttributeName:font,
+                                 NSForegroundColorAttributeName:colour,
+                                 NSKernAttributeName:@(kerning)
+                                 };
+    NSAttributedString *attString = [self kfx_instanceWithString:string attributes:attributes];
+    return attString;
+}
+
+/// Returns an NSAttributedString with the given string and the attributes
++(instancetype)kfx_instanceWithString:(NSString*)string
+                                 font:(UIFont*)font
+                               colour:(UIColor*)colour
+                            alignment:(NSTextAlignment)alignment
+                              kerning:(CGFloat)kerning{
     
     if (string == nil || font == nil || colour == nil) {
         return nil;
@@ -129,7 +147,6 @@
     NSAttributedString *attString = [self kfx_instanceWithString:string attributes:attributes];
     return attString;
 }
-
 
 //--------------------------------------------------------
 #pragma mark - Ranges
