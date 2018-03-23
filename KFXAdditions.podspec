@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFXAdditions"
-  s.version          = "2.0.2"
+  s.version          = "2.0.3"
   s.summary          = "A collection of categories on Foundation & Cocoa classes."
 
   s.description      = <<-DESC
@@ -9,7 +9,7 @@ A collection of categories on Foundation & Cocoa classes. Including: NSString,NS
                        DESC
 
   s.homepage         = "https://github.com/ChristianFox/KFXAdditions.git"
-  s.license          = { :type => 'Commercial', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { "Christian Fox" => "christianfox@kfxtech.com" }
   s.source           = { :git => "https://github.com/ChristianFox/KFXAdditions.git", :tag => s.version.to_s }
 
