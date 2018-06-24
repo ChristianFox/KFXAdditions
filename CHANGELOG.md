@@ -1,6 +1,12 @@
 
 # ChangeLog - KFXAdditions
 
+### 2.1.0 | Various additions
+- Improves this method -kfx_currentCalendarDateComponents; so that it sets the calendar on the NSDateComponents object
+- Adds method to NSDate -kfx_isCloseToDate: withinSeconds:
+- Adds method to CLLocation +locationFromString:withSeparator:
+- Adds methods to NSJSONSerialization for converting a JSON object to a string and vice versa.
+
 ### 2.0.3 | Correctly fixes Licence
 
 ### 2.0.2 | Updates Licence

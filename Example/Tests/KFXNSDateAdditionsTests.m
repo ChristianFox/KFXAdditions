@@ -360,6 +360,27 @@
 }
 
 
+//------------------------
+#pragma mark TEST -kfx_dateByAddingDays:withHour:minute:second:
+//------------------------
+-(void)testDateByAddingDays_With61Minutes_{
+    
+    // GIVEN
+    NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:0];
+    NSDateComponents *expectedComponents = [date kfx_currentCalendarDateComponents];
+    expectedComponents.hour = 1;
+    expectedComponents.minute = 1;
+    
+    // WHEN
+    NSDate *received = [date kfx_dateByAddingDays:0 withHour:0 minute:61 second:0];
+    NSDateComponents *receivedComponents = [received kfx_currentCalendarDateComponents];
+    
+    // THEN
+    XCTAssertNotNil(received);
+    XCTAssertNotNil(receivedComponents);
+    XCTAssertEqualObjects(receivedComponents, expectedComponents);
+    
+}
 
 
 

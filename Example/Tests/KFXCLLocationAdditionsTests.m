@@ -20,10 +20,9 @@
     [super tearDown];
 }
 
-//======================================================
-#pragma mark - ** Test Initilisers with coord adjustments **
-//======================================================
-
+//==========================
+#pragma mark - ** Test Initilisers **
+//==========================
 //--------------------------------------------------------
 #pragma mark - -locationByAdjustingCoordinatesInDegreesWithLatitude
 //--------------------------------------------------------
@@ -112,11 +111,34 @@
     XCTAssertTrue(adjustedLocation.coordinate.longitude > -1.1
                   && adjustedLocation.coordinate.longitude < -0.9);
 
-
 }
 
 
+//------------------------
+#pragma mark Test +kfx_locationFromString:withSeparator:
+//------------------------
+-(void)testLocationFromString_WithValidArgs_ShouldReturnLocation{
+    
+    // GIVEN
+    NSString *coordStr = @"11.111,-22.222";
+    NSString *sepStr = @",";
+    
+    // WHEN
+    CLLocation *location = [CLLocation kfx_locationFromString:coordStr withSeparator:sepStr];
+    
+    // THEN
+    XCTAssertNotNil(location);
+    XCTAssertEqual(location.coordinate.latitude, 11.111);
+    XCTAssertEqual(location.coordinate.longitude, -22.222);
+}
+
+
+
+
 @end
+
+
+
 
 
 

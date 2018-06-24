@@ -13,6 +13,7 @@
 		5B474A571FBC898500072048 /* NSURLKFXAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B474A561FBC898500072048 /* NSURLKFXAdditionsTests.m */; };
 		5B5206151CDB53780047DB8E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5206141CDB53780047DB8E /* Launch Screen.storyboard */; };
 		5B680FB31D60E43F006F25F0 /* KFXNSStringAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B680FB21D60E43F006F25F0 /* KFXNSStringAdditionsTests.m */; };
+		5B84E15220E01C3D000E86CB /* NSJSONSerializationKFXAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E15120E01C3D000E86CB /* NSJSONSerializationKFXAdditionsTests.m */; };
 		5BC0C5861FBF87AE00405381 /* NSNumberKFXAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC0C5851FBF87AE00405381 /* NSNumberKFXAdditionsTests.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -54,6 +55,8 @@
 		5B474A561FBC898500072048 /* NSURLKFXAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLKFXAdditionsTests.m; sourceTree = "<group>"; };
 		5B5206141CDB53780047DB8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5B680FB21D60E43F006F25F0 /* KFXNSStringAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFXNSStringAdditionsTests.m; sourceTree = "<group>"; };
+		5B84E15120E01C3D000E86CB /* NSJSONSerializationKFXAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSJSONSerializationKFXAdditionsTests.m; sourceTree = "<group>"; };
+		5B911CC920D0535D00BDB8DF /* NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = NOTES.md; path = ../NOTES.md; sourceTree = "<group>"; };
 		5BC0C5851FBF87AE00405381 /* NSNumberKFXAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNumberKFXAdditionsTests.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KFXAdditions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFXAdditions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -185,6 +188,7 @@
 				5B15352A1EA77D320001077B /* NSSetKFXAdditionsTests.m */,
 				5B474A561FBC898500072048 /* NSURLKFXAdditionsTests.m */,
 				5BC0C5851FBF87AE00405381 /* NSNumberKFXAdditionsTests.m */,
+				5B84E15120E01C3D000E86CB /* NSJSONSerializationKFXAdditionsTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -207,6 +211,7 @@
 				34DDAC9B44AF28C59B2783E5 /* README.md */,
 				D6D4DC6EFC54CEC13449C8FA /* LICENSE */,
 				DB88D6E81DCB783600A205EB /* CHANGELOG.md */,
+				5B911CC920D0535D00BDB8DF /* NOTES.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -284,7 +289,6 @@
 				ORGANIZATIONNAME = "Christian Fox";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 94Z3AYT2U7;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -354,7 +358,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		24DDF11EFF7C2E54C2A571DD /* 📦 Embed Pods Frameworks */ = {
@@ -477,7 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AB883CF62FD3FB7FB2E3ADA1 /* [CP] Check Pods Manifest.lock */ = {
@@ -559,6 +563,7 @@
 				5B1535271EA774C50001077B /* NSArrayKFXAdditionsTests.m in Sources */,
 				DB6BB7331DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m in Sources */,
 				5B474A571FBC898500072048 /* NSURLKFXAdditionsTests.m in Sources */,
+				5B84E15220E01C3D000E86CB /* NSJSONSerializationKFXAdditionsTests.m in Sources */,
 				5B15352B1EA77D320001077B /* NSSetKFXAdditionsTests.m in Sources */,
 				DB88D6E11DCB699B00A205EB /* KFXCLLocationAdditionsTests.m in Sources */,
 				5B1535291EA77B3E0001077B /* NSDictionaryKFXAdditionsTests.m in Sources */,
@@ -699,7 +704,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 94Z3AYT2U7;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFXAdditions/KFXAdditions-Prefix.pch";
 				INFOPLIST_FILE = "KFXAdditions/KFXAdditions-Info.plist";
@@ -717,7 +722,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 94Z3AYT2U7;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFXAdditions/KFXAdditions-Prefix.pch";
 				INFOPLIST_FILE = "KFXAdditions/KFXAdditions-Info.plist";
