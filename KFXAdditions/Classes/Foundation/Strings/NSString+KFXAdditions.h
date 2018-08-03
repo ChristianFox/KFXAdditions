@@ -10,6 +10,7 @@
 
 
 #import <Foundation/Foundation.h>
+@import CoreGraphics;
 
 typedef NS_OPTIONS(NSUInteger, KFXStringComponent) {
     KFXStringComponentNone = 0,

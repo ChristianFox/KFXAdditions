@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXAdditions
 
+### 2.1.1 | Imports CoreGraphics into NSString so that CGFloat can be used
+
 ### 2.1.0 | Various additions
 - Improves this method -kfx_currentCalendarDateComponents; so that it sets the calendar on the NSDateComponents object
 - Adds method to NSDate -kfx_isCloseToDate: withinSeconds:
