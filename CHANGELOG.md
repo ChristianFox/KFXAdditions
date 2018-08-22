@@ -1,6 +1,12 @@
 
 # ChangeLog - KFXAdditions
 
+### 2.2.0 | Various Additions 
+- Adds methods for converting between NSIndexPaths and view.tags
+- Adds method to UINavigationController for making the nav bar invisible
+- Adds method to NSURL for finding a URL in HTML
+- Adds methods to NSAttributedString for converting HTML to an AttributedString
+
 ### 2.1.1 | Imports CoreGraphics into NSString so that CGFloat can be used
 
 ### 2.1.0 | Various additions

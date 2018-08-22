@@ -49,7 +49,11 @@
 										  toItem:(NSInteger)endItem
 									  inSection:(NSInteger)section;
 
-
+//------------------------
+#pragma mark Converting from/to view Tags
+//------------------------
+-(NSInteger)kfx_viewTag;
++(NSIndexPath*)indexPathForViewTag:(NSInteger)viewTag;
 
 
 @end

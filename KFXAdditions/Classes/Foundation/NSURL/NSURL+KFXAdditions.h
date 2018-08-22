@@ -16,4 +16,6 @@
 /// Returns the keys and values of the parameters from the url
 -(NSDictionary<NSString*,NSString*>*)kfx_queryParameters;
 
++(NSURL*)kfx_urlFromHTMLString:(NSString*)htmlString withError:(NSError**)error;
+
 @end
