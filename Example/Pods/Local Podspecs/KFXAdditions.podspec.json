@@ -22,6 +22,6 @@
     "KFXAdditions/Classes/CoreLocation/**/*",
     "KFXAdditions/Classes/Foundation/**/*",
     "KFXAdditions/Classes/UIKit/**/*",
-    "KFXAdditions/Classes/MapKit/**/*"
+    "KFXAdditions/Classes/MKMapKit/**/*"
   ]
 }

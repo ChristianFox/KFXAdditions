@@ -1,6 +1,7 @@
 
 # ChangeLog - KFXAdditions
 
+### 2.3.1 | Fixes MKMapKit+KFXAdditions being in the wrong folder
 
 ### 2.3.0 | Various Additions
 - Adds convenience initiliser method to NSIndexPath +kfx_zeroZeroPath;
