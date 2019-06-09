@@ -34,7 +34,7 @@
 +(NSURL*)kfx_urlFromHTMLString:(NSString*)htmlString withError:(NSError *__autoreleasing *)error{
     
     NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:error];
-    if (*error != nil) {
+    if (detector == nil) {
         return nil;
     }
     NSArray *matches = [detector matchesInString:htmlString

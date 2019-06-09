@@ -17,6 +17,17 @@ static NSInteger kIndexPathSectionTagMultiplier = 10000;
 
 @implementation NSIndexPath (KFXAdditions)
 
+
+//------------------------
+#pragma mark Convenience
+//------------------------
++(instancetype)kfx_zeroZeroPath{
+    return [NSIndexPath indexPathForRow:0 inSection:0];
+}
+
+//--------------------------------------------------------
+#pragma mark Creating Arrays of Index Paths
+//--------------------------------------------------------
 +(NSArray *)kfx_indexPathsFromRow:(NSInteger)startRow
 							toRow:(NSInteger)endRow
 						inSection:(NSInteger)section{
@@ -59,7 +70,7 @@ static NSInteger kIndexPathSectionTagMultiplier = 10000;
     return tag;
 }
 
-+(NSIndexPath*)indexPathForViewTag:(NSInteger)viewTag{
++(NSIndexPath*)kfx_indexPathForViewTag:(NSInteger)viewTag{
     NSInteger section = (viewTag / kIndexPathSectionTagMultiplier) -1;
     NSInteger row = viewTag - ((1 + section) * kIndexPathSectionTagMultiplier);
     NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:section];

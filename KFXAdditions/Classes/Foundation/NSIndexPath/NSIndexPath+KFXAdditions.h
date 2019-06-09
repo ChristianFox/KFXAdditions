@@ -13,6 +13,11 @@
 
 @interface NSIndexPath (KFXAdditions)
 
+//------------------------
+#pragma mark Convenience
+//------------------------
+/// Creates an instance with section = 0, row = 0
++(instancetype)kfx_zeroZeroPath;
 
 //--------------------------------------------------------
 #pragma mark Creating Arrays of Index Paths
@@ -53,7 +58,7 @@
 #pragma mark Converting from/to view Tags
 //------------------------
 -(NSInteger)kfx_viewTag;
-+(NSIndexPath*)indexPathForViewTag:(NSInteger)viewTag;
++(NSIndexPath*)kfx_indexPathForViewTag:(NSInteger)viewTag;
 
 
 @end

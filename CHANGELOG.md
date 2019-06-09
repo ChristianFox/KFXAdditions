@@ -1,6 +1,18 @@
 
 # ChangeLog - KFXAdditions
 
+
+### 2.3.0 | Various Additions
+- Adds convenience initiliser method to NSIndexPath +kfx_zeroZeroPath;
+- Adds methods to NSString for getting initials
+- Fixes crash when using +kfx_urlFromHTMLString:...
+- Adds MKMapView Additions
+- Adds -kfx_presentWebPageWithURL: to UIViewController
+- Adds -kfx_showOpenSettingsAlertWithTitle to UIViewController
+- Adds -kfx_removeObjectsMatchingPredicate: to NSMutableArray
+- Adds methods to UITableViewCell: kfx_reuseIdentifier;, kfx_nib
+- Includes UINavigationController+KFXAdditions.h in UIKitAdditions.h
+
 ### 2.2.0 | Various Additions 
 - Adds methods for converting between NSIndexPaths and view.tags
 - Adds method to UINavigationController for making the nav bar invisible

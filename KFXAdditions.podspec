@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFXAdditions"
-  s.version          = "2.2.0"
+  s.version          = "2.3.0"
   s.summary          = "A collection of categories on Foundation & Cocoa classes."
 
   s.description      = <<-DESC
@@ -17,8 +17,8 @@ A collection of categories on Foundation & Cocoa classes. Including: NSString,NS
   s.source_files =
     'KFXAdditions/Classes/CoreLocation/**/*',
     'KFXAdditions/Classes/Foundation/**/*',
-    'KFXAdditions/Classes/UIKit/**/*'
-
+    'KFXAdditions/Classes/UIKit/**/*',
+    'KFXAdditions/Classes/MapKit/**/*'
 
 end
 
