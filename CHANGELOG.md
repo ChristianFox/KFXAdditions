@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXAdditions
 
+### 2.4.0 | Adds -kfx_combineWithColour: amount: to UIColor
+
 ### 2.3.1 | Fixes MKMapKit+KFXAdditions being in the wrong folder
 
 ### 2.3.0 | Various Additions
