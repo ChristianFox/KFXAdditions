@@ -1,6 +1,10 @@
 
 # ChangeLog - KFXAdditions
 
+### 2.5.0 | UIView Bug fix and UICollectionViewCell additions
+- Adds kfx_reuseIdentifier; & kfx_nib; to UICollectionViewCell
+- Fixes error in  UIView -top; where it was using self.x instead of self.y
+
 ### 2.4.0 | Adds -kfx_combineWithColour: amount: to UIColor
 
 ### 2.3.1 | Fixes MKMapKit+KFXAdditions being in the wrong folder
