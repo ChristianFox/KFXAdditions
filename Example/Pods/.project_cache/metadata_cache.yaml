@@ -1,0 +1,12 @@
+KFXAdditions:
+  LABEL: KFXAdditions
+  PROJECT_PATH: KFXAdditions.xcodeproj
+  UUID: 67A3EF330AB3A81AC00950B231BA351A
+Pods-KFXAdditions_Example:
+  LABEL: Pods-KFXAdditions_Example
+  PROJECT_PATH: Pods.xcodeproj
+  UUID: D7DBDBD561335E81A0BEDB37C23F19F5
+Pods-KFXAdditions_Tests:
+  LABEL: Pods-KFXAdditions_Tests
+  PROJECT_PATH: Pods.xcodeproj
+  UUID: 37970CD14BDDD346E2B701AF02B203CA

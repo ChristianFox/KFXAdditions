@@ -27,12 +27,12 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		793DF7BEEDDF43F17EE1FF9E /* Pods_KFXAdditions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B88D1C69AAC03CB30049C1 /* Pods_KFXAdditions_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		93D07289102AABD585DD35CB /* libPods-KFXAdditions_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F197D916DC3BEA099B2998 /* libPods-KFXAdditions_Example.a */; };
 		DB4922E91DB35301003A7C0B /* KFXNSDateAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4922E81DB35301003A7C0B /* KFXNSDateAdditionsTests.m */; };
 		DB6BB7331DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6BB7321DC0F3DB00ED7305 /* KFXUIColorAdditionsTests.m */; };
 		DB88D6E11DCB699B00A205EB /* KFXCLLocationAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB88D6E01DCB699B00A205EB /* KFXCLLocationAdditionsTests.m */; };
-		FF3E1A45B806DCE53E7B17F2 /* libPods-KFXAdditions_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D801BF18078DDAA1FA8685 /* libPods-KFXAdditions_Tests.a */; };
+		FC5D1FA548187DA7DCDD2405 /* Pods_KFXAdditions_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8C16EF1C853BA178A544D5 /* Pods_KFXAdditions_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		33F197D916DC3BEA099B2998 /* libPods-KFXAdditions_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFXAdditions_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DDAC9B44AF28C59B2783E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		53D801BF18078DDAA1FA8685 /* libPods-KFXAdditions_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KFXAdditions_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8C16EF1C853BA178A544D5 /* Pods_KFXAdditions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXAdditions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B88D1C69AAC03CB30049C1 /* Pods_KFXAdditions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXAdditions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B1535261EA774C50001077B /* NSArrayKFXAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayKFXAdditionsTests.m; sourceTree = "<group>"; };
 		5B1535281EA77B3E0001077B /* NSDictionaryKFXAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryKFXAdditionsTests.m; sourceTree = "<group>"; };
 		5B15352A1EA77D320001077B /* NSSetKFXAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetKFXAdditionsTests.m; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				93D07289102AABD585DD35CB /* libPods-KFXAdditions_Example.a in Frameworks */,
+				FC5D1FA548187DA7DCDD2405 /* Pods_KFXAdditions_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				FF3E1A45B806DCE53E7B17F2 /* libPods-KFXAdditions_Tests.a in Frameworks */,
+				793DF7BEEDDF43F17EE1FF9E /* Pods_KFXAdditions_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +143,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				33F197D916DC3BEA099B2998 /* libPods-KFXAdditions_Example.a */,
-				53D801BF18078DDAA1FA8685 /* libPods-KFXAdditions_Tests.a */,
+				4E8C16EF1C853BA178A544D5 /* Pods_KFXAdditions_Example.framework */,
+				50B88D1C69AAC03CB30049C1 /* Pods_KFXAdditions_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +240,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				648953EAF6F2B9BC1E0ED0E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,7 +278,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KFX;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Christian Fox";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
@@ -368,6 +369,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		648953EAF6F2B9BC1E0ED0E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KFXAdditions_Example/Pods-KFXAdditions_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KFXAdditions/KFXAdditions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KFXAdditions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KFXAdditions_Example/Pods-KFXAdditions_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A8E008DB2D47EB9196E17927 /* [CP] Check Pods Manifest.lock */ = {
@@ -489,14 +508,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -521,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -540,14 +562,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -565,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -582,10 +607,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFXAdditions/KFXAdditions-Prefix.pch";
 				INFOPLIST_FILE = "KFXAdditions/KFXAdditions-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.6.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -600,10 +629,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KFXAdditions/KFXAdditions-Prefix.pch";
 				INFOPLIST_FILE = "KFXAdditions/KFXAdditions-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.6.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

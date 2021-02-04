@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXAdditions
 
+### 2.6.0 | Update to use newish cocoapods options incremental_installation and generate_multiple_pod_projects.
+
 ### 2.5.0 | UIView Bug fix and UICollectionViewCell additions
 - Adds kfx_reuseIdentifier; & kfx_nib; to UICollectionViewCell
 - Fixes error in  UIView -top; where it was using self.x instead of self.y

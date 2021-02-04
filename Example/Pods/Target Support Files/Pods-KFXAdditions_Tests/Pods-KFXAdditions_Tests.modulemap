@@ -1,0 +1,6 @@
+framework module Pods_KFXAdditions_Tests {
+  umbrella header "Pods-KFXAdditions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

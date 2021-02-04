@@ -1,1 +1,0 @@
-../../../../../KFXAdditions/Classes/UIKit/UICollectionViewCell/UICollectionViewCell+KFXAdditions.h

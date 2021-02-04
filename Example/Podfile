@@ -1,5 +1,10 @@
-# use_frameworks!
-platform :ios, '8.0'
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+install! 'cocoapods',
+:generate_multiple_pod_projects => true,
+:incremental_installation => true
 
 target 'KFXAdditions_Example' do
     pod 'KFXAdditions', :path => '../'

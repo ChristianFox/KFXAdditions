@@ -1,0 +1,111 @@
+BUILD_CONFIGURATIONS:
+  Debug: :debug
+  Release: :release
+CACHE_KEYS:
+  KFXAdditions:
+    BUILD_SETTINGS_CHECKSUM:
+      KFXAdditions:
+        :debug: 21e776cdb48bf2a1eba441dd5c73aca3
+        :release: 21e776cdb48bf2a1eba441dd5c73aca3
+    CHECKSUM: 751fcf497905a8da252c310350035036a2650c56
+    FILES:
+      - "../../KFXAdditions/Classes/CoreLocation/CLLocation+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/CoreLocation/CLLocation+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Archiving/NSKeyedArchiver+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Archiving/NSKeyedArchiver+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Archiving/NSKeyedUnarchiver+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Archiving/NSKeyedUnarchiver+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSArray+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSArray+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSDictionary+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSDictionary+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSMutableArray+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSMutableArray+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSMutableDictionary+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSMutableDictionary+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSMutableSet+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSMutableSet+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSSet+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Collections/NSSet+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/FoundationAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/NSBundle/NSBundle+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/NSBundle/NSBundle+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/NSDate/NSDate+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/NSDate/NSDate+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/NSError/NSError+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/NSError/NSError+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/NSFileManager/NSFileManager+KFXDirectoryLocations.h"
+      - "../../KFXAdditions/Classes/Foundation/NSFileManager/NSFileManager+KFXDirectoryLocations.m"
+      - "../../KFXAdditions/Classes/Foundation/NSIndexPath/NSIndexPath+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/NSIndexPath/NSIndexPath+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/NSJSONSerialization/NSJSONSerialization+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/NSJSONSerialization/NSJSONSerialization+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/NSNumber/NSNumber+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/NSNumber/NSNumber+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/NSObject/NSObject+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/NSObject/NSObject+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/NSURL/NSURL+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/NSURL/NSURL+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Strings/NSAttributedString+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Strings/NSAttributedString+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/Foundation/Strings/NSString+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/Foundation/Strings/NSString+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/MKMapKit/MKMapView+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/MKMapKit/MKMapView+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/Text Input/UILabel+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/Text Input/UILabel+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/Text Input/UITextView+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/Text Input/UITextView+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIAlertController/UIAlertController+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIAlertController/UIAlertController+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIApplication/UIApplication+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIApplication/UIApplication+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIBezierPath/UIBezierPath+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIBezierPath/UIBezierPath+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIButton/UIButton+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIButton/UIButton+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UICollectionViewCell/UICollectionViewCell+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UICollectionViewCell/UICollectionViewCell+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIColor/UIColor+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIColor/UIColor+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIFont/UIFont+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIFont/UIFont+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIImage/UIImage+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIImage/UIImage+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIImageView/UIImageView+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIImageView/UIImageView+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIKitAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UINavigationController/UINavigationController+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UINavigationController/UINavigationController+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIResponder/UIResponder+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIResponder/UIResponder+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UITableView/UITableView+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UITableView/UITableView+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UITableViewCell/UITableViewCell+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UITableViewCell/UITableViewCell+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UITouch/UITouch+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UITouch/UITouch+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/UIView/UIView+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/UIView/UIView+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/View Controllers/UICollectionViewController+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/View Controllers/UICollectionViewController+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/View Controllers/UITableViewController+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/View Controllers/UITableViewController+KFXAdditions.m"
+      - "../../KFXAdditions/Classes/UIKit/View Controllers/UIViewController+KFXAdditions.h"
+      - "../../KFXAdditions/Classes/UIKit/View Controllers/UIViewController+KFXAdditions.m"
+      - "../../LICENSE"
+      - "../../README.md"
+    PROJECT_NAME: KFXAdditions
+    SPECS:
+      - KFXAdditions (2.6.0)
+  Pods-KFXAdditions_Example:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 2ccaaeeb54367e684794297f5462a03a
+      Release: 2ccaaeeb54367e684794297f5462a03a
+  Pods-KFXAdditions_Tests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: c92348de70a17ee627cba05acd931a07
+      Release: c92348de70a17ee627cba05acd931a07
+OBJECT_VERSION: 46
+PLUGINS:
+  {}
